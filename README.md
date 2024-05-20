@@ -76,8 +76,8 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## Acknowledgments
 
-    Thanks to the developers and contributors of DNABERT, Enformer, and scGPT models.
-    Appreciation goes to OpenAI for providing GPT-4, which plays a crucial role in our interpretability analysis.
+Thanks to the developers and contributors of DNABERT, Enformer, and scGPT models.
+Appreciation goes to OpenAI for providing GPT-4, which plays a crucial role in our interpretability analysis.
 
 ## Contact
 
