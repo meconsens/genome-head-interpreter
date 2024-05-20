@@ -2,3 +2,4 @@
 preprocessing/data/scores
 preprocessing/data/distributions
 preprocessing/data/coef
+setup.py
