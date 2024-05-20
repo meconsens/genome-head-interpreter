@@ -3,6 +3,7 @@ import csv
 import numpy as np
 import argparse
 import json
+import os
 
 
 def normalize_row(row):
@@ -66,12 +67,16 @@ def main():
     full_path = args.full_path
     model_name = args.model_name
     
-    df_results = pd.read_csv(data_path, index_col =0)
-    bio_features = [col for col in df_results.columns if not (('mse' in col or 'r2' in col) )]
-    print("BIO FEATURES: ", bio_features)
+    df_results = pd.read_csv(data_path, index_col=0)
+    bio_features = [col for col in df_results.columns if not (('layer_head' in col) )]
+    layer_heads = df_results['layer_head'].copy()
     normalized_rounded_df = df_results[bio_features].apply(normalize_row, axis=1)
-    normalized_rounded_df.to_csv(f'{full_path}/data/coef/{model_name}_norm_results_full.csv')
+    normalized_rounded_df.insert(0, 'layer_head', layer_heads)
+
+    os.makedirs(f'{full_path}/data/coef/', exist_ok=True)
+    normalized_rounded_df.to_csv(f'{full_path}/data/coef/{model_name}_norm_results_full.csv', index=False)
     
+    os.makedirs(f'{full_path}/data/explanation_prompts/', exist_ok=True)
     json_format = format_json(normalized_rounded_df)
     with open(f'{full_path}/data/explanation_prompts/{model_name}.json', 'w') as f:
         f.write(json_format)
