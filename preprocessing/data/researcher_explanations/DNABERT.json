@@ -1,178 +1,13 @@
 {
-    "layer0-head0": {
-            "name": "layer0-head0",
-            "given_name": "Low GC & End Positional",
-            "explanation": "This head primarily focuses on low GC content, and leans towards focusing on the end of sequences (positive position score).",           
-            "sentences": [
-                [
-                    [
-                        "Position",
-                        6
-                    ],
-                    "ARID",
-                    "ARID&Homeo domain factors",
-                    "Basic helix-loop-helix factors (bHLH)",
-                    "Basic helix-span-helix factors (bHSH)",
-                    [
-                        "Basic leucine zipper factors (bZIP)",
-                        -1
-                    ],
-                    "Basic leucine zipper factors (bZIP)&SAND domain factors",
-                    "C2CH THAP-type zinc finger factors",
-                    [
-                        "C2H2 zinc finger factors",
-                        2
-                    ],
-                    [
-                      "CRC domain",
-                      -1
-                    ],
-                    "DM-type intertwined zinc finger factors",
-                    "Fork head/winged helix factors",
-                    [
-                        "GC",
-                        -10
-                    ],
-                    "GCM domain factors",
-                    "Grainyhead domain factors",
-                    "Heat shock factors",
-                    [
-                        "Heteromeric CCAAT-binding factors",
-                        -1
-                    ],
-                    "High-mobility group (HMG) domain factors",
-                    "Homeo domain factors",
-                    "Homeo domain factors&High-mobility group (HMG) domain factors",
-                    "Homeo domain factors&Paired box factors",
-                    "MADS box factors",
-                    "Nuclear receptors with C4 zinc fingers",
-                    "Other C4 zinc finger-type factors",
-                    "Other C4 zinc finger-type factors&Basic helix-loop-helix factors (bHLH)",
-                    "Paired box factors",
-                    [
-                        "Rel homology region (RHR) factors",
-                        -2
-                    ],
-                    "Runt domain factors",
-                    "SAND domain factors",
-                    "SMAD/NF-1 DNA-binding domain factors",
-                    "STAT domain factors",
-                    "T-Box factors",
-                    "TATA-binding proteins",
-                    "TEA domain factors",
-                    "TSS",
-                    "Tryptophan cluster factors",
-                    "p53 domain factors",
-                    "phyloP",
-                    [
-                        "repeat_DNA",
-                        -1
-                    ],
-                    [
-                        "repeat_LINE",
-                        -1
-                    ],
-                    "repeat_LTR",
-                    "repeat_SINE",
-                    [
-                        "repeat_Simple_repeat",
-                        1
-                    ]
-                ]
-            ]
-        },
-        "layer4-head9": {
-                "name": "layer4-head9",
-                "given_name": "Start Positional, High GC & No Conservation",                
-                "explanation": "This head is mostly positional, focusing on tokens toward the start of sequence, and also on tokens with high GC content, while maintaining an aversion to regions conserved across species (negative phyloP score).",              
-                "sentences": [
-                    [
-                        [
-                            "Position",
-                            -9
-                        ],
-                        [
-                            "ARID",
-                            1
-                        ],
-                        "ARID&Homeo domain factors",
-                        "Basic helix-loop-helix factors (bHLH)",
-                        "Basic helix-span-helix factors (bHSH)",
-                        "Basic leucine zipper factors (bZIP)",
-                        "Basic leucine zipper factors (bZIP)&SAND domain factors",
-                        "C2CH THAP-type zinc finger factors",
-                        "C2H2 zinc finger factors",
-                        "CRC domain",
-                        "DM-type intertwined zinc finger factors",
-                        "Fork head/winged helix factors",
-                        [
-                            "GC",
-                            10
-                        ],
-                        "GCM domain factors",
-                        "Grainyhead domain factors",
-                        "Heat shock factors",
-                        "Heteromeric CCAAT-binding factors",
-                        "High-mobility group (HMG) domain factors",
-                        [
-                            "Homeo domain factors",
-                            2
-                        ],
-                        "Homeo domain factors&High-mobility group (HMG) domain factors",
-                        "Homeo domain factors&Paired box factors",
-                        "MADS box factors",
-                        "Nuclear receptors with C4 zinc fingers",
-                        "Other C4 zinc finger-type factors",
-                        "Other C4 zinc finger-type factors&Basic helix-loop-helix factors (bHLH)",
-                        "Paired box factors",
-                        "Rel homology region (RHR) factors",
-                        "Runt domain factors",
-                        "SAND domain factors",
-                        [
-                            "SMAD/NF-1 DNA-binding domain factors",
-                            2
-                        ],
-                        "STAT domain factors",
-                        "T-Box factors",
-                        [
-                            "TATA-binding proteins",
-                            3
-                        ],
-                        "TEA domain factors",
-                        "TSS",
-                        [
-                            "Tryptophan cluster factors",
-                            -2
-                        ],
-                        "p53 domain factors",
-                        [
-                            "phyloP",
-                            -4
-                        ],
-                        [
-                            "repeat_DNA",
-                            3
-                        ],
-                        "repeat_LINE",
-                        "repeat_LTR",
-                        [
-                            "repeat_SINE",
-                            -2
-                        ],
-                        "repeat_Simple_repeat"
-                    ]
-                ]
-      },
-      "layer0-head3": {
-        "name": "layer0-head3",
-        "given_name": "High GC",
-        "explanation": "The main thing this head does is find regions with high GC content.",
+    "layer10-head11": {
+        "name": "layer10-head11",
+        "given_name": "Unknown",
+        "explanation": "This head is not explained.",
         "sentences": [
             [
-                [
-                    "Position",
-                    2
-                ],
+                "phyloP",
+                "TSS",
+                "GC",
                 "ARID",
                 "ARID&Homeo domain factors",
                 "Basic helix-loop-helix factors (bHLH)",
@@ -184,10 +19,6 @@
                 "CRC domain",
                 "DM-type intertwined zinc finger factors",
                 "Fork head/winged helix factors",
-                [
-                    "GC",
-                    10
-                ],
                 "GCM domain factors",
                 "Grainyhead domain factors",
                 "Heat shock factors",
@@ -198,274 +29,317 @@
                 "Homeo domain factors&Paired box factors",
                 "MADS box factors",
                 "Nuclear receptors with C4 zinc fingers",
-                "Other C4 zinc finger-type factors",
                 "Other C4 zinc finger-type factors&Basic helix-loop-helix factors (bHLH)",
+                "Other C4 zinc finger-type factors",
+                "p53 domain factors",
                 "Paired box factors",
                 "Rel homology region (RHR) factors",
                 "Runt domain factors",
                 "SAND domain factors",
                 "SMAD/NF-1 DNA-binding domain factors",
                 "STAT domain factors",
-                "T-Box factors",
                 "TATA-binding proteins",
+                "T-Box factors",
                 "TEA domain factors",
-                "TSS",
                 "Tryptophan cluster factors",
-                "p53 domain factors",
-                "phyloP",
                 "repeat_DNA",
                 "repeat_LINE",
                 "repeat_LTR",
-                "repeat_SINE",
-                "repeat_Simple_repeat"
+                "repeat_Simple_repeat",
+                "repeat_SINE"
             ]
         ]
     },
-      "layer10-head8": {
-      "name": "layer10-head8",
-      "given_name": "Start Positional, TATA, T-Box, Forkhead, C2CH, Less bZIP&SAND, RHR and LINEs",
-      "explanation": "This head is mostly positional, it pays more attention to the end of sequences and avoids regions that bind BZIP and SAND domain TFs, as well as focusing on TATA-binding proteins, C2CH THAP-type zinc-finger factors, Fork head/winged helix factors, and T-Box Factors, while avoiding RHR factors and LINE family repeats.",
-      "sentences": [
-          [
-              [
-                  "Position",
-                  -10
-              ],
-              "ARID",
-              "ARID&Homeo domain factors",
-              "Basic helix-loop-helix factors (bHLH)",
-              "Basic helix-span-helix factors (bHSH)",
-              "Basic leucine zipper factors (bZIP)",
-              [
-                  "Basic leucine zipper factors (bZIP)&SAND domain factors",
-                  -7
-              ],
-              [
-                  "C2CH THAP-type zinc finger factors",
-                  5
-              ],
-              "C2H2 zinc finger factors",
-              "CRC domain",
-              "DM-type intertwined zinc finger factors",
-              [
-                  "Fork head/winged helix factors",
-                  5
-              ],
-              "GC",
-              "GCM domain factors",
-              "Grainyhead domain factors",
-              "Heat shock factors",
-              "Heteromeric CCAAT-binding factors",
-              "High-mobility group (HMG) domain factors",
-              "Homeo domain factors",
-              "Homeo domain factors&High-mobility group (HMG) domain factors",
-              "Homeo domain factors&Paired box factors",
-              "MADS box factors",
-              "Nuclear receptors with C4 zinc fingers",
-              "Other C4 zinc finger-type factors",
-              "Other C4 zinc finger-type factors&Basic helix-loop-helix factors (bHLH)",
-              "Paired box factors",
-              [
-                  "Rel homology region (RHR) factors",
-                  -5
-              ],
-              "Runt domain factors",
-              "SAND domain factors",
-              "SMAD/NF-1 DNA-binding domain factors",
-              "STAT domain factors",
-              [
-                  "T-Box factors",
-                  5
-              ],
-              [
-                  "TATA-binding proteins",
-                  6
-              ],
-              [
-                  "TEA domain factors",
-                  -3
-              ],
-              "TSS",
-              "Tryptophan cluster factors",
-              "p53 domain factors",
-              [
-                  "phyloP",
-                  -3
-              ],
-              "repeat_DNA",
-              [
-                  "repeat_LINE",
-                  -4
-              ],
-              "repeat_LTR",
-              "repeat_SINE",
-              "repeat_Simple_repeat"
-          ]
-      ]
-  },
-  "layer5-head5": {
-      "name": "layer5-head5",
-      "given_name": "End Positional, No SINEs",
-      "explanation": "This head predominantly focuses on the start of positional tokens in the genome, and slightly avoids SINE family repeats while focusing very very slightly on repeat_DNA.",
-  "sentences": [
-          [
-              [
-                  "Position",
-                  10
-              ],
-              "ARID",
-              "ARID&Homeo domain factors",
-              [
-                  "Basic helix-loop-helix factors (bHLH)",
-                  -1
-              ],
-              "Basic helix-span-helix factors (bHSH)",
-              "Basic leucine zipper factors (bZIP)",
-              "Basic leucine zipper factors (bZIP)&SAND domain factors",
-              "C2CH THAP-type zinc finger factors",
-              "C2H2 zinc finger factors",
-              "CRC domain",
-              "DM-type intertwined zinc finger factors",
-              "Fork head/winged helix factors",
-              "GC",
-              "GCM domain factors",
-              "Grainyhead domain factors",
-              "Heat shock factors",
-              "Heteromeric CCAAT-binding factors",
-              "High-mobility group (HMG) domain factors",
-              "Homeo domain factors",
-              "Homeo domain factors&High-mobility group (HMG) domain factors",
-              "Homeo domain factors&Paired box factors",
-              "MADS box factors",
-              "Nuclear receptors with C4 zinc fingers",
-              "Other C4 zinc finger-type factors",
-              [
-                  "Other C4 zinc finger-type factors&Basic helix-loop-helix factors (bHLH)",
-                  2
-              ],
-              "Paired box factors",
-              "Rel homology region (RHR) factors",
-              [
-                  "Runt domain factors",
-                  2
-              ],
-              "SAND domain factors",
-              "SMAD/NF-1 DNA-binding domain factors",
-              "STAT domain factors",
-              "T-Box factors",
-              [
-                  "TATA-binding proteins",
-                  1
-              ],
-              "TEA domain factors",
-              "TSS",
-              "Tryptophan cluster factors",
-              [
-                  "p53 domain factors",
-                  1
-              ],
-              [
-                  "phyloP",
-                  2
-              ],
-              [
-                  "repeat_DNA",
-                  3
-              ],
-              [
-                  "repeat_LINE",
-                  -2
-              ],
-              "repeat_LTR",
-              [
-                  "repeat_SINE",
-                  -4
-              ],
-              "repeat_Simple_repeat"
-          ]
-      ]
-  },
-  "layer11-head10": {
-         "name": "layer11-head10",
-         "given_name": "Start Positional, bHLH, C2CH & SINEs, Less bZIP&SAND, TSS, DM-types, Runt, repeats and LINES",
-         "explanation": "This head is mainly positional, focusing on the end of sequences, as well as regions that have bHLH factors, C2CH THAP-type zinc finger factors and SINE family repeats, while avoiding bZIP&SAND  domains, DM-type intertwined zinc finger factors, Runt domains, repeat DNA and LINE family repeats.",         
-         "sentences": [
-             [
-                 [
-                     "Position",
-                     -10
-                 ],
-                 "ARID",
-                 "ARID&Homeo domain factors",
-                 [
-                     "Basic helix-loop-helix factors (bHLH)",
-                     6
-                 ],
-                 "Basic helix-span-helix factors (bHSH)",
-                 "Basic leucine zipper factors (bZIP)",
-                 [
-                     "Basic leucine zipper factors (bZIP)&SAND domain factors",
-                     -9
-                 ],
-                 [
-                     "C2CH THAP-type zinc finger factors",
-                     5
-                 ],
-                 "C2H2 zinc finger factors",
-                 "CRC domain",
-                 [
-                     "DM-type intertwined zinc finger factors",
-                     -7
-                 ],
-                 "Fork head/winged helix factors",
-                 "GC",
-                 "GCM domain factors",
-                 "Grainyhead domain factors",
-                 "Heat shock factors",
-                 "Heteromeric CCAAT-binding factors",
-                 "High-mobility group (HMG) domain factors",
-                 "Homeo domain factors",
-                 "Homeo domain factors&High-mobility group (HMG) domain factors",
-                 "Homeo domain factors&Paired box factors",
-                 "MADS box factors",
-                 "Nuclear receptors with C4 zinc fingers",
-                 "Other C4 zinc finger-type factors",
-                 "Other C4 zinc finger-type factors&Basic helix-loop-helix factors (bHLH)",
-                 "Paired box factors",
-                 "Rel homology region (RHR) factors",
-                 [
-                     "Runt domain factors",
-                     -5
-                 ],
-                 "SAND domain factors",
-                 "SMAD/NF-1 DNA-binding domain factors",
-                 "STAT domain factors",
-                 "T-Box factors",
-                 "TATA-binding proteins",
-                 "TEA domain factors",
-                 [
-                     "TSS",
-                     -7
-                 ],
-                 "Tryptophan cluster factors",
-                 "p53 domain factors",
-                 "phyloP",
-                 [
-                     "repeat_DNA",
-                     -6
-                 ],
-                 [
-                     "repeat_LINE",
-                     -5
-                 ],
-                 "repeat_LTR",
-                 [
-                     "repeat_SINE",
-                     5
-                 ],
-                 "repeat_Simple_repeat"
-             ]
-         ]
-     }
+    "layer0-head0": {
+        "name": "layer0-head0",
+        "given_name": "Transcription Factor Specificity",
+        "explanation": "This head’s attention is centered on a set of transcription factors, enhancing those associated with heteromeric CCAAT-binding and nuclear receptors with C4 zinc fingers, while reducing focus on High-mobility group (HMG) domain,  fork head/winged helix, and MADS box factors.",
+        "sentences": [
+            [
+                "phyloP",
+                "TSS",
+                [
+                    "GC",
+                    5
+                ],
+                "ARID",
+                "ARID&Homeo domain factors",
+                "Basic helix-loop-helix factors (bHLH)",
+                "Basic helix-span-helix factors (bHSH)",
+                "Basic leucine zipper factors (bZIP)",
+                [
+                    "Basic leucine zipper factors (bZIP)&SAND domain factors",
+                    6
+                ],
+                "C2CH THAP-type zinc finger factors",
+                "C2H2 zinc finger factors",
+                "CRC domain",
+                "DM-type intertwined zinc finger factors",
+                [
+                    "Fork head/winged helix factors",
+                    -5
+                ],
+                "GCM domain factors",
+                "Grainyhead domain factors",
+                "Heat shock factors",
+                [
+                    "Heteromeric CCAAT-binding factors",
+                    9
+                ],
+                [
+                    "High-mobility group (HMG) domain factors",
+                    -6
+                ],
+                "Homeo domain factors",
+                "Homeo domain factors&High-mobility group (HMG) domain factors",
+                "Homeo domain factors&Paired box factors",
+                [
+                    "MADS box factors",
+                    -5
+                ],
+                [
+                    "Nuclear receptors with C4 zinc fingers",
+                    7
+                ],
+                "Other C4 zinc finger-type factors&Basic helix-loop-helix factors (bHLH)",
+                "Other C4 zinc finger-type factors",
+                "p53 domain factors",
+                [
+                    "Paired box factors",
+                    5
+                ],
+                "Rel homology region (RHR) factors",
+                "Runt domain factors",
+                "SAND domain factors",
+                "SMAD/NF-1 DNA-binding domain factors",
+                "STAT domain factors",
+                "TATA-binding proteins",
+                "T-Box factors",
+                "TEA domain factors",
+                "Tryptophan cluster factors",
+                "repeat_DNA",
+                "repeat_LINE",
+                "repeat_LTR",
+                "repeat_Simple_repeat",
+                "repeat_SINE"
+            ]
+        ]
+    },
+    "layer4-head9": {
+        "name": "layer4-head9",
+        "given_name": "bZIP, p53, SAND and BHLH",
+        "explanation": "This head’s attention is associated with transcription regulation regions through specific factors like bZIP, p53, and SAND, while slightly avoiding transcription start sites (TSS).",
+        "sentences": [
+            [
+                "phyloP",
+                [
+                    "TSS",
+                    -5
+                ],
+                "GC",
+                "ARID",
+                "ARID&Homeo domain factors",
+                "Basic helix-loop-helix factors (bHLH)",
+                "Basic helix-span-helix factors (bHSH)",
+                [
+                    "Basic leucine zipper factors (bZIP)",
+                    6
+                ],
+                [
+                    "Basic leucine zipper factors (bZIP)&SAND domain factors",
+                    7
+                ],
+                "C2CH THAP-type zinc finger factors",
+                "C2H2 zinc finger factors",
+                "CRC domain",
+                "DM-type intertwined zinc finger factors",
+                "Fork head/winged helix factors",
+                "GCM domain factors",
+                "Grainyhead domain factors",
+                "Heat shock factors",
+                "Heteromeric CCAAT-binding factors",
+                "High-mobility group (HMG) domain factors",
+                "Homeo domain factors",
+                "Homeo domain factors&High-mobility group (HMG) domain factors",
+                "Homeo domain factors&Paired box factors",
+                "MADS box factors",
+                "Nuclear receptors with C4 zinc fingers",
+                [
+                    "Other C4 zinc finger-type factors&Basic helix-loop-helix factors (bHLH)",
+                    6
+                ],
+                "Other C4 zinc finger-type factors",
+                [
+                    "p53 domain factors",
+                    7
+                ],
+                "Paired box factors",
+                "Rel homology region (RHR) factors",
+                "Runt domain factors",
+                "SAND domain factors",
+                "SMAD/NF-1 DNA-binding domain factors",
+                "STAT domain factors",
+                "TATA-binding proteins",
+                "T-Box factors",
+                "TEA domain factors",
+                "Tryptophan cluster factors",
+                "repeat_DNA",
+                "repeat_LINE",
+                "repeat_LTR",
+                "repeat_Simple_repeat",
+                "repeat_SINE"
+            ]
+        ]
+    },
+    "layer1-head9": {
+        "name": "layer1-head9",
+        "given_name": "Conservation, Transcriptional Regulation and Repetitive Element Focus",
+        "explanation": "This head primarily attends to DNA sequences associated with transcriptional regulation, including regions highly conserved between species (high phyloP score), several transcription factors, while even attending to some repetitive elements such as LINE and LTR, while actively avoiding other transcription factors and certain repeats, in particular Runt domains, Grainyhead domains, and SINE repeats.",
+        "sentences": [
+            [
+                [
+                    "phyloP",
+                    8
+                ],
+                "TSS",
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "ARID",
+                    8
+                ],
+                [
+                    "ARID&Homeo domain factors",
+                    7
+                ],
+                [
+                    "Basic helix-loop-helix factors (bHLH)",
+                    -6
+                ],
+                [
+                    "Basic helix-span-helix factors (bHSH)",
+                    -9
+                ],
+                [
+                    "Basic leucine zipper factors (bZIP)",
+                    8
+                ],
+                [
+                    "Basic leucine zipper factors (bZIP)&SAND domain factors",
+                    8
+                ],
+                [
+                    "C2CH THAP-type zinc finger factors",
+                    -7
+                ],
+                [
+                    "C2H2 zinc finger factors",
+                    -9
+                ],
+                [
+                    "CRC domain",
+                    7
+                ],
+                [
+                    "DM-type intertwined zinc finger factors",
+                    7
+                ],
+                [
+                    "Fork head/winged helix factors",
+                    6
+                ],
+                [
+                    "GCM domain factors",
+                    -8
+                ],
+                [
+                    "Grainyhead domain factors",
+                    -10
+                ],
+                [
+                    "Heat shock factors",
+                    5
+                ],
+                "Heteromeric CCAAT-binding factors",
+                [
+                    "High-mobility group (HMG) domain factors",
+                    6
+                ],
+                [
+                    "Homeo domain factors",
+                    9
+                ],
+                [
+                    "Homeo domain factors&High-mobility group (HMG) domain factors",
+                    8
+                ],
+                [
+                    "Homeo domain factors&Paired box factors",
+                    8
+                ],
+                "MADS box factors",
+                [
+                    "Nuclear receptors with C4 zinc fingers",
+                    5
+                ],
+                [
+                    "Other C4 zinc finger-type factors&Basic helix-loop-helix factors (bHLH)",
+                    7
+                ],
+                [
+                    "Other C4 zinc finger-type factors",
+                    10
+                ],
+                [
+                    "p53 domain factors",
+                    5
+                ],
+                "Paired box factors",
+                [
+                    "Rel homology region (RHR) factors",
+                    -5
+                ],
+                [
+                    "Runt domain factors",
+                    -10
+                ],
+                "SAND domain factors",
+                [
+                    "SMAD/NF-1 DNA-binding domain factors",
+                    -9
+                ],
+                "STAT domain factors",
+                [
+                    "TATA-binding proteins",
+                    8
+                ],
+                [
+                    "T-Box factors",
+                    -8
+                ],
+                [
+                    "TEA domain factors",
+                    6
+                ],
+                "Tryptophan cluster factors",
+                "repeat_DNA",
+                [
+                    "repeat_LINE",
+                    8
+                ],
+                [
+                    "repeat_LTR",
+                    8
+                ],
+                "repeat_Simple_repeat",
+                [
+                    "repeat_SINE",
+                    -6
+                ]
+            ]
+        ]
+    }
    }
   

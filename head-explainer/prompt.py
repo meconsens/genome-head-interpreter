@@ -13,7 +13,7 @@ import random
 load_dotenv()
 
 # API key from .env
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
 # coefficients into feature<tab>coef and then zero-filtered out coefs
 def format_coefficients(head_data):
