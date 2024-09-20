@@ -15,20 +15,30 @@ def calculate_z_scores(real_df, distribution_folder):
     dist_df = dist_df[[col for col in dist_df.columns if 'position' not in col]]
     
     z_scores = pd.DataFrame(index=real_df.index)  # dataFrame to store Z-scores
-   
     for feature in real_df.columns:
         mean = dist_df[feature].mean(axis=1)
         std = dist_df[feature].std(axis=1)
         std[std == 0] = np.nan  # 0 standard deviations with NaN to avoid division by zero
         z_scores[feature] = (real_df[feature] - mean) / std  # Z-score per feature
         # nonsignificant coefficients to 0 before normalization
-        z_scores.loc[z_scores[feature].abs() <= 1.96, feature] = 0
+        z_scores.loc[z_scores[feature].abs() <= 4, feature] = 0
 
     return z_scores
 
+
 def normalize_row(row):
-    # absolute maximum to use as the scaling factor
+    # Check for existing NaN or inf values
+    if row.isnull().any() or np.isinf(row).any():
+        raise ValueError("Input row contains NaN or inf values.")
+    
+    # Absolute maximum to use as the scaling factor
     scale = max(row.max(), abs(row.min()))
+    print(f"scale: {scale}")
+    
+    # handle division by zero
+    if scale == 0:
+        return row.fillna(0).astype(int)
+    
     return ((row / scale) * 10).round().astype(int)
 
 
@@ -69,15 +79,22 @@ def main():
     model_name_to_folder = {
         'DNABERT': 'DNABERT',
         'DNABERT_pretrained': 'DNABERT',
+        'DNABERT_random': 'DNABERT',
+        'DNABERT_random_init': 'DNABERT',
         'enformer': 'enformer',
+        'enformer_random_init': 'enformer',
         'scgpt_ms': 'scgpt_ms',
-        'scgpt_ms_pretrained': 'scgpt_ms_pretrained',
+        'scgpt_ms_random_init': 'scgpt_ms',
+        'scgpt_ms_pretrained': 'scgpt_ms',
         'scgpt_pancreas': 'scgpt_pancreas',
-        'scgpt_pancreas_pretrained': 'scgpt_pancreas_pretrained',
+        'scgpt_pancreas_random_init': 'scgpt_pancreas',
+        'scgpt_pancreas_pretrained': 'scgpt_pancreas',
     }
 
     model_name = args.model_name
+    print("THE MODEL NAME IS:", model_name)
     folder = model_name_to_folder.get(model_name, 'scgpt_pancreas')
+    print("THE FOLDER NAME IS:", folder)
     distribution_folder = f'{full_path}/data/distributions/{folder}/'
 
     real_coef_df = pd.read_csv(real_coef_path, index_col=0)
@@ -94,6 +111,7 @@ def main():
 
     os.makedirs(f'{full_path}/data/explanation_prompts/', exist_ok=True)
     json_output = format_json(normalized_coefs)
+    print(f'{full_path}/data/explanation_prompts/{model_name}.json')
     with open(f'{full_path}/data/explanation_prompts/{model_name}.json', 'w') as f:
         f.write(json_output)
 
