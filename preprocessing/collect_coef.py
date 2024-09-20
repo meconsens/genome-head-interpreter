@@ -108,9 +108,13 @@ def main():
     config_functions = {
         'DNABERT': configure_DNABERT,
         'DNABERT_pretrained': configure_DNABERT,
+        'DNABERT_random': configure_DNABERT,
+        'DNABERT_random_init': configure_DNABERT,
         'DNABERT_TATA': configure_DNABERT,
-        'enformer': configure_enformer
+        'enformer': configure_enformer,
+        'enformer_random_init': configure_enformer
     }
+
 
     # default to scgpt configurations if model not found
     config_function = config_functions.get(args.model_name, configure_scgpt)
