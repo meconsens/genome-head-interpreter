@@ -234,7 +234,7 @@ def analyze_attention_heads(model, data_loader, device, vocab, nlayers, nhead, p
 
                 # tokens, attention matrices, labels, and input_values together
                 for tokens, att_matrix, label, values in zip(input_tokens, attention_scores, batch_labels_list, input_values_list):
-                    max_att_scores = att_matrix.max(dim=-1)[0].detach().cpu().numpy()
+                    max_att_scores = att_matrix.max(dim=0)[0].detach().cpu().numpy()
                     # append a tuple with max attention scores, tokens, label, and the specific input_values
                     examples_scores_attention[layer][head].append((max_att_scores, tokens, label, values))
                     
@@ -254,7 +254,7 @@ def main():
         "--task_name",
         default="classification",
         type=str,
-        help="either pretrained or classification",
+        help="either pretrained or classification or random_init",
     )
     parser.add_argument(
         "--full_path",
@@ -467,7 +467,10 @@ def main():
         adata.obs["celltype_id"] = celltype_id_labels
         adata.var["gene_name"] = adata.var.index.tolist()
                     
-    if config.load_model is not None:
+    load_model = config.load_model
+    if task_name == 'random_init':
+        load_model = None           
+    if load_model is not None:
         ## Load weights from other fine-tuned model
         model_dir = model_path
         model_dir = Path(config.load_model)
@@ -556,7 +559,7 @@ def main():
         all_counts, celltypes_labels, batch_ids, test_size=0.1, shuffle=True
     )
 
-    if config.load_model is None:
+    if load_model is None:
         vocab = Vocab(
             VocabPybind(genes + special_tokens, None)
         )  # bidirectional lookup [gene <-> int]
@@ -625,7 +628,7 @@ def main():
         fast_transformer_backend=fast_transformer_backend,
         pre_norm=config.pre_norm,
     )
-    if config.load_model is not None:
+    if load_model is not None:
         try:
             model.load_state_dict(torch.load(model_file))
             logger.info(f"Loading all model params from {model_file}")
