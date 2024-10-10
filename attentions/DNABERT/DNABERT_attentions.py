@@ -2,6 +2,7 @@ import torch
 import torch.nn.functional as F
 import sys
 from transformers import BertConfig, DNATokenizer, BertForSequenceClassification
+from transformers import BertForMaskedLM
 from torch.utils.data import Dataset, DataLoader
 import argparse
 import pandas as pd
@@ -152,7 +153,7 @@ def main():
         "--task_name",
         default="human_enhancer",
         type=str,
-        help="The task name, either human_enhancer or human_non_TATA or pretrained",
+        help="The task name, either human_enhancer or human_non_TATA or pretrained or random/random_init",
     )
     parser.add_argument(
         "--full_path",
@@ -176,9 +177,15 @@ def main():
     
     config_class, model_class, tokenizer_class = BertConfig, BertForSequenceClassification, DNATokenizer
     
-    #model, make sure output_attentions = True
-    model = model_class.from_pretrained(model_path, output_attentions=True)
-    model.eval()
+    if task_name =='random_init':
+        #initialize model with random weights, output_attentions=True
+        config = BertConfig(output_attentions=True)
+        model = BertForMaskedLM(config)
+        model.eval()
+    else:
+        #model
+        model = model_class.from_pretrained(model_path, output_attentions=True)
+        model.eval()
     
     #tokenizer
     tokenizer = tokenizer_class.from_pretrained(model_path, do_lower_case=False)

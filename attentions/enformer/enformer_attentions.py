@@ -12,8 +12,44 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pickle
 from torch.cuda.amp import GradScaler, autocast
+from transformers import PretrainedConfig
 
-torch.cuda.empty_cache()
+class EnformerConfig(PretrainedConfig):
+    model_type = "enformer"
+
+    def __init__(
+        self,
+        dim = 1536,
+        depth = 11,
+        heads = 8,
+        output_heads = dict(human = 5313, mouse= 1643),
+        target_length = 896,
+        attn_dim_key = 64,
+        dropout_rate = 0.4,
+        attn_dropout = 0.05,
+        pos_dropout = 0.01,
+        use_checkpointing = False,
+        use_convnext = False,
+        num_downsamples = 7,    # genetic sequence is downsampled 2 ** 7 == 128x in default Enformer - can be changed for higher resolution
+        dim_divisible_by = 128,
+        use_tf_gamma = False,
+        **kwargs,
+    ):
+        self.dim = dim
+        self.depth = depth
+        self.heads = heads
+        self.output_heads = output_heads
+        self.target_length = target_length
+        self.attn_dim_key = attn_dim_key
+        self.dropout_rate = dropout_rate
+        self.attn_dropout = attn_dropout
+        self.pos_dropout = pos_dropout
+        self.use_checkpointing = use_checkpointing
+        self.num_downsamples = num_downsamples
+        self.dim_divisible_by = dim_divisible_by
+        self.use_tf_gamma = use_tf_gamma
+
+        super().__init__(**kwargs)
 
 
 class DNADataset(Dataset):
@@ -144,16 +180,29 @@ def main():
         type=int,
         help="Number of samples to process",
     )
+    parser.add_argument(
+        "--task_name",
+        default=None,
+        type=str,
+        help="If task name is initialize from random use random_init",
+    )
     args = parser.parse_args()
 
     model_path = args.model_path
     data_path = args.data_path
     full_path = args.full_path
     num_samples = args.num_samples
+    task_name = 'random_init'
+    print("TASK NAME:", task_name)
     
-    
-    #model 
-    model = Enformer.from_pretrained(model_path)
+    if(task_name == 'random_init'):
+        # new pretrained config
+        config = EnformerConfig()
+        # initialize model with random weights
+        model = Enformer(config)
+    else:
+        #model 
+        model = Enformer.from_pretrained(model_path)
     model.eval()
     model.output_attentions = True
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
