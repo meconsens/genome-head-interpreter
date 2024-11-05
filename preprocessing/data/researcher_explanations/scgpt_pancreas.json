@@ -1,15 +1,14 @@
 {
     "layer0_head0": {
         "name": "layer0_head0",
-        "given_name": "Pancreatic Function and Cell Development Focus",
-        "explanation": "This head’s attention is strongly associated with many biological features relating most strongly to pancreatic cell types,protein binding,  cell projection and cytoskeleton organization, alongside promoting metabolic processes involving transport, and even neuron differentiation.",
+        "given_name": "Many Features: Cell Development Focus",
+        "explanation": "This head’s attention is strongly associated with many biological features relating most strongly to cell cycle and cytoskeleton organization, as well as genes involved in the golgi apparatus, while reducing attention to genes related to molecular transducer activity or plasma membrane.",
         "sentences": [
             [
                 [
                     "expression",
-                    8
+                    6
                 ],
-                "gastic immune cells",
                 [
                     "fetal cerebellum vascular endothelial cells",
                     -5
@@ -17,36 +16,34 @@
                 "large intestine adult immune cells",
                 "bone marrow stromal",
                 "midbrain neurotype human endothelial cell",
-                "midbrain neurotype human pericytes",
+                "midbrain neurotypes human microglial cell",
+                "midbrain neurotype human pericyte",
                 [
                     "pancreas acinar cell",
-                    10
+                    5
                 ],
-                [
-                    "pancreas ductal cell",
-                    10
-                ],
+                "pancreas ductal cell",
                 "pancreas mesenchymal stromal cell",
-                "lung proliferating macrophage cell",
+                [
+                    "lung proliferating macrophage cell",
+                    5
+                ],
                 "GOBP anatomical structure formation involved in morphogenesis",
                 "GOBP animal organ morphogenesis",
                 "GOBP biological adhesion",
                 "GOBP biological process involved in interspecies interaction between organisms",
                 "GOBP cellular response to endogenous stimulus",
                 "GOBP cellular response to oxygen containing compound",
-                [
-                    "GOBP cellular response to stress",
-                    5
-                ],
+                "GOBP cellular response to stress",
                 "GOBP cell activation",
                 "GOBP cell cell adhesion",
                 "GOBP cell cell signaling",
-                "GOBP cell cycle",
-                "GOBP cell migration",
                 [
-                    "GOBP cell projection organization",
+                    "GOBP cell cycle",
                     9
                 ],
+                "GOBP cell migration",
+                "GOBP cell projection organization",
                 "GOBP chemical homeostasis",
                 "GOBP circulatory system development",
                 [
@@ -54,59 +51,49 @@
                     9
                 ],
                 "GOBP defense response",
-                "GOBP embryo development",
                 "GOBP enzyme linked receptor protein signaling pathway",
-                [
-                    "GOBP epithelium development",
-                    5
-                ],
+                "GOBP epithelium development",
                 "GOBP homeostatic process",
                 "GOBP immune response",
                 "GOBP inflammatory response ",
                 "GOBP ion transport",
                 [
                     "GOBP lipid metabolic process",
-                    6
+                    -5
                 ],
                 "GOBP locomotion",
-                [
-                    "GOBP negative regulation of biosynthetic process",
-                    6
-                ],
+                "GOBP negative regulation of biosynthetic process",
                 "GOBP negative regulation of cell death",
                 "GOBP negative regulation of molecular function",
                 "GOBP negative regulation of multicellular organismal process",
                 "GOBP negative regulation of response to stimulus",
                 "GOBP negative regulation of signaling",
-                [
-                    "GOBP neurogenesis",
-                    6
-                ],
-                [
-                    "GOBP neuron differentiation",
-                    7
-                ],
+                "GOBP neurogenesis",
+                "GOBP neuron differentiation",
                 "GOBP nitrogen compound transport",
-                "GOBP phosphorylation",
-                "GOBP positive regulation of cellular biosynthetic process",
+                [
+                    "GOBP phosphorylation",
+                    5
+                ],
+                [
+                    "GOBP positive regulation of cellular biosynthetic process",
+                    5
+                ],
                 "GOBP positive regulation of cell population proliferation",
-                "GOBP positive regulation of develpomental process",
+                "GOBP positive regulation of developmental process",
                 "GOBP positive regulation of gene expression",
-                "GOBP positive regulation of molecular function",
+                [
+                    "GOBP positive regulation of molecular function",
+                    5
+                ],
                 "GOBP positive regulation of multicellular organismal process",
                 "GOBP positive regulation of nucleobase containing compound metabolic process",
                 "GOBP positive regulation of protein metabolic process",
                 "GOBP positive regulation of RNA metabolic process",
                 "GOBP positive regulation of signaling",
-                [
-                    "GOBP programmed cell death",
-                    5
-                ],
+                "GOBP programmed cell death",
                 "GOBP proteolysis",
-                [
-                    "GOBP regulation of anatomical structure morphogenesis",
-                    5
-                ],
+                "GOBP regulation of anatomical structure morphogenesis",
                 "GOBP regulation of cellular component movement",
                 "GOBP regulation of cell adhesion",
                 "GOBP regulation of cell death",
@@ -120,10 +107,7 @@
                 "GOBP regulation of protein phosphorylation",
                 "GOBP regulation of response to external stimulus",
                 "GOBP regulation of response to stress",
-                [
-                    "GOBP regulation of transport",
-                    5
-                ],
+                "GOBP regulation of transport",
                 "GOBP reproduction",
                 "GOBP response to abiotic stimulus",
                 "GOBP response to cytokine",
@@ -131,38 +115,29 @@
                 "GOBP response to lipid",
                 "GOBP response to oxygen containing compound",
                 "GOBP small molecule metabolic process",
-                [
-                    "GOBP tissue development",
-                    5
-                ],
-                [
-                    "GOBP transmembrane transport",
-                    8
-                ],
+                "GOBP tissue development",
+                "GOBP transmembrane transport",
                 "GOBP tube development",
                 "GOBP tube morphogenesis",
                 "GOBP vasculature development",
-                [
-                    "GOBP vesicle mediated transport",
-                    6
-                ],
+                "GOBP vesicle mediated transport",
                 "GOCC cell surface",
                 "GOCC endoplasmic reticulum",
                 [
                     "GOCC golgi apparatus",
-                    5
-                ],
-                "GOCC intrinsic component of plasma membrane",
-                [
-                    "GOCC plasma membrane region",
-                    5
+                    6
                 ],
                 [
-                    "GOMF identical protein binding",
-                    10
+                    "GOCC intrinsic component of plasma membrane",
+                    -6
                 ],
+                "GOCC plasma membrane region",
+                "GOMF identical protein binding",
                 "GOMF molecular function regulator",
-                "GOMF molecular transducer activity",
+                [
+                    "GOMF molecular transducer activity",
+                    -6
+                ],
                 "GOMF protein containing complex binding",
                 "GOMF sequence specific DNA binding",
                 "GOMF signaling receptor binding",
@@ -171,22 +146,19 @@
             ]
         ]
     },
-    "layer4_head3": {
-        "name": "layer4_head3",
-        "given_name": "Gastric Immune Cells",
-        "explanation": "This head’s attention is slightly associated with genes that are markers for gastric immune cells.",
+    "layer6_head3": {
+        "name": "layer6_head3",
+        "given_name": "Interspecies Interactions",
+        "explanation": "The main thing this head does is pay more attention to genes related to biological process involved in interspecies interaction between organisms.",
         "sentences": [
             [
                 "expression",
-                [
-                    "gastic immune cells",
-                    5
-                ],
                 "fetal cerebellum vascular endothelial cells",
                 "large intestine adult immune cells",
                 "bone marrow stromal",
                 "midbrain neurotype human endothelial cell",
-                "midbrain neurotype human pericytes",
+                "midbrain neurotypes human microglial cell",
+                "midbrain neurotype human pericyte",
                 "pancreas acinar cell",
                 "pancreas ductal cell",
                 "pancreas mesenchymal stromal cell",
@@ -194,7 +166,10 @@
                 "GOBP anatomical structure formation involved in morphogenesis",
                 "GOBP animal organ morphogenesis",
                 "GOBP biological adhesion",
-                "GOBP biological process involved in interspecies interaction between organisms",
+                [
+                    "GOBP biological process involved in interspecies interaction between organisms",
+                    5
+                ],
                 "GOBP cellular response to endogenous stimulus",
                 "GOBP cellular response to oxygen containing compound",
                 "GOBP cellular response to stress",
@@ -208,7 +183,6 @@
                 "GOBP circulatory system development",
                 "GOBP cytoskeleton organization",
                 "GOBP defense response",
-                "GOBP embryo development",
                 "GOBP enzyme linked receptor protein signaling pathway",
                 "GOBP epithelium development",
                 "GOBP homeostatic process",
@@ -229,7 +203,7 @@
                 "GOBP phosphorylation",
                 "GOBP positive regulation of cellular biosynthetic process",
                 "GOBP positive regulation of cell population proliferation",
-                "GOBP positive regulation of develpomental process",
+                "GOBP positive regulation of developmental process",
                 "GOBP positive regulation of gene expression",
                 "GOBP positive regulation of molecular function",
                 "GOBP positive regulation of multicellular organismal process",
@@ -388,121 +362,6 @@
                 "GOMF sequence specific DNA binding",
                 "GOMF signaling receptor binding",
                 "GOMF transcription regulator activity",
-                "abnormal respiratory system morphology"
-            ]
-        ]
-    },
-    "layer11_head7": {
-        "name": "layer11_head7",
-        "given_name": "Reduced Gene Expression Control",
-        "explanation": "This head primarily shows reduced attention towards genes involved in sequence-specific DNA binding and transcription regulation activities, suggesting a selective decrease in focusing on direct gene expression control mechanisms.",
-        "sentences": [
-            [
-                "expression",
-                "gastic immune cells",
-                "fetal cerebellum vascular endothelial cells",
-                "large intestine adult immune cells",
-                "bone marrow stromal",
-                "midbrain neurotype human endothelial cell",
-                "midbrain neurotype human pericytes",
-                "pancreas acinar cell",
-                "pancreas ductal cell",
-                "pancreas mesenchymal stromal cell",
-                "lung proliferating macrophage cell",
-                "GOBP anatomical structure formation involved in morphogenesis",
-                "GOBP animal organ morphogenesis",
-                "GOBP biological adhesion",
-                "GOBP biological process involved in interspecies interaction between organisms",
-                "GOBP cellular response to endogenous stimulus",
-                "GOBP cellular response to oxygen containing compound",
-                "GOBP cellular response to stress",
-                "GOBP cell activation",
-                "GOBP cell cell adhesion",
-                "GOBP cell cell signaling",
-                "GOBP cell cycle",
-                "GOBP cell migration",
-                "GOBP cell projection organization",
-                "GOBP chemical homeostasis",
-                "GOBP circulatory system development",
-                "GOBP cytoskeleton organization",
-                "GOBP defense response",
-                "GOBP embryo development",
-                "GOBP enzyme linked receptor protein signaling pathway",
-                "GOBP epithelium development",
-                "GOBP homeostatic process",
-                "GOBP immune response",
-                "GOBP inflammatory response ",
-                "GOBP ion transport",
-                "GOBP lipid metabolic process",
-                "GOBP locomotion",
-                "GOBP negative regulation of biosynthetic process",
-                "GOBP negative regulation of cell death",
-                "GOBP negative regulation of molecular function",
-                "GOBP negative regulation of multicellular organismal process",
-                "GOBP negative regulation of response to stimulus",
-                "GOBP negative regulation of signaling",
-                "GOBP neurogenesis",
-                "GOBP neuron differentiation",
-                "GOBP nitrogen compound transport",
-                "GOBP phosphorylation",
-                "GOBP positive regulation of cellular biosynthetic process",
-                "GOBP positive regulation of cell population proliferation",
-                "GOBP positive regulation of develpomental process",
-                "GOBP positive regulation of gene expression",
-                "GOBP positive regulation of molecular function",
-                "GOBP positive regulation of multicellular organismal process",
-                "GOBP positive regulation of nucleobase containing compound metabolic process",
-                "GOBP positive regulation of protein metabolic process",
-                "GOBP positive regulation of RNA metabolic process",
-                "GOBP positive regulation of signaling",
-                "GOBP programmed cell death",
-                "GOBP proteolysis",
-                "GOBP regulation of anatomical structure morphogenesis",
-                "GOBP regulation of cellular component movement",
-                "GOBP regulation of cell adhesion",
-                "GOBP regulation of cell death",
-                "GOBP regulation of cell differentiation",
-                "GOBP regulation of cell population proliferation",
-                "GOBP regulation of immune system process",
-                "GOBP regulation of intracellular signal transduction",
-                "GOBP regulation of multicellular organismal development",
-                "GOBP regulation of phosphorus metabolic process",
-                "GOBP regulation of protein modification process",
-                "GOBP regulation of protein phosphorylation",
-                "GOBP regulation of response to external stimulus",
-                "GOBP regulation of response to stress",
-                "GOBP regulation of transport",
-                "GOBP reproduction",
-                "GOBP response to abiotic stimulus",
-                "GOBP response to cytokine",
-                "GOBP response to endogenous stimulus",
-                "GOBP response to lipid",
-                "GOBP response to oxygen containing compound",
-                "GOBP small molecule metabolic process",
-                "GOBP tissue development",
-                "GOBP transmembrane transport",
-                "GOBP tube development",
-                "GOBP tube morphogenesis",
-                "GOBP vasculature development",
-                "GOBP vesicle mediated transport",
-                "GOCC cell surface",
-                "GOCC endoplasmic reticulum",
-                "GOCC golgi apparatus",
-                "GOCC intrinsic component of plasma membrane",
-                "GOCC plasma membrane region",
-                "GOMF identical protein binding",
-                "GOMF molecular function regulator",
-                "GOMF molecular transducer activity",
-                "GOMF protein containing complex binding",
-                [
-                    "GOMF sequence specific DNA binding",
-                    -6
-                ],
-                "GOMF signaling receptor binding",
-                [
-                    "GOMF transcription regulator activity",
-                    -5
-                ],
                 "abnormal respiratory system morphology"
             ]
         ]

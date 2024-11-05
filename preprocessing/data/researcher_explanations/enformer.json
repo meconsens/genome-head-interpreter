@@ -1,102 +1,17 @@
 {
-    "layer0-head0": {
-        "name": "layer0-head0",
-        "given_name": "Only SRP RNA repeats, Promoters, TSS",
-        "explanation": "This head’s attention is associated with promoters,CRISPR perturbed regions and the TSS, along with Signal recognition particle (SRP) RNA repeats, while avoiding other repeats like LINE, tRNA and scRNA repeats.",
-        "sentences": [
-            [
-                "phyloP",
-                [
-                    "TSS",
-                    6
-                ],
-                "enhancers",
-                [
-                    "promoters",
-                    8
-                ],
-                "H3K4me3",
-                "CTCF_bound",
-                "CRISPR_screening",
-                "CRISPR_screening_high_confidence",
-                "CRISPR_perturbation",
-                "GC",
-                "ARID",
-                "ARID&Homeo domain factors",
-                "Basic helix-loop-helix factors (bHLH)",
-                "Basic helix-span-helix factors (bHSH)",
-                "Basic leucine zipper factors (bZIP)",
-                "Basic leucine zipper factors (bZIP)&SAND domain factors",
-                "C2CH THAP-type zinc finger factors",
-                "C2H2 zinc finger factors",
-                "CRC domain",
-                "DM-type intertwined zinc finger factors",
-                "Fork head/winged helix factors",
-                "GCM domain factors",
-                "Grainyhead domain factors",
-                "Heat shock factors",
-                "Heteromeric CCAAT-binding factors",
-                "High-mobility group (HMG) domain factors",
-                "Homeo domain factors",
-                "Homeo domain factors&High-mobility group (HMG) domain factors",
-                "Homeo domain factors&Paired box factors",
-                "MADS box factors",
-                "Nuclear receptors with C4 zinc fingers",
-                "Other C4 zinc finger-type factors&Basic helix-loop-helix factors (bHLH)",
-                "Other C4 zinc finger-type factors",
-                "p53 domain factors",
-                "Paired box factors",
-                "Rel homology region (RHR) factors",
-                [
-                    "Runt domain factors",
-                    -7
-                ],
-                "SAND domain factors",
-                "SMAD/NF-1 DNA-binding domain factors",
-                "STAT domain factors",
-                "TATA-binding proteins",
-                "T-Box factors",
-                "TEA domain factors",
-                "Tryptophan cluster factors",
-                "repeat_DNA",
-                [
-                    "repeat_LINE",
-                    -9
-                ],
-                "repeat_Low_complexity",
-                "repeat_LTR",
-                "repeat_RC",
-                "repeat_Retroposon",
-                "repeat_rRNA",
-                [
-                    "repeat_scRNA",
-                    -6
-                ],
-                "repeat_Simple_repeat",
-                "repeat_SINE",
-                "repeat_snRNA",
-                [
-                    "repeat_srpRNA",
-                    10
-                ],
-                [
-                    "repeat_tRNA",
-                    -8
-                ],
-                "repeat_Unknown"
-            ]
-        ]
-    },
-    "layer9-head5": {
-        "name": "layer9-head5",
-        "given_name": "No rRNA Repeats",
-        "explanation": "This head shows a strong aversion to ribosomal gene RNA repeats.",
+    "layer3-head4": {
+        "name": "layer3-head4",
+        "given_name": "Promoters",
+        "explanation": "The main thing this head does is pay more attention to promoter regions within sequences, indicating preference for sequences involved in initiation of gene transcription.",
         "sentences": [
             [
                 "phyloP",
                 "TSS",
                 "enhancers",
-                "promoters",
+                [
+                    "promoters",
+                    10
+                ],
                 "H3K4me3",
                 "CTCF_bound",
                 "CRISPR_screening",
@@ -143,10 +58,7 @@
                 "repeat_LTR",
                 "repeat_RC",
                 "repeat_Retroposon",
-                [
-                    "repeat_rRNA",
-                    -8
-                ],
+                "repeat_rRNA",
                 "repeat_scRNA",
                 "repeat_Simple_repeat",
                 "repeat_SINE",
@@ -157,28 +69,20 @@
             ]
         ]
     },
+
     "layer9-head6": {
         "name": "layer9-head6",
-        "given_name": " Promoters, TSS, Enhancers, Conservation & No Repeats",
-        "explanation": "This head shows a strong preference for genomic regions belonging to promoters, CRISPR perturbation experiments, transcription start sites, and enhancers, while also attending to conserved regions across species and strongly avoiding Runt domains and repeat families.",
+        "given_name": "TSS & CRISPR Perturbation",
+        "explanation": "This head shows a strong preference for genomic regions belonging to the transcription start site (TSS) and CRISPR perturbation experiments, indicating a strong preference for regions associated with gene regulation.",
         "sentences": [
             [
-                [
-                    "phyloP",
-                    5
-                ],
+                "phyloP",
                 [
                     "TSS",
                     10
                 ],
-                [
-                    "enhancers",
-                    8
-                ],
-                [
-                    "promoters",
-                    10
-                ],
+                "enhancers",
+                "promoters",
                 "H3K4me3",
                 "CTCF_bound",
                 "CRISPR_screening",
@@ -214,10 +118,7 @@
                 "p53 domain factors",
                 "Paired box factors",
                 "Rel homology region (RHR) factors",
-                [
-                    "Runt domain factors",
-                    -8
-                ],
+                "Runt domain factors",
                 "SAND domain factors",
                 "SMAD/NF-1 DNA-binding domain factors",
                 "STAT domain factors",
@@ -226,15 +127,9 @@
                 "TEA domain factors",
                 "Tryptophan cluster factors",
                 "repeat_DNA",
-                [
-                    "repeat_LINE",
-                    -10
-                ],
+                "repeat_LINE",
                 "repeat_Low_complexity",
-                [
-                    "repeat_LTR",
-                    -7
-                ],
+                "repeat_LTR",
                 "repeat_RC",
                 "repeat_Retroposon",
                 "repeat_rRNA",
