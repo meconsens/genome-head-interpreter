@@ -3,10 +3,15 @@ import numpy as np
 import argparse
 import os
 import json
+import numpy as np
+import pandas as pd
 
-def calculate_z_scores(real_df, distribution_folder):
+def calculate_z_scores(real_df, distribution_folder, task_name, model_name):
     #find the coef distribution folder
-    files = [f for f in os.listdir(distribution_folder) if f.startswith('coef_') and f.endswith('.csv')]
+    if 'local' in task_name:
+        files = [f for f in os.listdir(distribution_folder) if f.endswith('_coef.csv')]
+    else:
+        files = [f for f in os.listdir(distribution_folder) if f.startswith('coef_') and f.endswith('.csv')]
     if not files:
         raise FileNotFoundError("No coefficient files found in the distribution folder.")
     
@@ -14,24 +19,32 @@ def calculate_z_scores(real_df, distribution_folder):
     dist_df = pd.concat(dfs, axis=1)
     dist_df = dist_df[[col for col in dist_df.columns if 'position' not in col]]
     
-    z_scores = pd.DataFrame(index=real_df.index)  # dataFrame to store Z-scores
+    # dictionary to store Z-scores
+    z_scores_dict = {}
+    
+    # Z-scores for each feature
     for feature in real_df.columns:
         mean = dist_df[feature].mean(axis=1)
         std = dist_df[feature].std(axis=1)
-        std[std == 0] = np.nan  # 0 standard deviations with NaN to avoid division by zero
-        z_scores[feature] = (real_df[feature] - mean) / std  # Z-score per feature
-        # nonsignificant coefficients to 0 before normalization
-        z_scores.loc[z_scores[feature].abs() <= 4, feature] = 0
+        std[std == 0] = np.nan  
+        z_scores_dict[feature] = (real_df[feature] - mean) / std  
+        cut_off = 4.5
+        z_scores_dict[feature].loc[z_scores_dict[feature].abs() <= cut_off] = 0
+    
+    z_scores = pd.DataFrame(z_scores_dict, index=real_df.index)
+    
+    # replace NaN and infinite values with 0
+    z_scores = z_scores.replace([np.inf, -np.inf, np.nan], 0)
 
     return z_scores
 
 
 def normalize_row(row):
-    # Check for existing NaN or inf values
+    # check for existing NaN or inf values
     if row.isnull().any() or np.isinf(row).any():
         raise ValueError("Input row contains NaN or inf values.")
     
-    # Absolute maximum to use as the scaling factor
+    # min max scaling
     scale = max(row.max(), abs(row.min()))
     print(f"scale: {scale}")
     
@@ -42,8 +55,14 @@ def normalize_row(row):
     return ((row / scale) * 10).round().astype(int)
 
 
-def format_json(df):
-    bio_features = [col for col in df.columns if col not in ('layer_head') and 'position' not in col]
+def format_json(df, task_name):
+    #flip the dataframe 
+    print("task_name pre flip:", task_name) 
+    #if task_name is local
+    if 'local' in task_name:
+        df = df.T
+    bio_features = [col for col in df.columns if 'layer' not in col]
+    print("BIO FEATURES:", bio_features)
     json_structure = {}
 
     for layer_head, series in df.iterrows():
@@ -52,7 +71,6 @@ def format_json(df):
         non_zero_coeffs = {k: v for k, v in series_dict.items() if abs(v) > 4 and k in bio_features}
         #do not include position...
         sentences = [[feature if abs(series_dict[feature]) <= 4 else [feature, series_dict[feature]] for feature in bio_features if 'position' not in feature]]
-        
         json_structure[layer_head] = {
             "name": layer_head,
             "given_name": "...",
@@ -66,15 +84,15 @@ def format_json(df):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--coef_path", type=str, help="Path to the coefficients CSV")
-    parser.add_argument("--pval_path", type=str, help="Path to the p-values CSV")
-    parser.add_argument("--adj_pval_path", type=str, help="Path to the adjusted p-values CSV")
     parser.add_argument("--full_path", default = "/scratch/ssd004/scratch/mconsens/genome-head-interpreter/head-explainer/", type=str, help="The full path to the output directory")
     parser.add_argument("--model_name", default="DNABERT", type=str, help="The model being explained")
+    parser.add_argument("--task_name", default="task", type=str, help="The task being explained")
     args = parser.parse_args()
 
     real_coef_path = args.coef_path
     full_path = args.full_path
     model_name = args.model_name
+    task_name = args.task_name
     
     model_name_to_folder = {
         'DNABERT': 'DNABERT',
@@ -99,20 +117,25 @@ def main():
 
     real_coef_df = pd.read_csv(real_coef_path, index_col=0)
     # exclude positional columns from real_coef_df
-    real_coef_df = real_coef_df[[col for col in real_coef_df.columns if 'position' not in col]]
+    if 'global' in task_name:
+        real_coef_df = real_coef_df[[col for col in real_coef_df.columns if 'position' not in col]]
+    
+    print(f"THE TASK NAME IS: {task_name}")
 
-
-    z_scores = calculate_z_scores(real_coef_df, distribution_folder)
-
+    z_scores = calculate_z_scores(real_coef_df, distribution_folder, task_name, model_name)
+    
     normalized_coefs = z_scores.apply(normalize_row, axis=0)
 
     os.makedirs(f'{full_path}/data/coef/', exist_ok=True)
-    normalized_coefs.to_csv(f'{full_path}/data/coef/{model_name}_normalized_results.csv')
+    if (task_name =='global'):
+        normalized_coefs.to_csv(f'{full_path}/data/coef/{model_name}_normalized_results.csv')
+    else:
+        normalized_coefs.to_csv(f'{full_path}/data/coef/{model_name}/{model_name}_normalized_results.csv')
 
-    os.makedirs(f'{full_path}/data/explanation_prompts/', exist_ok=True)
-    json_output = format_json(normalized_coefs)
+    os.makedirs(f'{full_path}/data/explanation_prompts/{task_name}', exist_ok=True)
+    json_output = format_json(normalized_coefs, task_name)
     print(f'{full_path}/data/explanation_prompts/{model_name}.json')
-    with open(f'{full_path}/data/explanation_prompts/{model_name}.json', 'w') as f:
+    with open(f'{full_path}/data/explanation_prompts/{task_name}/{model_name}.json', 'w') as f:
         f.write(json_output)
 
 if __name__ == "__main__":

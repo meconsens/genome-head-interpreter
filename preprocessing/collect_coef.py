@@ -3,37 +3,7 @@ import numpy as np
 import argparse
 from scipy import stats
 import os
-
-#set up for different models configurations
-def configure_DNABERT(df):
-    for col in df.columns:
-        if col not in ['sequence', 'kmers']:
-            df[col] = df[col].apply(lambda x: np.array(x.split(','), dtype=float))
-    return {
-        'attention_score_columns': [col for col in df.columns if 'layer' in col and 'head' in col],
-        'bio_feature_columns': [col for col in df.columns if not (('layer' in col and 'head' in col) or ('label' in col) or ('sequence' in col) or ('kmers' in col))],
-        'seq_length': df['kmers'].apply(lambda x: len(x.split(','))).tolist()  # sequence lengths based on 'kmers'
-    }
-
-def configure_enformer(df):
-    for col in df.columns:
-        if col not in ['gene']:
-            df[col] = df[col].apply(lambda x: np.array(x.split(','), dtype=float))
-    return {
-        'attention_score_columns': [col for col in df.columns if 'layer' in col and 'head' in col],
-        'bio_feature_columns': [col for col in df.columns if not (('layer' in col and 'head' in col) or ('gene' in col))],
-        'seq_length': 1536
-    }
-
-def configure_scgpt(df):
-    for col in df.columns:
-        if col not in ['gene_sequence', 'label']:
-            df[col] = df[col].apply(lambda x: np.array(x.split(','), dtype=float))
-    return {
-        'attention_score_columns': [col for col in df.columns if 'layer' in col and 'head' in col],
-        'bio_feature_columns': [col for col in df.columns if not (('layer' in col and 'head' in col) or ('gene_sequence' in col) or  ('label' in col))],
-        'seq_length': 500
-    }
+from config_functions import configure_DNABERT, configure_enformer, configure_scgpt
 
 def run_spearman(df, attention_score_columns, bio_feature_columns, seq_lengths):
     coef_dict = {}
@@ -104,7 +74,6 @@ def main():
     
     df = pd.read_csv(data_path, sep=';')
     
-    df = pd.read_csv(args.data_path, sep=';')
     config_functions = {
         'DNABERT': configure_DNABERT,
         'DNABERT_pretrained': configure_DNABERT,
@@ -115,13 +84,12 @@ def main():
         'enformer_random_init': configure_enformer
     }
 
-
-    # default to scgpt configurations if model not found
     config_function = config_functions.get(args.model_name, configure_scgpt)
     
-    # apply configuration for run
     config = config_function(df)
-    
+
+    new_df = config["transformed_df"] if "transformed_df" in config else df
+
     attention_score_columns = config["attention_score_columns"]
     bio_feature_columns = config["bio_feature_columns"]
     seq_length = config["seq_length"]
@@ -130,7 +98,7 @@ def main():
     print(f'Bio Feature Columns: {bio_feature_columns}')
     print(f'Sequence Length: {seq_length}')
 
-    coef_dict = run_spearman(df, attention_score_columns, bio_feature_columns, seq_length)
+    coef_dict = run_spearman(new_df, attention_score_columns, bio_feature_columns, seq_length)
 
     coef_df = pd.DataFrame.from_dict(coef_dict, orient="index", columns=bio_feature_columns)
 

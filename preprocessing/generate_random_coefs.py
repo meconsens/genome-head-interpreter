@@ -9,36 +9,7 @@ from scipy import stats
 from statsmodels.stats.multitest import multipletests
 import os
 import time
-
-def configure_DNABERT(df):
-    for col in df.columns:
-        if col not in ['sequence', 'kmers']:
-            df[col] = df[col].apply(lambda x: np.array(x.split(','), dtype=float))
-    return {
-        'attention_score_columns': [col for col in df.columns if 'layer' in col and 'head' in col],
-        'bio_feature_columns': [col for col in df.columns if not (('layer' in col and 'head' in col) or ('label' in col) or ('sequence' in col) or ('kmers' in col))],
-        'seq_length': df['kmers'].apply(lambda x: len(x.split(','))).tolist()  # sequence lengths based on 'kmers'
-    }
-
-def configure_enformer(df):
-    for col in df.columns:
-        if col not in ['gene']:
-            df[col] = df[col].apply(lambda x: np.array(x.split(','), dtype=float))
-    return {
-        'attention_score_columns': [col for col in df.columns if 'layer' in col and 'head' in col],
-        'bio_feature_columns': [col for col in df.columns if not (('layer' in col and 'head' in col) or ('gene' in col))],
-        'seq_length': 1536
-    }
-
-def configure_scgpt(df):
-    for col in df.columns:
-        if col not in ['gene_sequence', 'label']:
-            df[col] = df[col].apply(lambda x: np.array(x.split(','), dtype=float))
-    return {
-        'attention_score_columns': [col for col in df.columns if 'layer' in col and 'head' in col],
-        'bio_feature_columns': [col for col in df.columns if not (('layer' in col and 'head' in col) or ('gene_sequence' in col) or  ('label' in col))],
-        'seq_length': 500
-    }
+from config_functions import configure_DNABERT, configure_enformer, configure_scgpt
 
 def shuffle_attention_scores(df, attention_score_columns, block_size=10):
     # shuffle attentions between sequences
@@ -53,11 +24,11 @@ def shuffle_attention_scores(df, attention_score_columns, block_size=10):
             for index, row in df.iterrows():
                 sequence = np.array(row[col])
                 seq_len = len(sequence)
-                print(f'seq len: {seq_len}')
+                #print(f'seq len: {seq_len}')
                 full_blocks = seq_len // block_size
-                print(f'full blocks: {full_blocks}')
+                #print(f'full blocks: {full_blocks}')
                 num_elements = full_blocks * block_size
-                print(f'num elements: {num_elements}')
+                #print(f'num elements: {num_elements}')
 
                 # split the sequence into blocks and remainder
                 full_sequence = sequence[:num_elements]
@@ -118,9 +89,6 @@ def run_spearman(df, attention_score_columns, bio_feature_columns, seq_lengths):
     return coef_dict
 
 
-
-
-
 def parallel_shuffle_and_analysis(df, attention_score_columns, bio_feature_columns, seq_length, model, full_path, iteration):
     # seed for each process 
     pid = os.getpid()
@@ -130,7 +98,7 @@ def parallel_shuffle_and_analysis(df, attention_score_columns, bio_feature_colum
     np.random.seed(unique_seed)
 
     # shuffling
-    shuffled_df = shuffle_attention_scores(df.copy(), attention_score_columns)
+    shuffled_df = shuffle_attention_scores(df, attention_score_columns)
     coef_dict = run_spearman(shuffled_df, attention_score_columns, bio_feature_columns, seq_length)
 
     # save results
@@ -139,12 +107,11 @@ def parallel_shuffle_and_analysis(df, attention_score_columns, bio_feature_colum
     pd.DataFrame.from_dict(coef_dict, orient="index", columns=bio_feature_columns).to_csv(results_filename)
     print(f"Process {pid} with seed {unique_seed} completed and saved to {results_filename}")
 
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--data_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/scores/DNABERT_kmer_scores.csv",
+        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/scores/DNABERT_scores.csv",
         type=str,
         help="The path to the data",
     )
@@ -177,16 +144,14 @@ def main():
         'enformer_random_init': configure_enformer
     }
 
-    # default to scgpt configurations if model not found
     config_function = config_functions.get(args.model_name, configure_scgpt)
     
-    # apply configuration for run
     config = config_function(df)
     
     attention_score_columns = config["attention_score_columns"]
     bio_feature_columns = config["bio_feature_columns"]
     seq_length = config["seq_length"]
-    
+
     with ProcessPoolExecutor(max_workers=50) as executor:
         futures = [executor.submit(parallel_shuffle_and_analysis, df, attention_score_columns, bio_feature_columns, seq_length, args.model_name, args.full_path, i) for i in range(100)]
         for future in as_completed(futures):
