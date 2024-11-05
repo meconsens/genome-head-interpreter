@@ -13,6 +13,12 @@ To set up genome-head-interpreter, clone the repository and navigate to the proj
 git clone https://github.com/meconsens/genome-head-interpreter/
 cd genome-head-interpreter
 ```
+
+Install requirements
+```bash
+conda create --name <env> --file requirements.txt
+```
+
 ## Usage
 Follow these steps to execute the analysis pipeline for each model you wish to analyze:
 
