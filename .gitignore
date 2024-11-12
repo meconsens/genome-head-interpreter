@@ -1,7 +1,7 @@
-**/.Rhistory
-**/.DS_Store
+scripts
 .env
 preprocessing/data/scores
 preprocessing/data/distributions
 preprocessing/data/coef
+preprocessing/data/feature_scores
 setup.py
