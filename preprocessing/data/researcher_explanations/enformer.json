@@ -69,28 +69,24 @@
             ]
         ]
     },
-
-    "layer9-head6": {
-        "name": "layer9-head6",
-        "given_name": "TSS & CRISPR Perturbation",
-        "explanation": "This head shows a strong preference for genomic regions belonging to the transcription start site (TSS) and CRISPR perturbation experiments, indicating a strong preference for regions associated with gene regulation.",
+    "layer10-head7": {
+        "name": "layer10-head7",
+        "given_name": "Enhancers",
+        "explanation": "This head focuses on enhancer regions, where the greater attention scores in this head are associated with sequence regions that increase the likelihood of transcription of nearby genes.",
         "sentences": [
             [
                 "phyloP",
+                "TSS",
                 [
-                    "TSS",
+                    "enhancers",
                     10
                 ],
-                "enhancers",
                 "promoters",
                 "H3K4me3",
                 "CTCF_bound",
                 "CRISPR_screening",
                 "CRISPR_screening_high_confidence",
-                [
-                    "CRISPR_perturbation",
-                    10
-                ],
+                "CRISPR_perturbation",
                 "GC",
                 "ARID",
                 "ARID&Homeo domain factors",
