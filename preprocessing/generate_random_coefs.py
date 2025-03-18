@@ -9,7 +9,7 @@ from scipy import stats
 from statsmodels.stats.multitest import multipletests
 import os
 import time
-from config_functions import configure_DNABERT, configure_enformer, configure_scgpt
+from config_functions import configure_DNABERT, configure_scgpt
 
 def shuffle_attention_scores(df, attention_score_columns, block_size=10):
     # shuffle attentions between sequences
@@ -140,8 +140,6 @@ def main():
         'DNABERT_random': configure_DNABERT,
         'DNABERT_random_init': configure_DNABERT,
         'DNABERT_TATA': configure_DNABERT,
-        'enformer': configure_enformer,
-        'enformer_random_init': configure_enformer
     }
 
     config_function = config_functions.get(args.model_name, configure_scgpt)

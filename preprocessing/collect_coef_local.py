@@ -4,7 +4,7 @@ import argparse
 import os
 from concurrent.futures import ProcessPoolExecutor
 from scipy import stats
-from config_functions import configure_DNABERT, configure_enformer, configure_scgpt
+from config_functions import configure_DNABERT, configure_scgpt
 import json
 
 
@@ -181,8 +181,6 @@ def main():
         'DNABERT_random': configure_DNABERT,
         'DNABERT_random_init': configure_DNABERT,
         'DNABERT_TATA': configure_DNABERT,
-        'enformer': configure_enformer,
-        'enformer_random_init': configure_enformer
     }
 
     # default to scGPT configurations if model not found

@@ -5,7 +5,7 @@ from scipy import stats
 import os
 import argparse
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from config_functions import configure_DNABERT, configure_enformer, configure_scgpt
+from config_functions import configure_DNABERT, configure_scgpt
 import json
 
 def get_subsequence_vals_from_csv(seq_info_csv):
@@ -174,8 +174,6 @@ def main():
         'DNABERT_random': configure_DNABERT,
         'DNABERT_random_init': configure_DNABERT,
         'DNABERT_TATA': configure_DNABERT,
-        'enformer': configure_enformer,
-        'enformer_random_init': configure_enformer,
     }
     config_function = config_functions.get(model, configure_scgpt)
     

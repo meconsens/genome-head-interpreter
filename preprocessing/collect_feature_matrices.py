@@ -251,22 +251,6 @@ def configure_DNABERT(df):
     }
 
 
-def configure_enformer(df):
-    # copy to modify
-    df_copy = df.copy()
-    
-    for col in df_copy.columns:
-        if col != 'gene':
-            df_copy[col] = df_copy[col].apply(lambda x: np.array(x.split(','), dtype=np.float64))
-    
-    return {
-        'attention_score_columns': [col for col in df_copy.columns if 'layer' in col and 'head' in col],
-        'bio_feature_columns': [col for col in df_copy.columns if not (('layer' in col and 'head' in col) or ('gene' in col))],
-        'seq_length': 1536,
-        'seq_column': 'gene',
-        'transformed_df': df_copy  # transformed df
-    }
-
 def configure_scgpt(df):
     df_copy = df.copy()
     for col in df_copy.columns:
@@ -315,8 +299,6 @@ def main():
         'DNABERT_random': configure_DNABERT,
         'DNABERT_random_init': configure_DNABERT,
         'DNABERT_TATA': configure_DNABERT,
-        'enformer': configure_enformer,
-        'enformer_random_init': configure_enformer
     }
 
     # Default to scGPT configurations if model not found

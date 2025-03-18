@@ -3,7 +3,7 @@ import numpy as np
 import argparse
 from scipy import stats
 import os
-from config_functions import configure_DNABERT, configure_enformer, configure_scgpt
+from config_functions import configure_DNABERT, configure_scgpt
 
 def run_spearman(df, attention_score_columns, bio_feature_columns, seq_lengths):
     coef_dict = {}
@@ -79,9 +79,7 @@ def main():
         'DNABERT_pretrained': configure_DNABERT,
         'DNABERT_random': configure_DNABERT,
         'DNABERT_random_init': configure_DNABERT,
-        'DNABERT_TATA': configure_DNABERT,
-        'enformer': configure_enformer,
-        'enformer_random_init': configure_enformer
+        'DNABERT_TATA': configure_DNABERT
     }
 
     config_function = config_functions.get(args.model_name, configure_scgpt)
