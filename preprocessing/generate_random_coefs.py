@@ -9,7 +9,7 @@ from scipy import stats
 from statsmodels.stats.multitest import multipletests
 import os
 import time
-from config_functions import configure_DNABERT, configure_enformer, configure_scgpt
+from config_functions import configure_DNABERT, configure_scgpt, configure_nucleotide_transformer
 
 def shuffle_attention_scores(df, attention_score_columns, block_size=10):
     # shuffle attentions between sequences
@@ -111,49 +111,74 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--data_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/scores/DNABERT_scores.csv",
+        default="/home/mica/genome-head-interpreter/preprocessing/data/scores/",
         type=str,
         help="The path to the data",
     )
     parser.add_argument(
         "--full_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/",
+        default="/home/mica/genome-head-interpreter/preprocessing/",
         type=str,
         help="The full path to the collect_coef.py file",
     )
     parser.add_argument(
         "--model_name",
-        default="DNABERT",
+        default="DNABERT_TATA",
         type=str,
         help="The model being explained",
+    )
+    parser.add_argument(
+        "--model_subtype",
+        default="finetuned",
+        type=str,
+        choices=["random_init", "random", "pretrained", "finetuned"],
+        help="The model subtype being explained",
     )
     args = parser.parse_args()
 
     data_path = args.data_path
     full_path = args.full_path
     model = args.model_name
+    
+    #make sure if model_subtype selected as "random", the model_name is DNABERT_TATA or DNABERT_enhancer
+    if args.model_subtype == "random":
+        assert args.model_name == "DNABERT_TATA" or args.model_name == "DNABERT_enhancers", "Model name should be DNABERT_TATA or DNABERT_enhancers"
+    
 
+    #add model name to the data path
+    data_path = f'{data_path}{args.model_name}/{args.model_name}_{args.model_subtype}_scores.csv'
+    
     df = pd.read_csv(data_path, sep=';')
+    
+    # Check for and drop _minmax columns
+    minmax_columns = [col for col in df.columns if '_minmax' in col]
+    if minmax_columns:
+        print(f"Found {len(minmax_columns)} columns with '_minmax' suffix - dropping them")
+        df = df.drop(columns=minmax_columns)
+        print(f"Remaining columns: {len(df.columns)}")
+
     config_functions = {
-        'DNABERT': configure_DNABERT,
-        'DNABERT_pretrained': configure_DNABERT,
-        'DNABERT_random': configure_DNABERT,
-        'DNABERT_random_init': configure_DNABERT,
         'DNABERT_TATA': configure_DNABERT,
-        'enformer': configure_enformer,
-        'enformer_random_init': configure_enformer
+        'DNABERT_enhancers': configure_DNABERT,
+        'scgpt_ms': configure_scgpt,
+        'scgpt_pancreas': configure_scgpt,
+        'NT_TATA': configure_nucleotide_transformer,
+        'NT_enhancers': configure_nucleotide_transformer
     }
 
-    config_function = config_functions.get(args.model_name, configure_scgpt)
+    config_function = config_functions.get(args.model_name)
     
     config = config_function(df)
+    new_df = config["transformed_df"] if "transformed_df" in config else df
     
     attention_score_columns = config["attention_score_columns"]
     bio_feature_columns = config["bio_feature_columns"]
     seq_length = config["seq_length"]
 
+    print(f"Attention score columns: {attention_score_columns}, Bio feature columns: {bio_feature_columns}, Sequence length: {seq_length}")
+
     with ProcessPoolExecutor(max_workers=50) as executor:
-        futures = [executor.submit(parallel_shuffle_and_analysis, df, attention_score_columns, bio_feature_columns, seq_length, args.model_name, args.full_path, i) for i in range(100)]
+        futures = [executor.submit(parallel_shuffle_and_analysis, new_df, attention_score_columns, bio_feature_columns, seq_length, args.model_name, args.full_path, i) for i in range(100)]
         for future in as_completed(futures):
             future.result()
 

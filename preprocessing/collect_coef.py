@@ -3,7 +3,7 @@ import numpy as np
 import argparse
 from scipy import stats
 import os
-from config_functions import configure_DNABERT, configure_enformer, configure_scgpt
+from config_functions import configure_DNABERT, configure_scgpt, configure_nucleotide_transformer
 
 def run_spearman(df, attention_score_columns, bio_feature_columns, seq_lengths):
     coef_dict = {}
@@ -32,6 +32,12 @@ def run_spearman(df, attention_score_columns, bio_feature_columns, seq_lengths):
                 X = x
                 Y = y
 
+        # Check if X and Y have matching first dimensions
+        if len(X) != len(Y):
+            print(f"WARNING: Shape mismatch in column '{layer_head}': X has {len(X)} rows, Y has {len(Y)} elements")
+            coef_dict[layer_head] = [0] * len(bio_feature_columns)
+            continue
+
         # handle NaN values
         X = np.nan_to_num(X)
 
@@ -50,21 +56,28 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--data_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/scores/DNABERT_kmer_scores.csv",
+        default="/home/mica/genome-head-interpreter/preprocessing/data/scores/",
         type=str,
         help="The path to the data",
     )
     parser.add_argument(
         "--full_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/",
+        default="/home/mica/genome-head-interpreter/preprocessing/",
         type=str,
         help="The full path to the collect_coef.py file",
     )
     parser.add_argument(
         "--model_name",
-        default="DNABERT",
+        default="DNABERT_TATA",
         type=str,
         help="The model being explained",
+    )
+    parser.add_argument(
+        "--model_subtype",
+        default="finetuned",
+        type=str,
+        choices=["random_init", "random", "pretrained", "finetuned"],
+        help="The model subtype being explained",
     )
     args = parser.parse_args()
 
@@ -72,19 +85,34 @@ def main():
     full_path = args.full_path
     model = args.model_name
     
+    #make sure if model_subtype selected as "random", the model_name is DNABERT_TATA or DNABERT_enhancer
+    if args.model_subtype == "random":
+        assert args.model_name == "DNABERT_TATA" or args.model_name == "DNABERT_enhancers", "Model name should be DNABERT_TATA or DNABERT_enhancers"
+    
+
+    #add model name to the data path
+    data_path = f'{data_path}{args.model_name}/{args.model_name}_{args.model_subtype}_scores.csv'
+    
     df = pd.read_csv(data_path, sep=';')
     
+
+    # Check for and drop _minmax columns
+    minmax_columns = [col for col in df.columns if '_minmax' in col]
+    if minmax_columns:
+        print(f"Found {len(minmax_columns)} columns with '_minmax' suffix - dropping them")
+        df = df.drop(columns=minmax_columns)
+        print(f"Remaining columns: {len(df.columns)}")
+
     config_functions = {
-        'DNABERT': configure_DNABERT,
-        'DNABERT_pretrained': configure_DNABERT,
-        'DNABERT_random': configure_DNABERT,
-        'DNABERT_random_init': configure_DNABERT,
         'DNABERT_TATA': configure_DNABERT,
-        'enformer': configure_enformer,
-        'enformer_random_init': configure_enformer
+        'DNABERT_enhancers': configure_DNABERT,
+        'scgpt_ms': configure_scgpt,
+        'scgpt_pancreas': configure_scgpt,
+        'NT_TATA': configure_nucleotide_transformer,
+        'NT_enhancers': configure_nucleotide_transformer
     }
 
-    config_function = config_functions.get(args.model_name, configure_scgpt)
+    config_function = config_functions.get(args.model_name)
     
     config = config_function(df)
 
@@ -104,7 +132,9 @@ def main():
 
     # save
     os.makedirs(f'{full_path}/data/coef/', exist_ok=True)
-    coef_df.to_csv(f'{full_path}/data/coef/coef_{model}_results.csv')
+    #make specific folder for each model
+    os.makedirs(f'{full_path}/data/coef/{args.model_name}', exist_ok=True)
+    coef_df.to_csv(f'{full_path}/data/coef/{args.model_name}/{args.model_subtype}_results.csv')
 
 if __name__ == "__main__":
     main()
