@@ -17,6 +17,7 @@ cd genome-head-interpreter
 Install requirements
 ```bash
 conda create --name <env> --file requirements.txt
+pip install statsmodels
 ```
 
 ## Usage
