@@ -21,6 +21,9 @@ def calculate_z_scores(real_df, distribution_folder, task_name, model_name):
     
     # dictionary to store Z-scores
     z_scores_dict = {}
+
+    #save another copy of the z scores without cut off
+    z_scores_dict_no_cutoff = {}
     
     # Z-scores for each feature
     for feature in real_df.columns:
@@ -28,15 +31,18 @@ def calculate_z_scores(real_df, distribution_folder, task_name, model_name):
         std = dist_df[feature].std(axis=1)
         std[std == 0] = np.nan  
         z_scores_dict[feature] = (real_df[feature] - mean) / std  
+        z_scores_dict_no_cutoff[feature] = (real_df[feature] - mean) / std
         cut_off = 4.5
         z_scores_dict[feature].loc[z_scores_dict[feature].abs() <= cut_off] = 0
     
     z_scores = pd.DataFrame(z_scores_dict, index=real_df.index)
+    z_scores_no_cutoff = pd.DataFrame(z_scores_dict_no_cutoff, index=real_df.index)
     
     # replace NaN and infinite values with 0
     z_scores = z_scores.replace([np.inf, -np.inf, np.nan], 0)
+    z_scores_no_cutoff = z_scores_no_cutoff.replace([np.inf, -np.inf, np.nan], 0)
 
-    return z_scores
+    return z_scores, z_scores_no_cutoff
 
 
 def normalize_row(row):
@@ -122,7 +128,15 @@ def main():
     
     print(f"THE TASK NAME IS: {task_name}")
 
-    z_scores = calculate_z_scores(real_coef_df, distribution_folder, task_name, model_name)
+    z_scores, z_scores_no_cutoff = calculate_z_scores(real_coef_df, distribution_folder, task_name, model_name)
+    
+    #let's save the z_scores
+    os.makedirs(f'{full_path}/data/z_scores/', exist_ok=True)
+    if (task_name =='global'):
+        z_scores_no_cutoff.to_csv(f'{full_path}/data/z_scores/{model_name}_z_scores.csv')
+    else:
+        os.makedirs(f'{full_path}/data/z_scores/{model_name}', exist_ok=True)
+        z_scores_no_cutoff.to_csv(f'{full_path}/data/z_scores/{model_name}/{model_name}_z_scores.csv')
     
     normalized_coefs = z_scores.apply(normalize_row, axis=0)
 
