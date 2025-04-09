@@ -5,88 +5,28 @@ from scipy import stats
 import os
 from config_functions import configure_DNABERT, configure_scgpt, configure_nucleotide_transformer
 
-def check_head_specificity(df, attention_score_column, head_num, label_column='label'):
+def run_centered_attention_correlations(df, attention_score_columns, bio_feature_columns, seq_lengths, label_column='label'):
     """
-    Check if a head activates more on a specific label.
+    Calculate correlations between centered attention scores and biological features
+    for each label subset separately and for the whole dataset.
     
-    Args:
-        df: DataFrame with sequences
-        attention_score_column: Column name for head attention scores
-        label_column: Column containing labels
-        
-    Returns:
-        preferred_label: The label this head prefers (or None if non-specific)
-        p_value: Statistical significance of the preference
-    """
-    # Get unique labels
-    unique_labels = df[label_column].unique()
-    
-    if len(unique_labels) <= 1:
-        return None, 1.0  # No preference if only one label
-    
-    # Store means for each label
-    label_means = {}
-    for label in unique_labels:
-        # label represents the full list of labels so
-        label = str(label).split(',')[0]
-        label_subset = df[df[label_column] == label]
-        label_means[label] = label_subset[attention_score_column].apply(lambda x: np.mean(x)).mean()
-
-    
-    # Find label with highest mean
-    max_label_key = max(label_means, key=label_means.get)
-    
-    # Perform statistical test to determine if preference is significant
-    # Use ANOVA if more than 2 labels, t-test if exactly 2
-    p_value = 1.0
-    if len(unique_labels) == 2:
-        # Extract the two labels
-        label1, label2 = unique_labels
-        group1 = df[df[label_column] == label1][attention_score_column].apply(lambda x: np.mean(x))
-        group2 = df[df[label_column] == label2][attention_score_column].apply(lambda x: np.mean(x))
-
-        
-        # Perform t-test
-        _, p_value = stats.ttest_ind(group1, group2, equal_var=False)
-    else:
-        # Prepare data for ANOVA
-        groups = []
-        for label in unique_labels:
-            group = df[df[label_column] == label][attention_score_column].apply(lambda x: np.mean(x)).values
-            groups.append(group)
-            
-        # Perform ANOVA
-        _, p_value = stats.f_oneway(*groups)
-    
-    #bonferroni correct the p-value for the total number of heads in the model
-    p_value = p_value * head_num
-    #check for significant p-value
-    if p_value > 0.05:
-        max_label_key = None
-
-    # Return the label key (which is now hashable) and p-value
-    return max_label_key, p_value
-
-def run_label_specific_correlations(df, attention_score_columns, bio_feature_columns, seq_lengths, head_num, label_column='label'):
-    """
-    Calculate correlations for heads across each label subset separately.
+    Centered attention = token attention - mean head attention across all tokens
     
     Args:
         df: DataFrame with sequences
         attention_score_columns: List of column names for head attention scores
         bio_feature_columns: List of column names for biological features
         seq_lengths: List or integer of sequence lengths
-        head_num: Number of heads in the model
         label_column: Column containing labels
         
     Returns:
         label_coef_dict: Dictionary mapping (head, label) pairs to correlation coefficients
-        head_specificity: Dictionary mapping heads to their preferred labels
+        global_coef_dict: Dictionary mapping heads to correlation coefficients across the whole dataset
     """
     # Dictionary to store correlations by (head, label) pairs
     label_coef_dict = {}
-    # Still track head specificity for reference
-    head_specificity = {}
+    # Dictionary to store correlations across the entire dataset
+    global_coef_dict = {}
     
     # Extract simple labels
     df['simple_label'] = df[label_column].apply(lambda x: str(x).split(',')[0])
@@ -94,28 +34,83 @@ def run_label_specific_correlations(df, attention_score_columns, bio_feature_col
     # Get unique labels
     unique_labels = df['simple_label'].unique()
     
+    # First, precompute mean attention scores for each head across the entire dataset
+    head_global_means = {}
     for layer_head in attention_score_columns:
-        # Check if this head has label preference (for reference)
-        preferred_label, p_value = check_head_specificity(df, layer_head, head_num, label_column)
-        head_specificity[layer_head] = preferred_label if preferred_label is not None else "non-specific"
+        # Flatten all attention scores for this head across all sequences
+        all_attention_values = []
+        for _, seq in df.iterrows():
+            all_attention_values.extend(seq[layer_head])
         
-        print(f"Calculating correlations for head {layer_head} (specificity: {head_specificity[layer_head]})")
+        # Calculate global mean for this head
+        head_global_means[layer_head] = np.mean(all_attention_values)
+        print(f"Global mean for {layer_head}: {head_global_means[layer_head]}")
+    
+    # Calculate correlations across the entire dataset
+    for layer_head in attention_score_columns:
+        print(f"Calculating global correlations for head {layer_head}")
         
-        # For each label, calculate correlations
-        for label in unique_labels:
-            # Get subset of data for this label
-            subset_df = df[df['simple_label'] == label]
+        X = None
+        Y_centered = None  # For centered attention scores
+        
+        # Process all sequences
+        for index, seq in df.iterrows():
+            # Handle sequence length
+            if isinstance(seq_lengths, list):
+                seq_len = seq_lengths[index]
+            else:
+                seq_len = seq_lengths
             
-            if subset_df.empty:
-                print(f"No sequences found for label {label} in head {layer_head}")
-                continue
-                
+            # Reshape features
+            x = np.concatenate(seq[bio_feature_columns].values).ravel().reshape((len(bio_feature_columns), seq_len)).T
+            
+            # Center the attention scores
+            y_original = seq[layer_head]
+            y_centered = np.array(y_original) - head_global_means[layer_head]
+            
+            if X is not None:
+                X = np.concatenate([X, x])
+                Y_centered = np.concatenate([Y_centered, y_centered])
+            else:
+                X = x
+                Y_centered = y_centered
+        
+        # Check for shape mismatches
+        if len(X) != len(Y_centered):
+            print(f"WARNING: Global shape mismatch for {layer_head}: X has {len(X)} rows, Y has {len(Y_centered)} elements")
+            global_coef_dict[layer_head] = [0] * len(bio_feature_columns)
+            continue
+        
+        # Handle NaN values
+        X = np.nan_to_num(X)
+        
+        # Calculate Spearman correlation for each feature using centered attention
+        global_coef_dict[layer_head] = []
+        for col_iter in range(X.shape[1]):
+            result = stats.spearmanr(X[:, col_iter], Y_centered)
+            if not np.isnan(result.statistic):
+                global_coef_dict[layer_head].append(result.statistic)
+            else:
+                global_coef_dict[layer_head].append(0)
+    
+    # For each label, calculate correlations
+    for label in unique_labels:
+        # Get subset of data for this label
+        subset_df = df[df['simple_label'] == label]
+        
+        if subset_df.empty:
+            print(f"No sequences found for label {label}")
+            continue
+            
+        print(f"Calculating correlations for label {label}")
+        
+        for layer_head in attention_score_columns:
             # Create a unique key for this head-label combination
             head_label_key = f"{layer_head}_{label}"
             label_coef_dict[head_label_key] = []
             
             X = None
-            Y = None
+            Y_centered = None
             
             # Process sequences in this subset
             for index, seq in subset_df.iterrows():
@@ -127,33 +122,36 @@ def run_label_specific_correlations(df, attention_score_columns, bio_feature_col
                 
                 # Reshape features
                 x = np.concatenate(seq[bio_feature_columns].values).ravel().reshape((len(bio_feature_columns), seq_len)).T
-                y = seq[layer_head]
+                
+                # Center the attention scores using the global mean
+                y_original = seq[layer_head]
+                y_centered = np.array(y_original) - head_global_means[layer_head]
                 
                 if X is not None:
                     X = np.concatenate([X, x])
-                    Y = np.concatenate([Y, y])
+                    Y_centered = np.concatenate([Y_centered, y_centered])
                 else:
                     X = x
-                    Y = y
+                    Y_centered = y_centered
             
             # Check for shape mismatches
-            if len(X) != len(Y):
-                print(f"WARNING: Shape mismatch for {head_label_key}: X has {len(X)} rows, Y has {len(Y)} elements")
+            if len(X) != len(Y_centered):
+                print(f"WARNING: Shape mismatch for {head_label_key}: X has {len(X)} rows, Y has {len(Y_centered)} elements")
                 label_coef_dict[head_label_key] = [0] * len(bio_feature_columns)
                 continue
             
             # Handle NaN values
             X = np.nan_to_num(X)
             
-            # Calculate Spearman correlation for each feature
+            # Calculate Spearman correlation for each feature using centered attention
             for col_iter in range(X.shape[1]):
-                result = stats.spearmanr(X[:, col_iter], Y)
+                result = stats.spearmanr(X[:, col_iter], Y_centered)
                 if not np.isnan(result.statistic):
                     label_coef_dict[head_label_key].append(result.statistic)
                 else:
                     label_coef_dict[head_label_key].append(0)
     
-    return label_coef_dict, head_specificity
+    return label_coef_dict, global_coef_dict
 
 def main():
     parser = argparse.ArgumentParser()
@@ -234,28 +232,28 @@ def main():
     seq_length = config["seq_length"]
 
     print(f'Attention Score Columns: {attention_score_columns}')
-    #get the number of heads
     print(f'Number of Heads: {len(attention_score_columns)}')
-    head_num = len(attention_score_columns)
     print(f'Bio Feature Columns: {bio_feature_columns}')
     print(f'Sequence Length: {seq_length}')
     print(f'Label Column: {args.label_column}')
 
-    # Run analysis with specificity 
-    label_coef_dict, head_specificity = run_label_specific_correlations(
+    # Run analysis with centered attention correlations
+    label_coef_dict, global_coef_dict = run_centered_attention_correlations(
         new_df, 
         attention_score_columns, 
         bio_feature_columns, 
         seq_length,
-        head_num,
         args.label_column,
     )
-    # Create a more complex dataframe structure
-    # First, gather all unique labels
+    
+    # Create a global correlation dataframe
+    global_df = pd.DataFrame.from_dict(global_coef_dict, orient="index", columns=bio_feature_columns)
+    global_df.to_csv(f'{full_path}/data/coef/{args.model_name}/{args.model_subtype}_global_centered_headcorr.csv')
+    
+    print(f"Global centered correlations saved to: {full_path}/data/coef/{args.model_name}/{args.model_subtype}_global_centered_headcorr.csv")
+    
+    # Create dataframes for each label
     all_labels = new_df['simple_label'].unique()
-
-    # Create a multi-level dataframe
-    coef_dfs = {}
     for label in all_labels:
         # Filter for just this label's correlations
         label_keys = [k for k in label_coef_dict.keys() if k.endswith(f"_{label}")]
@@ -267,15 +265,12 @@ def main():
         
         # Create dataframe for this label
         label_data = {head: label_coef_dict[f"{head}_{label}"] for head, key in zip(head_names, label_keys)}
-        coef_dfs[label] = pd.DataFrame.from_dict(label_data, orient="index", columns=bio_feature_columns)
-        
-        # Add specificity information
-        coef_dfs[label]['specificity'] = pd.Series({head: head_specificity[head] for head in head_names})
+        label_df = pd.DataFrame.from_dict(label_data, orient="index", columns=bio_feature_columns)
         
         # Save each label's results separately
-        coef_dfs[label].to_csv(f'{full_path}/data/coef/{args.model_name}/{args.model_subtype}_label_{label}_headcorr.csv')
-
-    print(f"Results saved to: {full_path}/data/coef/{args.model_name}/{args.model_subtype}_label_*_headcorr.csv")
+        label_df.to_csv(f'{full_path}/data/coef/{args.model_name}/{args.model_subtype}_label_{label}_centered_headcorr.csv')
+    
+    print(f"Label-specific centered correlations saved to: {full_path}/data/coef/{args.model_name}/{args.model_subtype}_label_*_centered_headcorr.csv")
 
 if __name__ == "__main__":
     main()

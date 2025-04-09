@@ -16,9 +16,16 @@ def calculate_feature_specific_thresholds(real_df, distribution_folder):
         z_scores: DataFrame with z-scores
         feature_stats: Dictionary with feature statistics
     """
-    files = [f for f in os.listdir(distribution_folder) if f.startswith('coef_') and f.endswith('.csv')]
+    # Look for centered coefficient files
+    files = [f for f in os.listdir(distribution_folder) if f.startswith('centered_coef_') and f.endswith('.csv')]
     if not files:
-        raise FileNotFoundError("No coefficient files found in the distribution folder.")
+        # Fallback to original coefficient files if no centered files found
+        files = [f for f in os.listdir(distribution_folder) if f.startswith('coef_') and f.endswith('.csv')]
+        if not files:
+            raise FileNotFoundError("No coefficient files found in the distribution folder.")
+        print("Using original coefficient files for z-score calculation.")
+    else:
+        print(f"Using {len(files)} centered coefficient files for z-score calculation.")
 
     dfs = [pd.read_csv(os.path.join(distribution_folder, file), index_col=0) for file in files]
     dist_df = pd.concat(dfs, axis=1)
@@ -109,34 +116,7 @@ def get_label_mapping(model_name):
     
     return label_mappings.get(model_name, {})
 
-def extract_head_specificity_from_files(label_specific_coef_dfs):
-    """
-    Extract head specificity from the 'specificity' column in label-specific correlation files.
-    
-    Args:
-        label_specific_coef_dfs: Dictionary mapping labels to DataFrames with label-specific correlations
-        
-    Returns:
-        specificity_map: Dictionary mapping heads to their specific label
-    """
-    specificity_map = {}
-    
-    # Process each label-specific DataFrame
-    for label, label_df in label_specific_coef_dfs.items():
-        # Skip if specificity column is not present
-        if 'specificity' not in label_df.columns:
-            continue
-        
-        # Get heads that are specific to this label (specificity value is 1)
-        specific_heads = label_df[label_df['specificity'] == 1].index.tolist()
-        
-        # Update the specificity map for these heads
-        for head in specific_heads:
-            specificity_map[head] = label
-    
-    return specificity_map
-
-def format_json_with_labels(df, label_specific_dfs, bio_features, specificity_map, model_name):
+def format_json_with_labels(df, label_specific_dfs, bio_features, model_name):
     """
     Format the data as JSON with label-specific sentences for each head.
     
@@ -144,7 +124,6 @@ def format_json_with_labels(df, label_specific_dfs, bio_features, specificity_ma
         df: DataFrame with overall z-scores
         label_specific_dfs: Dictionary mapping labels to DataFrames with label-specific z-scores
         bio_features: List of biological feature column names
-        specificity_map: Dictionary mapping heads to their preferred labels
         model_name: Name of the model
         
     Returns:
@@ -157,41 +136,24 @@ def format_json_with_labels(df, label_specific_dfs, bio_features, specificity_ma
     
     json_structure = {}
     for layer_head, series in df.iterrows():
-        # Skip the specificity column
-        features_only = {k: v for k, v in series.items() if k != 'specificity' and k in bio_features}
+        # Get features with non-zero z-scores
+        features_only = {k: v for k, v in series.items() if k in bio_features}
         non_zero = {k: int(v) for k, v in features_only.items() if v != 0}
         sentences = [[feature if feature not in non_zero else [feature, non_zero[feature]] for feature in bio_features]]
-        
-        # Get the specificity value from our new specificity map
-        specificity_value = specificity_map.get(layer_head, "non-specific")
-        
-        # Try to convert string to int if possible for label mapping
-        if specificity_value != "non-specific":
-            try:
-                specificity_key = int(float(specificity_value))
-                if specificity_key in label_mapping:
-                    text_specificity = label_mapping[specificity_key]
-                else:
-                    text_specificity = str(specificity_value)
-            except (ValueError, TypeError):
-                text_specificity = str(specificity_value)
-        else:
-            text_specificity = "non-specific"
         
         # Initialize the head's JSON structure
         json_structure[layer_head] = {
             "name": layer_head,
-            "label_specificity": text_specificity,
             "explanation": "The main thing this head does is find...",
             "sentences": sentences
         }
         
-        # Add label-specific sentences for all labels, regardless of head specificity
+        # Add label-specific sentences for all labels
         for label in unique_labels:
             if layer_head in label_specific_dfs[label].index:
                 # Get label-specific features
                 label_series = label_specific_dfs[label].loc[layer_head]
-                label_features = {k: v for k, v in label_series.items() if k != 'specificity' and k in bio_features}
+                label_features = {k: v for k, v in label_series.items() if k in bio_features}
                 label_non_zero = {k: int(v) for k, v in label_features.items() if v != 0}
                 
                 # Try to get the text representation of the label
@@ -211,46 +173,30 @@ def format_json_with_labels(df, label_specific_dfs, bio_features, specificity_ma
         
     return json.dumps(json_structure, indent=4)
 
-def calculate_label_specific_z_scores(args, label_specific_coef_dfs, original_coef_df):
+def calculate_label_specific_z_scores(args, label_specific_coef_dfs, global_coef_df):
     """
     Calculate z-scores for label-specific correlations.
     
     Args:
         args: Command-line arguments
         label_specific_coef_dfs: Dictionary mapping labels to DataFrames with label-specific correlations
-        original_coef_df: DataFrame with original correlations
+        global_coef_df: DataFrame with global correlations
         
     Returns:
         z_scores_by_label: Dictionary mapping labels to DataFrames with label-specific z-scores
         overall_z_scores: DataFrame with overall z-scores
+        feature_stats: Dictionary with feature statistics
     """
     # Get distribution folder
     dist_folder = f"{args.full_path}/data/distributions/{args.model_name}/"
     
-    # Calculate overall z-scores (for backward compatibility)
-    # First, remove specificity column if present
-    df_for_z = original_coef_df.drop(columns=['specificity']) if 'specificity' in original_coef_df.columns else original_coef_df
-    overall_z_scores, feature_stats = calculate_feature_specific_thresholds(df_for_z, dist_folder)
-    
-    # Add specificity back to overall z-scores
-    if 'specificity' in original_coef_df.columns:
-        overall_z_scores['specificity'] = original_coef_df['specificity']
-        # Move specificity to first column
-        overall_z_scores = overall_z_scores[['specificity'] + [col for col in overall_z_scores.columns if col != 'specificity']]
+    # Calculate global z-scores
+    overall_z_scores, feature_stats = calculate_feature_specific_thresholds(global_coef_df, dist_folder)
     
     # Calculate z-scores for each label
     z_scores_by_label = {}
     for label, label_df in label_specific_coef_dfs.items():
-        # Remove specificity column if present
-        df_for_z = label_df.drop(columns=['specificity']) if 'specificity' in label_df.columns else label_df
-        label_z_scores, _ = calculate_feature_specific_thresholds(df_for_z, dist_folder)
-        
-        # Add specificity back
-        if 'specificity' in label_df.columns:
-            label_z_scores['specificity'] = label_df['specificity']
-            # Move specificity to first column
-            label_z_scores = label_z_scores[['specificity'] + [col for col in label_z_scores.columns if col != 'specificity']]
-        
+        label_z_scores, _ = calculate_feature_specific_thresholds(label_df, dist_folder)
         z_scores_by_label[label] = label_z_scores
     
     return z_scores_by_label, overall_z_scores, feature_stats
@@ -266,39 +212,50 @@ def main():
     # Define paths
     model_coef_path = f"{args.data_path}{args.model_name}"
     
-    # Load the original correlation file (for backward compatibility)
-    original_coef_path = f"{model_coef_path}/{args.model_subtype}_results.csv"
-    original_df = pd.read_csv(original_coef_path, index_col=0)
+    # Look for centered coefficient files first
+    global_coef_path = f"{model_coef_path}/{args.model_subtype}_global_centered_headcorr.csv"
+    if not os.path.exists(global_coef_path):
+        # Fallback to original coefficient files if no centered files found
+        global_coef_path = f"{model_coef_path}/{args.model_subtype}_results.csv"
+        prefix = ""
+        print(f"No centered global coefficient file found. Using original file: {global_coef_path}")
+    else:
+        prefix = "centered_"
+        print(f"Using centered global coefficient file: {global_coef_path}")
+    
+    global_df = pd.read_csv(global_coef_path, index_col=0)
     
     # Load label-specific correlation files
     label_specific_coef_dfs = {}
-    label_files = [f for f in os.listdir(model_coef_path) if f.startswith(f"{args.model_subtype}_label_") and f.endswith("_headcorr.csv")]
-    print(f"Found {len(label_files)} label-specific correlation files")
+    
+    # Look for centered label-specific files first
+    label_files = [f for f in os.listdir(model_coef_path) if 
+                  f.startswith(f"{args.model_subtype}_label_") and 
+                  f"{prefix}headcorr.csv" in f]
+    
     if not label_files:
         print("No label-specific correlation files found. Make sure to run the correlation analysis first.")
         return
     
+    print(f"Found {len(label_files)} label-specific correlation files with prefix '{prefix}'")
+    
     for label_file in label_files:
-        # Extract label from filename (format: "{subtype}_label_{label}_headcorr.csv")
-        label = label_file.replace(f"{args.model_subtype}_label_", "").replace("_headcorr.csv", "")
+        # Extract label from filename
+        if prefix:
+            # Format: "{subtype}_label_{label}_centered_headcorr.csv"
+            label = label_file.replace(f"{args.model_subtype}_label_", "").replace(f"_{prefix}headcorr.csv", "")
+        else:
+            # Format: "{subtype}_label_{label}_headcorr.csv"
+            label = label_file.replace(f"{args.model_subtype}_label_", "").replace("_headcorr.csv", "")
+            
         label_df = pd.read_csv(os.path.join(model_coef_path, label_file), index_col=0)
         label_specific_coef_dfs[label] = label_df
     
-    # Get bio features (remove specificity and position columns)
-    bio_features = [col for col in original_df.columns if col != 'specificity' and 'position' not in col]
+    # Get bio features (remove position columns)
+    bio_features = [col for col in global_df.columns if 'position' not in col]
     
     # Calculate z-scores
-    z_scores_by_label, overall_z_scores, feature_stats = calculate_label_specific_z_scores(args, label_specific_coef_dfs, original_df)
-    
-    # Extract head specificity from label-specific files instead of calculating it
-    specificity_map = extract_head_specificity_from_files(label_specific_coef_dfs)
-    
-    # For heads that don't have a specificity assigned, mark them as "non-specific"
-    all_heads = set(overall_z_scores.index)
-    for head in all_heads:
-        if head not in specificity_map:
-            specificity_map[head] = "non-specific"
-
+    z_scores_by_label, overall_z_scores, feature_stats = calculate_label_specific_z_scores(args, label_specific_coef_dfs, global_df)
     
     # Create output directories
     os.makedirs(f"{args.full_path}/data/z_scores/{args.model_name}", exist_ok=True)
@@ -308,25 +265,25 @@ def main():
     
     # Save feature statistics
     feature_stats_df = pd.DataFrame.from_dict({k: v for k, v in feature_stats.items()})
-    feature_stats_df.to_csv(f'{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}_feature_thresholds.csv')
+    feature_stats_df.to_csv(f'{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}_{prefix}feature_thresholds.csv')
     
-    # Save overall z-scores (for backward compatibility)
-    overall_z_scores.to_csv(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}_z_scores.csv")
+    # Save global z-scores
+    overall_z_scores.to_csv(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}_{prefix}z_scores.csv")
     
     # Save label-specific z-scores
     for label, z_scores in z_scores_by_label.items():
-        z_scores.to_csv(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}/label_specific/{label}_z_scores.csv")
+        z_scores.to_csv(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}/label_specific/{label}_{prefix}z_scores.csv")
     
     # Create JSON with label-specific information
-    json_out = format_json_with_labels(overall_z_scores, z_scores_by_label, bio_features, specificity_map, args.model_name)
+    json_out = format_json_with_labels(overall_z_scores, z_scores_by_label, bio_features, args.model_name)
     
     # Save JSON
-    with open(f"{args.full_path}/data/explanation_prompts/{args.model_name}/{args.model_subtype}.json", "w") as f:
+    with open(f"{args.full_path}/data/explanation_prompts/{args.model_name}/{args.model_subtype}_{prefix}centered.json", "w") as f:
         f.write(json_out)
     
-    print(f"Z-score analysis complete for {args.model_name} ({args.model_subtype})")
-    print(f"Label-specific z-scores saved to: {args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}_label_specific/")
-    print(f"JSON explanation prompts saved to: {args.full_path}/data/explanation_prompts/{args.model_name}/{args.model_subtype}.json")
+    print(f"Z-score analysis complete for {args.model_name} ({args.model_subtype}) using {prefix}centered approach")
+    print(f"Label-specific z-scores saved to: {args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}/label_specific/")
+    print(f"JSON explanation prompts saved to: {args.full_path}/data/explanation_prompts/{args.model_name}/{args.model_subtype}_{prefix}centered.json")
 
 if __name__ == "__main__":
     main()
