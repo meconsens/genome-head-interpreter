@@ -1,4 +1,3 @@
-#place at same level as model.py
 import torch
 import torch.jit  # this is needed to avoid a circular import
 from torch import nn
@@ -89,7 +88,7 @@ class MultiheadAttention(nn.MultiheadAttention):
         self.dequant_k = torch.ao.quantization.DeQuantStub()
         self.dequant_v = torch.ao.quantization.DeQuantStub()
         self.attns = None
-        self.output_attentions = output_attentions
+        #self.output_attentions = output_attentions
 
     def _get_name(self):
         return 'QuantizableMultiheadAttention'
@@ -246,7 +245,7 @@ class MultiheadAttention(nn.MultiheadAttention):
                 key_padding_mask: Optional[Tensor] = None,
                 need_weights: bool = True,
                 attn_mask: Optional[Tensor] = None,
-                average_attn_weights: bool = True,
+                average_attn_weights: bool = False,
                 is_causal: bool = False) -> Tuple[Tensor, Optional[Tensor]]:
         r"""
     Note::
@@ -307,7 +306,7 @@ class MultiheadAttention(nn.MultiheadAttention):
                       key_padding_mask: Optional[Tensor] = None,
                       need_weights: bool = True,
                       attn_mask: Optional[Tensor] = None,
-                      average_attn_weights: bool = True,
+                      average_attn_weights: bool = False,
                       is_causal: bool = False) -> Tuple[Tensor, Optional[Tensor]]:
         # This version will not deal with the static key/value pairs.
         # Keeping it here for future changes.
@@ -455,6 +454,7 @@ class MultiheadAttention(nn.MultiheadAttention):
             )
             attn_output_weights = attn_output_weights.view(bsz * self.num_heads, tgt_len, src_len)
 
+
         attn_output_weights = nnF.softmax(
             attn_output_weights, dim=-1)
         
@@ -475,12 +475,10 @@ class MultiheadAttention(nn.MultiheadAttention):
         # for the type: ignore[has-type], see https://github.com/pytorch/pytorch/issues/58969
         attn_output = self.out_proj(attn_output)  # type: ignore[has-type]
         attn_output_weights = self.quant_attn_output_weights(attn_output_weights)
-        if self.output_attentions:
-            #print("returning attentions")
-            return attn_output, self.attns
         if need_weights:
             # average attention weights over heads
             attn_output_weights = attn_output_weights.view(bsz, self.num_heads, tgt_len, src_len)
+            print("INSIDE NEED WEIGHTS RETURNING ATTNS:", attn_output_weights.shape)
             if average_attn_weights:
                 attn_output_weights = attn_output_weights.mean(dim=1)
             return attn_output, attn_output_weights
