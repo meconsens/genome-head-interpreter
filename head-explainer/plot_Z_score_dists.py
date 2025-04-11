@@ -66,8 +66,6 @@ def main():
         'DNABERT_pretrained': 'DNABERT_pretrained',
         'DNABERT_random': 'DNABERT_random',
         'DNABERT_random_init': 'DNABERT_random_init',
-        'enformer': 'enformer',
-        'enformer_random_init': 'enformer_random_init',
         'scgpt_ms': 'scgpt_ms',
         'scgpt_ms_random_init': 'scgpt_ms_random_init',
         'scgpt_ms_pretrained': 'scgpt_ms_pretrained',
