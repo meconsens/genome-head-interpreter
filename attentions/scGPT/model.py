@@ -9,6 +9,7 @@ import numpy as np
 from torch import nn, Tensor
 import torch.distributed as dist
 import torch.nn.functional as F
+from torch.nn import Linear, Dropout, LayerNorm, BatchNorm1d, ReLU, Embedding, Sequential, Identity, CosineSimilarity, LeakyReLU, Sigmoid
 #from torch.nn import TransformerEncoder, TransformerEncoderLayer
 from .updated_torch_layers import TransformerEncoder, TransformerEncoderLayer
 #from .fast_transformers import TransformerEncoder, TransformerEncoderLayer
@@ -198,10 +199,20 @@ class TransformerModel(nn.Module):
             )  # the batch norm always works on dim 1
         elif getattr(self, "bn", None) is not None:
             total_embs = self.bn(total_embs.permute(0, 2, 1)).permute(0, 2, 1)
-
-        output, attns = self.transformer_encoder(
+        transformer_output = self.transformer_encoder(
             total_embs, src_key_padding_mask=src_key_padding_mask
         )
+        # Handle various tuple formats
+        if isinstance(transformer_output, tuple):
+            if len(transformer_output) == 1:
+                output = transformer_output[0]
+                attns = None
+            else:  # len >= 2
+                output, attns = transformer_output[0], transformer_output[1]
+        else:
+            output = transformer_output
+            attns = None
+
         return output, attns  # (batch, seq_len, embsize)
 
     def _get_cell_emb_from_layer(
@@ -298,9 +309,21 @@ class TransformerModel(nn.Module):
             src_key_padding_mask = torch.zeros(
                 total_embs.shape[:2], dtype=torch.bool, device=total_embs.device
             )
-        transformer_output, attns = self.transformer_encoder(
+
+        transformer_output = self.transformer_encoder(
             total_embs, src_key_padding_mask=src_key_padding_mask
         )
+        # Handle various tuple formats
+        if isinstance(transformer_output, tuple):
+            if len(transformer_output) == 1:
+                output = transformer_output[0]
+                attns = None
+            else:  # len >= 2
+                output, attns = transformer_output[0], transformer_output[1]
+        else:
+            output = transformer_output
+            attns = None
+
 
         if self.use_batch_labels:
             batch_emb = self.batch_encoder(batch_labels)  # (batch, embsize)
@@ -352,10 +375,22 @@ class TransformerModel(nn.Module):
             dict of output Tensors.
         """
         output = {}
-        transformer_output, attns = self._encode(
+
+        transformer_output = self._encode(
             src, values, src_key_padding_mask, batch_labels
         )
-        output["attentions"] = attns
+        # Handle various tuple formats
+        if isinstance(transformer_output, tuple):
+            if len(transformer_output) == 1:
+                output = transformer_output[0]
+                attns = None
+            else:  # len >= 2
+                output, attns = transformer_output[0], transformer_output[1]
+                output["attentions"] = attns
+        else:
+            output = transformer_output
+            attns = None 
+
 
         if self.use_batch_labels:
             batch_emb = self.batch_encoder(batch_labels)  # (batch, embsize)
@@ -885,6 +920,9 @@ class ExprDecoder(nn.Module):
 
     def forward(self, x: Tensor) -> Dict[str, Tensor]:
         """x is the output of the transformer, (batch, seq_len, d_model)"""
+        print(f"x is of type: {x.dtype}")
+        print(f"x is of shape: {x.shape}")
+        print(f"x at position 1 is of type: {x[1].dtype}")
         pred_value = self.fc(x).squeeze(-1)  # (batch, seq_len)
 
         if not self.explicit_zero_prob:
