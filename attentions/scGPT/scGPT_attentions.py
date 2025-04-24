@@ -52,6 +52,427 @@ class SeqDataset(Dataset):
         return {k: v[idx] for k, v in self.data.items()}
 
 
+def initialize_weights_normal(model: nn.Module, mean: float = 0.0, std: float = 0.02):
+    """
+    Initialize all model weights using a normal distribution N(mean, std).
+    
+    Args:
+        model: PyTorch model
+        mean: Mean of the normal distribution (default: 0.0)
+        std: Standard deviation of the normal distribution (default: 0.02)
+    """
+    for module in model.modules():
+        # Linear layers
+        if isinstance(module, nn.Linear):
+            module.weight.data.normal_(mean=mean, std=std)
+            if module.bias is not None:
+                module.bias.data.zero_()
+        
+        # Embedding layers
+        elif isinstance(module, nn.Embedding):
+            module.weight.data.normal_(mean=mean, std=std)
+            if hasattr(module, 'padding_idx') and module.padding_idx is not None:
+                module.weight.data[module.padding_idx].zero_()
+        
+        # LayerNorm
+        elif isinstance(module, nn.LayerNorm):
+            module.weight.data.fill_(1.0)  # gamma
+            module.bias.data.zero_()       # beta
+        
+        # Conv layers
+        elif isinstance(module, (nn.Conv1d, nn.Conv2d, nn.Conv3d)):
+            module.weight.data.normal_(mean=mean, std=std)
+            if module.bias is not None:
+                module.bias.data.zero_()
+        
+        # Any other layer with parameters
+        else:
+            for param_name, param in module.named_parameters(recurse=False):
+                if 'weight' in param_name:
+                    # Apply normal initialization to any other weight parameters
+                    param.data.normal_(mean=mean, std=std)
+                elif 'bias' in param_name:
+                    # Zero initialization for any bias parameters
+                    param.data.zero_()
+
+
+def random_init_scgpt(model, mean=0.0, std=0.02):
+    """
+    Random initialization for scGPT model.
+    
+    Args:
+        model: scGPT model
+        mean: Mean of normal distribution
+        std: Standard deviation of normal distribution
+    
+    Returns:
+        The randomly initialized model
+    """
+    print("Applying standardized random initialization to scGPT model...")
+    initialize_weights_normal(model, mean=mean, std=std)
+    return model
+
+
+def verify_standardized_initialization(model: nn.Module, 
+                                      normal_mean: float = 0.0, 
+                                      normal_std: float = 0.02,
+                                      tolerance: float = 0.01) -> Dict[str, Any]:
+    """
+    Verify that model weights have been initialized according to our standardized scheme:
+    - Linear layers: weights ~ N(mean, std), biases = 0
+    - Embedding layers: weights ~ N(mean, std)
+    - LayerNorm: gamma = 1.0, beta = 0.0
+    - All other weight parameters: ~ N(mean, std)
+    
+    Args:
+        model: PyTorch model
+        normal_mean: Expected mean for normal distribution (default: 0.0)
+        normal_std: Expected std for normal distribution (default: 0.02)
+        tolerance: Tolerance for mean/std checks
+        
+    Returns:
+        Dictionary with verification results
+    """
+    results = {
+        "all_layers_verified": True,
+        "layers_checked": 0,
+        "issues": [],
+        "stats": {}
+    }
+    
+    # Counters for different layer types
+    layer_counts = {
+        "linear": 0,
+        "embedding": 0,
+        "layernorm": 0,
+        "other": 0
+    }
+    
+    # Collect weights by layer type for statistical analysis
+    layer_weights = {
+        "linear": [],
+        "embedding": [],
+        "other": []
+    }
+    
+    # List to track verification of each layer
+    layer_verifications = []
+    
+    print(f"\nVerifying initialization against standardized scheme:")
+    print(f"- Linear layers: weights ~ N({normal_mean}, {normal_std}), biases = 0")
+    print(f"- Embedding layers: weights ~ N({normal_mean}, {normal_std})")
+    print(f"- LayerNorm: gamma = 1.0, beta = 0.0")
+    print(f"- Other weight parameters: ~ N({normal_mean}, {normal_std})")
+    print("-" * 80)
+    
+    # Check each named module
+    for name, module in model.named_modules():
+        # Skip top-level container modules to avoid redundant parameter checking
+        if len(name.split('.')) <= 1 and not isinstance(module, (nn.Linear, nn.Embedding, nn.LayerNorm)):
+            continue
+            
+        if isinstance(module, nn.Linear):
+            # Check linear layer weights
+            layer_counts["linear"] += 1
+            weights = module.weight.detach().cpu().numpy().flatten()
+            layer_weights["linear"].extend(weights)
+            
+            # Calculate statistics
+            w_mean = np.mean(weights)
+            w_std = np.std(weights)
+            
+            # Check if weights match expected normal distribution
+            weights_correct = (abs(w_mean - normal_mean) < tolerance and 
+                              abs(w_std - normal_std) < tolerance * 3)
+            
+            # Check if biases are zeros
+            bias_correct = True
+            if module.bias is not None:
+                biases = module.bias.detach().cpu().numpy().flatten()
+                bias_mean = np.mean(np.abs(biases))
+                bias_correct = bias_mean < tolerance / 10
+            
+            layer_correct = weights_correct and bias_correct
+            
+            # Log verification result
+            layer_verifications.append({
+                "name": name,
+                "type": "linear",
+                "weights_correct": weights_correct,
+                "bias_correct": bias_correct,
+                "w_mean": w_mean,
+                "w_std": w_std,
+                "correct": layer_correct
+            })
+            
+            if not layer_correct:
+                results["issues"].append({
+                    "layer": name,
+                    "type": "linear",
+                    "weights_mean": w_mean,
+                    "weights_std": w_std,
+                    "expected_mean": normal_mean,
+                    "expected_std": normal_std,
+                    "bias_correct": bias_correct
+                })
+                results["all_layers_verified"] = False
+                
+        elif isinstance(module, nn.Embedding):
+            # Check embedding layer weights
+            layer_counts["embedding"] += 1
+            weights = module.weight.detach().cpu().numpy()
+            
+            # Exclude padding token if it exists
+            if hasattr(module, 'padding_idx') and module.padding_idx is not None:
+                if module.padding_idx < weights.shape[0]:
+                    # Create a mask to exclude padding token
+                    mask = np.ones(weights.shape[0], dtype=bool)
+                    mask[module.padding_idx] = False
+                    weights = weights[mask].flatten()
+                else:
+                    weights = weights.flatten()
+            else:
+                weights = weights.flatten()
+                
+            layer_weights["embedding"].extend(weights)
+            
+            # Calculate statistics
+            w_mean = np.mean(weights)
+            w_std = np.std(weights)
+            
+            # Check if weights match expected normal distribution
+            weights_correct = (abs(w_mean - normal_mean) < tolerance and 
+                              abs(w_std - normal_std) < tolerance * 3)
+            
+            layer_verifications.append({
+                "name": name,
+                "type": "embedding",
+                "weights_correct": weights_correct,
+                "w_mean": w_mean,
+                "w_std": w_std,
+                "correct": weights_correct
+            })
+            
+            if not weights_correct:
+                results["issues"].append({
+                    "layer": name,
+                    "type": "embedding",
+                    "weights_mean": w_mean,
+                    "weights_std": w_std,
+                    "expected_mean": normal_mean,
+                    "expected_std": normal_std
+                })
+                results["all_layers_verified"] = False
+                
+        elif isinstance(module, nn.LayerNorm):
+            # Check LayerNorm parameters
+            layer_counts["layernorm"] += 1
+            
+            # LayerNorm should have gamma=1 and beta=0
+            gamma = module.weight.detach().cpu().numpy().flatten()
+            beta = module.bias.detach().cpu().numpy().flatten()
+            
+            gamma_correct = np.allclose(gamma, 1.0, atol=tolerance)
+            beta_correct = np.allclose(beta, 0.0, atol=tolerance)
+            
+            layer_correct = gamma_correct and beta_correct
+            
+            layer_verifications.append({
+                "name": name,
+                "type": "layernorm",
+                "gamma_correct": gamma_correct,
+                "beta_correct": beta_correct,
+                "gamma_mean": np.mean(gamma),
+                "beta_mean": np.mean(beta),
+                "correct": layer_correct
+            })
+            
+            if not layer_correct:
+                results["issues"].append({
+                    "layer": name,
+                    "type": "layernorm",
+                    "gamma_mean": np.mean(gamma),
+                    "gamma_expected": 1.0,
+                    "beta_mean": np.mean(beta),
+                    "beta_expected": 0.0
+                })
+                results["all_layers_verified"] = False
+                
+        elif len(list(module.parameters(recurse=False))) > 0:
+            # Check parameters of other layer types
+            for param_name, param in module.named_parameters(recurse=False):
+                # Only check weight parameters, not biases
+                if 'weight' in param_name:
+                    layer_counts["other"] += 1
+                    weights = param.detach().cpu().numpy().flatten()
+                    layer_weights["other"].extend(weights)
+                    
+                    w_mean = np.mean(weights)
+                    w_std = np.std(weights)
+                    
+                    # Check if weights match expected normal distribution
+                    weights_correct = (abs(w_mean - normal_mean) < tolerance and 
+                                      abs(w_std - normal_std) < tolerance * 3)
+                    
+                    full_name = f"{name}.{param_name}"
+                    layer_verifications.append({
+                        "name": full_name,
+                        "type": "other",
+                        "weights_correct": weights_correct,
+                        "w_mean": w_mean,
+                        "w_std": w_std,
+                        "correct": weights_correct
+                    })
+                    
+                    if not weights_correct:
+                        results["issues"].append({
+                            "layer": full_name,
+                            "type": "other",
+                            "weights_mean": w_mean,
+                            "weights_std": w_std,
+                            "expected_mean": normal_mean,
+                            "expected_std": normal_std
+                        })
+                        results["all_layers_verified"] = False
+                
+                # Check biases
+                elif 'bias' in param_name:
+                    biases = param.detach().cpu().numpy().flatten()
+                    bias_mean = np.mean(np.abs(biases))
+                    bias_correct = bias_mean < tolerance / 10
+                    
+                    full_name = f"{name}.{param_name}"
+                    if not bias_correct:
+                        results["issues"].append({
+                            "layer": full_name,
+                            "type": "bias",
+                            "bias_mean": bias_mean,
+                            "expected": 0.0
+                        })
+                        results["all_layers_verified"] = False
+        
+        results["layers_checked"] += 1
+    
+    # Calculate overall statistics for each layer type
+    for layer_type, weights in layer_weights.items():
+        if weights:
+            results["stats"][layer_type] = {
+                "mean": np.mean(weights),
+                "std": np.std(weights),
+                "min": np.min(weights),
+                "max": np.max(weights),
+                "count": len(weights)
+            }
+    
+    # Count how many layers passed verification
+    correct_layers = sum(1 for v in layer_verifications if v["correct"])
+    total_layers = len(layer_verifications)
+    
+    # Print verification results
+    print(f"\nVerification Summary:")
+    print(f"- Linear layers: {layer_counts['linear']}")
+    print(f"- Embedding layers: {layer_counts['embedding']}")
+    print(f"- LayerNorm layers: {layer_counts['layernorm']}")
+    print(f"- Other parameter layers: {layer_counts['other']}")
+    print(f"- Total layers checked: {results['layers_checked']}")
+    print(f"- Layers correctly initialized: {correct_layers}/{total_layers}")
+    
+    print("\nWeight Statistics:")
+    for layer_type, stats in results["stats"].items():
+        print(f"- {layer_type.capitalize()} layers: mean={stats['mean']:.6f}, std={stats['std']:.6f}")
+    
+    # Plot weight distribution
+    plt.figure(figsize=(12, 8))
+    
+    # Plot histograms for each layer type
+    plt.subplot(2, 2, 1)
+    for layer_type, weights in layer_weights.items():
+        if weights:
+            plt.hist(weights, bins=50, alpha=0.5, label=f'{layer_type.capitalize()}')
+    plt.title('Weight Distribution by Layer Type')
+    plt.xlabel('Weight Value')
+    plt.ylabel('Frequency')
+    plt.legend()
+    
+    # Plot Q-Q plot for linear layer weights
+    if layer_weights["linear"]:
+        plt.subplot(2, 2, 2)
+        from scipy import stats
+        linear_sample = np.random.choice(layer_weights["linear"], 
+                                         size=min(1000, len(layer_weights["linear"])))
+        stats.probplot(linear_sample, dist="norm", plot=plt)
+        plt.title('Q-Q Plot (Linear Layer Weights)')
+    
+    # Plot initialization correctness by layer type
+    plt.subplot(2, 2, 3)
+    layer_types = ["linear", "embedding", "layernorm", "other"]
+    correct_by_type = {layer_type: 0 for layer_type in layer_types}
+    total_by_type = {layer_type: 0 for layer_type in layer_types}
+    
+    for v in layer_verifications:
+        if v["type"] in total_by_type:
+            total_by_type[v["type"]] += 1
+            if v["correct"]:
+                correct_by_type[v["type"]] += 1
+    
+    # Calculate percentage correct for each type
+    pct_correct = []
+    for layer_type in layer_types:
+        if total_by_type[layer_type] > 0:
+            pct = 100 * correct_by_type[layer_type] / total_by_type[layer_type]
+            pct_correct.append(pct)
+        else:
+            pct_correct.append(0)
+    
+    plt.bar(layer_types, pct_correct)
+    plt.title('Initialization Correctness by Layer Type')
+    plt.xlabel('Layer Type')
+    plt.ylabel('Percent Correct')
+    plt.ylim(0, 105)
+    
+    # Add text labels
+    for i, pct in enumerate(pct_correct):
+        if total_by_type[layer_types[i]] > 0:
+            plt.text(i, pct + 2, f"{pct:.1f}%", ha='center')
+            plt.text(i, pct/2, f"{correct_by_type[layer_types[i]]}/{total_by_type[layer_types[i]]}", 
+                    ha='center', color='white')
+    
+    # Overall correctness gauge
+    plt.subplot(2, 2, 4)
+    overall_pct = 100 * correct_layers / total_layers if total_layers > 0 else 0
+    plt.pie([overall_pct, 100-overall_pct], 
+            labels=[f'Correct ({correct_layers})', f'Issues ({total_layers-correct_layers})'],
+            colors=['green', 'red'], autopct='%1.1f%%', 
+            startangle=90)
+    plt.axis('equal')
+    plt.title('Overall Initialization Correctness')
+    
+    plt.tight_layout()
+    plt.savefig('initialization_verification.png')
+    print(f"\nVisualization saved to: initialization_verification.png")
+    
+    # Final verdict
+    if results["all_layers_verified"]:
+        print("\n✅ All layers are correctly initialized according to the standardized scheme!")
+    else:
+        print(f"\n⚠️ Found {len(results['issues'])} issues with initialization.")
+        print("Here are the top issues:")
+        for i, issue in enumerate(results["issues"][:5]):  # Show top 5 issues
+            print(f"  {i+1}. {issue['layer']} ({issue['type']}): ", end="")
+            if issue['type'] == 'layernorm':
+                print(f"gamma={issue['gamma_mean']:.4f} (expected: 1.0), "
+                      f"beta={issue['beta_mean']:.4f} (expected: 0.0)")
+            elif issue['type'] == 'bias':
+                print(f"bias_mean={issue['bias_mean']:.6f} (expected: 0.0)")
+            else:
+                print(f"mean={issue['weights_mean']:.6f} (expected: {normal_mean}), "
+                      f"std={issue['weights_std']:.6f} (expected: {normal_std})")
+        if len(results["issues"]) > 5:
+            print(f"  ... and {len(results['issues'])-5} more issues.")
+    
+    return results
+
+
 # data_loader
 def prepare_dataloader(
     data_pt: Dict[str, torch.Tensor],
@@ -467,9 +888,7 @@ def main():
         adata.obs["celltype_id"] = celltype_id_labels
         adata.var["gene_name"] = adata.var.index.tolist()
                     
-    load_model = config.load_model
-    if task_name == 'random_init':
-        load_model = None           
+    load_model = config.load_model         
     if load_model is not None:
         ## Load weights from other fine-tuned model
         model_dir = model_path
@@ -645,6 +1064,23 @@ def main():
                 logger.info(f"Loading params {k} with shape {v.shape}")
             model_dict.update(pretrained_dict)
             model.load_state_dict(model_dict)
+    if task_name == 'random_init':
+        model = random_init_scgpt(model)
+        # Verify initialization
+        results = verify_standardized_initialization(model)
+        
+        # Print results summary
+        print(f"Initialization verification complete:")
+        print(f"- Layers checked: {results['layers_checked']}")
+        print(f"- All layers verified: {results['all_layers_verified']}")
+        
+        if not results['all_layers_verified']:
+            print(f"- Found {len(results['anomalies'])} anomalies")
+            for i, anomaly in enumerate(results['anomalies'][:5]):  # Show only first 5
+                print(f"  Anomaly {i+1}: {anomaly}")
+            
+            if len(results['anomalies']) > 5:
+                print(f"  ... and {len(results['anomalies'])-5} more anomalies.")
 
     pre_freeze_param_count = sum(dict((p.data_ptr(), p.numel()) for p in model.parameters() if p.requires_grad).values())
 

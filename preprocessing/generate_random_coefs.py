@@ -12,6 +12,17 @@ import time
 from config_functions import configure_DNABERT, configure_scgpt, configure_nucleotide_transformer
 
 def shuffle_attention_scores(df, attention_score_columns, block_size=10):
+    """
+    Shuffle attention scores between and within sequences.
+    
+    Args:
+        df: DataFrame with sequences
+        attention_score_columns: List of column names for head attention scores
+        block_size: Size of blocks to shuffle within sequences
+        
+    Returns:
+        df: DataFrame with shuffled attention scores
+    """
     # shuffle attentions between sequences
     for col in attention_score_columns:
         shuffled_data = df[col].sample(frac=1).reset_index(drop=True)
@@ -24,11 +35,8 @@ def shuffle_attention_scores(df, attention_score_columns, block_size=10):
             for index, row in df.iterrows():
                 sequence = np.array(row[col])
                 seq_len = len(sequence)
-                #print(f'seq len: {seq_len}')
                 full_blocks = seq_len // block_size
-                #print(f'full blocks: {full_blocks}')
                 num_elements = full_blocks * block_size
-                #print(f'num elements: {num_elements}')
 
                 # split the sequence into blocks and remainder
                 full_sequence = sequence[:num_elements]
@@ -44,17 +52,56 @@ def shuffle_attention_scores(df, attention_score_columns, block_size=10):
                 np.random.shuffle(remainder)
 
                 # concatenate shuffle blocks with shuffle remainder
-                df.at[index, col] = np.concatenate((remainder, full_sequence))
+                df.at[index, col] = np.concatenate((full_sequence, remainder))
 
     return df
 
-def run_spearman(df, attention_score_columns, bio_feature_columns, seq_lengths):
+def compute_global_attention_means(df, attention_score_columns):
+    """
+    Compute the global mean attention score for each head across all sequences.
+    
+    Args:
+        df: DataFrame with sequences
+        attention_score_columns: List of column names for head attention scores
+        
+    Returns:
+        head_global_means: Dictionary mapping heads to their global mean attention scores
+    """
+    head_global_means = {}
+    for layer_head in attention_score_columns:
+        # Flatten all attention scores for this head across all sequences
+        all_attention_values = []
+        for _, seq in df.iterrows():
+            all_attention_values.extend(seq[layer_head])
+        
+        # Calculate global mean for this head
+        head_global_means[layer_head] = np.mean(all_attention_values)
+        print(f"Global mean for {layer_head}: {head_global_means[layer_head]}")
+    
+    return head_global_means
+
+def run_centered_spearman(df, attention_score_columns, bio_feature_columns, seq_lengths, head_global_means):
+    """
+    Calculate Spearman correlations between centered attention scores and bio features.
+    
+    Centered attention = token attention - mean head attention across all tokens
+    
+    Args:
+        df: DataFrame with sequences
+        attention_score_columns: List of column names for head attention scores
+        bio_feature_columns: List of column names for biological features
+        seq_lengths: List or integer of sequence lengths
+        head_global_means: Dictionary mapping heads to their global mean attention scores
+        
+    Returns:
+        coef_dict: Dictionary mapping heads to correlation coefficients
+    """
     coef_dict = {}
     for layer_head in attention_score_columns:
         coef_dict[layer_head] = []
 
         X = None
-        Y = None
+        Y_centered = None  # For centered attention scores
 
         # loop over rows (sequences)
         for index, seq in df.iterrows():
@@ -66,21 +113,24 @@ def run_spearman(df, attention_score_columns, bio_feature_columns, seq_lengths):
 
             # reshape according to the sequence length determined
             x = np.concatenate(seq[bio_feature_columns].values).ravel().reshape((len(bio_feature_columns), seq_len)).T
-            y = seq[layer_head]
+            
+            # Center the attention scores
+            y_original = seq[layer_head]
+            y_centered = np.array(y_original) - head_global_means[layer_head]
 
             if X is not None:
                 X = np.concatenate([X, x])
-                Y = np.concatenate([Y, y])
+                Y_centered = np.concatenate([Y_centered, y_centered])
             else:
                 X = x
-                Y = y
+                Y_centered = y_centered
 
-       # handle NaN values
+        # handle NaN values
         X = np.nan_to_num(X)
 
-        # Spearman correlation for each feature column
+        # Spearman correlation for each feature column using centered attention
         for col_iter in range(X.shape[1]):
-            result = stats.spearmanr(X[:, col_iter], Y)
+            result = stats.spearmanr(X[:, col_iter], Y_centered)
             if not np.isnan(result.statistic):
                 coef_dict[layer_head].append(result.statistic)
             else:
@@ -88,8 +138,20 @@ def run_spearman(df, attention_score_columns, bio_feature_columns, seq_lengths):
 
     return coef_dict
 
-
-def parallel_shuffle_and_analysis(df, attention_score_columns, bio_feature_columns, seq_length, model, full_path, iteration):
+def parallel_shuffle_and_analysis(df, attention_score_columns, bio_feature_columns, seq_length, head_global_means, model, full_path, iteration):
+    """
+    Perform shuffling and correlation analysis in parallel.
+    
+    Args:
+        df: DataFrame with sequences
+        attention_score_columns: List of column names for head attention scores
+        bio_feature_columns: List of column names for biological features
+        seq_length: List or integer of sequence lengths
+        head_global_means: Dictionary mapping heads to their global mean attention scores
+        model: Model name
+        full_path: Path to save results
+        iteration: Iteration number
+    """
     # seed for each process 
     pid = os.getpid()
     current_time = time.time()
@@ -99,11 +161,13 @@ def parallel_shuffle_and_analysis(df, attention_score_columns, bio_feature_colum
 
     # shuffling
     shuffled_df = shuffle_attention_scores(df, attention_score_columns)
-    coef_dict = run_spearman(shuffled_df, attention_score_columns, bio_feature_columns, seq_length)
+    
+    # Calculate correlations using centered attention
+    coef_dict = run_centered_spearman(shuffled_df, attention_score_columns, bio_feature_columns, seq_length, head_global_means)
 
     # save results
     os.makedirs(f'{full_path}/data/distributions/{model}/', exist_ok=True)
-    results_filename = f'{full_path}/data/distributions/{model}/coef_{iteration}_results.csv'
+    results_filename = f'{full_path}/data/distributions/{model}/centered_coef_{iteration}_results.csv'
     pd.DataFrame.from_dict(coef_dict, orient="index", columns=bio_feature_columns).to_csv(results_filename)
     print(f"Process {pid} with seed {unique_seed} completed and saved to {results_filename}")
 
@@ -111,13 +175,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--data_path",
-        default="/home/mica/genome-head-interpreter/preprocessing/data/scores/",
+        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/scores/",
         type=str,
         help="The path to the data",
     )
     parser.add_argument(
         "--full_path",
-        default="/home/mica/genome-head-interpreter/preprocessing/",
+        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/",
         type=str,
         help="The full path to the collect_coef.py file",
     )
@@ -140,9 +204,9 @@ def main():
     full_path = args.full_path
     model = args.model_name
     
-    #make sure if model_subtype selected as "random", the model_name is DNABERT_TATA or DNABERT_enhancer
+    #make sure if model_subtype selected as "random", the model_name is DNABERT
     if args.model_subtype == "random":
-        assert args.model_name == "DNABERT_TATA" or args.model_name == "DNABERT_enhancers", "Model name should be DNABERT_TATA or DNABERT_enhancers"
+        assert args.model_name == "DNABERT_TATA" or args.model_name == "DNABERT_enhancers" or args.model_name == "DNABERT_fake_TATA", "Model name should be DNABERT_TATA, DNABERT_fake_TATA, or DNABERT_enhancers"
     
 
     #add model name to the data path
@@ -160,10 +224,12 @@ def main():
     config_functions = {
         'DNABERT_TATA': configure_DNABERT,
         'DNABERT_enhancers': configure_DNABERT,
+        'DNABERT_fake_TATA': configure_DNABERT,
         'scgpt_ms': configure_scgpt,
         'scgpt_pancreas': configure_scgpt,
         'NT_TATA': configure_nucleotide_transformer,
-        'NT_enhancers': configure_nucleotide_transformer
+        'NT_enhancers': configure_nucleotide_transformer,
+        'NT_fake_TATA': configure_nucleotide_transformer,
     }
 
     config_function = config_functions.get(args.model_name)
@@ -176,11 +242,34 @@ def main():
     seq_length = config["seq_length"]
 
     print(f"Attention score columns: {attention_score_columns}, Bio feature columns: {bio_feature_columns}, Sequence length: {seq_length}")
+    
+    # Compute global mean attention for each head before shuffling
+    print("Computing global mean attention scores...")
+    head_global_means = compute_global_attention_means(new_df, attention_score_columns)
+    
+    # Save the global means for reference
+    global_means_df = pd.DataFrame.from_dict(head_global_means, orient="index", columns=["global_mean"])
+    os.makedirs(f'{full_path}/data/distributions/{args.model_name}/', exist_ok=True)
+    global_means_df.to_csv(f'{full_path}/data/distributions/{args.model_name}/global_attention_means.csv')
+    print(f"Global attention means saved to: {full_path}/data/distributions/{args.model_name}/global_attention_means.csv")
 
     with ProcessPoolExecutor(max_workers=50) as executor:
-        futures = [executor.submit(parallel_shuffle_and_analysis, new_df, attention_score_columns, bio_feature_columns, seq_length, args.model_name, args.full_path, i) for i in range(100)]
+        futures = [executor.submit(
+                    parallel_shuffle_and_analysis, 
+                    new_df.copy(), 
+                    attention_score_columns, 
+                    bio_feature_columns, 
+                    seq_length,
+                    head_global_means,
+                    args.model_name, 
+                    args.full_path, 
+                    i
+                  ) for i in range(100)]
+        
         for future in as_completed(futures):
             future.result()
+    
+    print("All shuffling iterations completed.")
 
 if __name__ == "__main__":
     main()

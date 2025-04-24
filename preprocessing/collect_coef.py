@@ -56,13 +56,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--data_path",
-        default="/home/mica/genome-head-interpreter/preprocessing/data/scores/",
+        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/scores/",
         type=str,
         help="The path to the data",
     )
     parser.add_argument(
         "--full_path",
-        default="/home/mica/genome-head-interpreter/preprocessing/",
+        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/",
         type=str,
         help="The full path to the collect_coef.py file",
     )
