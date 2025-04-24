@@ -1,7 +1,7 @@
 # Genome-Head-Interpreter
 
 ## Abstract
-genome-head-interpreter aims to explain the attention heads of genomic transformer models DNABERT, Enformer, and scGPT. By analyzing attention scores and employing OpenAI's GPT-4 for exploratory prompting, this project aims to elucidate the functional roles of attention heads within these models. Our methods involve Spearman rank correlations to relate attention scores with biological feature annotations, providing new insights into the interpretability of genomic transformers.
+genome-head-interpreter aims to explain the attention heads of genomic transformer models DNABERT, Nucleotide Transformer, and scGPT. By analyzing attention scores and employing OpenAI's GPT-4 for exploratory prompting, this project aims to elucidate the functional roles of attention heads within these models. Our methods involve Spearman rank correlations to relate attention scores with biological feature annotations, providing new insights into the interpretability of genomic transformers. We also provide code to select heads associated with biological features (as measured using our method), and ablate these specific heads along with layer-matched less important heads.
 
 ## Introduction
 Deep learning has shown exceptional capability in extracting meaningful information from genomic sequences. Transformer models, known for their efficiency and scalability, offer promising avenues for genomic interpretation but often act as "black boxes". genome-head-interpreter seeks to shed light on these models by interpreting the roles of their attention heads, linking them to biological features and providing a clearer understanding of their decision-making processes.
