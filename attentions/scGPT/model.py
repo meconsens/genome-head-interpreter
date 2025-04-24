@@ -386,7 +386,8 @@ class TransformerModel(nn.Module):
                 attns = None
             else:  # len >= 2
                 output, attns = transformer_output[0], transformer_output[1]
-                output["attentions"] = attns
+                if attns:
+                    output["attentions"] = attns
         else:
             output = transformer_output
             attns = None 
