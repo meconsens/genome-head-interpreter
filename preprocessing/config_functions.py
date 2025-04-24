@@ -8,7 +8,10 @@ def configure_DNABERT(df):
     #print all the column names
     print(df_copy.columns)
     for col in df_copy.columns:
-        if col not in ['sequence', 'kmers']:
+        if col == 'label':
+                #just grab the first label and turn it into a single scalar not array
+                df_copy[col] = df_copy[col].apply(lambda x: x[0])
+        if col not in ['sequence', 'kmers', 'label']:
             # Check if the column contains string data before attempting to split
             if df_copy[col].dtype == 'object':
                 df_copy[col] = df_copy[col].apply(lambda x: np.array(x.split(','), dtype=np.float64) if isinstance(x, str) else np.array([x], dtype=np.float64))
@@ -29,7 +32,10 @@ def configure_nucleotide_transformer(df):
     #print all the column names
     print(df_copy.columns)
     for col in df_copy.columns:
-        if col not in ['sequence', 'kmers']:
+        if col == 'label':
+                #just grab the first label and turn it into a single scalar not array
+                df_copy[col] = df_copy[col].apply(lambda x: x[0])
+        if col not in ['sequence', 'kmers', 'label']:
             # Check if the column contains string data before attempting to split
             if df_copy[col].dtype == 'object':
                 df_copy[col] = df_copy[col].apply(lambda x: np.array(x.split(','), dtype=np.float64) if isinstance(x, str) else np.array([x], dtype=np.float64))
