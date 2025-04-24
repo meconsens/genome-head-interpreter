@@ -257,8 +257,8 @@ def main():
                         help="Model subtype to analyze (default: finetuned)")
     parser.add_argument("--prefix", default="centered_", type=str,
                         help="Prefix for z-score files (default: 'centered_')")
-    parser.add_argument("--num_top_heads", default=46, type=int,
-                        help="Number of top heads to select (default: 10 for scgpt, 14 for DNABERT, 46 for NT)")
+    parser.add_argument("--num_top_heads", default=232, type=int,
+                        help="Number of top heads to select (default: 96 for scgpt, 72 for DNABERT, 232 for NT)")
     parser.add_argument("--feature", default='GC',type=str,
                         help="Specific feature to analyze for head associations")
     parser.add_argument("--sign_filter", type=str, choices=["positive", "negative"],
