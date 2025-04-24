@@ -3,7 +3,8 @@ scripts
 preprocessing/data/scores
 preprocessing/data/distributions
 preprocessing/data/coef
-preprocessing/data/feature_scores
+preprocessing/data/z_scores
+preprocessing/data/plots
 setup.py
 **/.DS_Store
 **/.Rhistory

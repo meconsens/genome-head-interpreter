@@ -1,0 +1,4031 @@
+{
+    "layer0-head0": {
+        "name": "layer0-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    19
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    19
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    20
+                ]
+            ]
+        ]
+    },
+    "layer0-head1": {
+        "name": "layer0-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -53
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -51
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -56
+                ]
+            ]
+        ]
+    },
+    "layer0-head2": {
+        "name": "layer0-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -68
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -72
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -63
+                ]
+            ]
+        ]
+    },
+    "layer0-head3": {
+        "name": "layer0-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    29
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    32
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    25
+                ]
+            ]
+        ]
+    },
+    "layer0-head4": {
+        "name": "layer0-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -132
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -137
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -127
+                ]
+            ]
+        ]
+    },
+    "layer0-head5": {
+        "name": "layer0-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -34
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -35
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -32
+                ]
+            ]
+        ]
+    },
+    "layer0-head6": {
+        "name": "layer0-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -142
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -144
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -139
+                ]
+            ]
+        ]
+    },
+    "layer0-head7": {
+        "name": "layer0-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    72
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    71
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    72
+                ]
+            ]
+        ]
+    },
+    "layer0-head8": {
+        "name": "layer0-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    48
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    46
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    50
+                ]
+            ]
+        ]
+    },
+    "layer0-head9": {
+        "name": "layer0-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    76
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    77
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    75
+                ]
+            ]
+        ]
+    },
+    "layer0-head10": {
+        "name": "layer0-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    148
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    151
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    145
+                ]
+            ]
+        ]
+    },
+    "layer0-head11": {
+        "name": "layer0-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -16
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -22
+                ]
+            ]
+        ]
+    },
+    "layer1-head0": {
+        "name": "layer1-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    16
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ]
+            ]
+        ]
+    },
+    "layer1-head1": {
+        "name": "layer1-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -36
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -32
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -41
+                ]
+            ]
+        ]
+    },
+    "layer1-head2": {
+        "name": "layer1-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -43
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -42
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -44
+                ]
+            ]
+        ]
+    },
+    "layer1-head3": {
+        "name": "layer1-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    16
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    16
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    15
+                ]
+            ]
+        ]
+    },
+    "layer1-head4": {
+        "name": "layer1-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -24
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -20
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -28
+                ]
+            ]
+        ]
+    },
+    "layer1-head5": {
+        "name": "layer1-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ]
+            ]
+        ]
+    },
+    "layer1-head6": {
+        "name": "layer1-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ]
+            ]
+        ]
+    },
+    "layer1-head7": {
+        "name": "layer1-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    28
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    30
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    26
+                ]
+            ]
+        ]
+    },
+    "layer1-head8": {
+        "name": "layer1-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    13
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    10
+                ]
+            ]
+        ]
+    },
+    "layer1-head9": {
+        "name": "layer1-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    63
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    64
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    61
+                ]
+            ]
+        ]
+    },
+    "layer1-head10": {
+        "name": "layer1-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    16
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    16
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    17
+                ]
+            ]
+        ]
+    },
+    "layer1-head11": {
+        "name": "layer1-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -51
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -60
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -40
+                ]
+            ]
+        ]
+    },
+    "layer2-head0": {
+        "name": "layer2-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    20
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    21
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    20
+                ]
+            ]
+        ]
+    },
+    "layer2-head1": {
+        "name": "layer2-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -15
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -15
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ]
+            ]
+        ]
+    },
+    "layer2-head2": {
+        "name": "layer2-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    25
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    27
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    23
+                ]
+            ]
+        ]
+    },
+    "layer2-head3": {
+        "name": "layer2-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    23
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    23
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    23
+                ]
+            ]
+        ]
+    },
+    "layer2-head4": {
+        "name": "layer2-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer2-head5": {
+        "name": "layer2-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    51
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    51
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    51
+                ]
+            ]
+        ]
+    },
+    "layer2-head6": {
+        "name": "layer2-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer2-head7": {
+        "name": "layer2-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    25
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    26
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    24
+                ]
+            ]
+        ]
+    },
+    "layer2-head8": {
+        "name": "layer2-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ]
+            ]
+        ]
+    },
+    "layer2-head9": {
+        "name": "layer2-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ]
+            ]
+        ]
+    },
+    "layer2-head10": {
+        "name": "layer2-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ]
+            ]
+        ]
+    },
+    "layer2-head11": {
+        "name": "layer2-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -11
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -11
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ]
+            ]
+        ]
+    },
+    "layer3-head0": {
+        "name": "layer3-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    17
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    18
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    17
+                ]
+            ]
+        ]
+    },
+    "layer3-head1": {
+        "name": "layer3-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ]
+            ]
+        ]
+    },
+    "layer3-head2": {
+        "name": "layer3-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer3-head3": {
+        "name": "layer3-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -13
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -11
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -15
+                ]
+            ]
+        ]
+    },
+    "layer3-head4": {
+        "name": "layer3-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -15
+                ]
+            ]
+        ]
+    },
+    "layer3-head5": {
+        "name": "layer3-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ]
+            ]
+        ]
+    },
+    "layer3-head6": {
+        "name": "layer3-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer3-head7": {
+        "name": "layer3-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ]
+    },
+    "layer3-head8": {
+        "name": "layer3-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    40
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    41
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    39
+                ]
+            ]
+        ]
+    },
+    "layer3-head9": {
+        "name": "layer3-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -29
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -28
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -30
+                ]
+            ]
+        ]
+    },
+    "layer3-head10": {
+        "name": "layer3-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -36
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -34
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -39
+                ]
+            ]
+        ]
+    },
+    "layer3-head11": {
+        "name": "layer3-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    18
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    19
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    18
+                ]
+            ]
+        ]
+    },
+    "layer4-head0": {
+        "name": "layer4-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ]
+    },
+    "layer4-head1": {
+        "name": "layer4-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ]
+            ]
+        ]
+    },
+    "layer4-head2": {
+        "name": "layer4-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    33
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    32
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    33
+                ]
+            ]
+        ]
+    },
+    "layer4-head3": {
+        "name": "layer4-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    24
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    26
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    21
+                ]
+            ]
+        ]
+    },
+    "layer4-head4": {
+        "name": "layer4-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -20
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -17
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -22
+                ]
+            ]
+        ]
+    },
+    "layer4-head5": {
+        "name": "layer4-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -19
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -18
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -19
+                ]
+            ]
+        ]
+    },
+    "layer4-head6": {
+        "name": "layer4-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -25
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -27
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -24
+                ]
+            ]
+        ]
+    },
+    "layer4-head7": {
+        "name": "layer4-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -25
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -26
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -24
+                ]
+            ]
+        ]
+    },
+    "layer4-head8": {
+        "name": "layer4-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -15
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -13
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -18
+                ]
+            ]
+        ]
+    },
+    "layer4-head9": {
+        "name": "layer4-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -11
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -9
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -12
+                ]
+            ]
+        ]
+    },
+    "layer4-head10": {
+        "name": "layer4-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer4-head11": {
+        "name": "layer4-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer5-head0": {
+        "name": "layer5-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    14
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    15
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    14
+                ]
+            ]
+        ]
+    },
+    "layer5-head1": {
+        "name": "layer5-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -21
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -22
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -21
+                ]
+            ]
+        ]
+    },
+    "layer5-head2": {
+        "name": "layer5-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    31
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    31
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    30
+                ]
+            ]
+        ]
+    },
+    "layer5-head3": {
+        "name": "layer5-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer5-head4": {
+        "name": "layer5-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -16
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -18
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ]
+            ]
+        ]
+    },
+    "layer5-head5": {
+        "name": "layer5-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    13
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    14
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ]
+    },
+    "layer5-head6": {
+        "name": "layer5-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    10
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ]
+            ]
+        ]
+    },
+    "layer5-head7": {
+        "name": "layer5-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                "GC"
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer5-head8": {
+        "name": "layer5-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer5-head9": {
+        "name": "layer5-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer5-head10": {
+        "name": "layer5-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ]
+            ]
+        ]
+    },
+    "layer5-head11": {
+        "name": "layer5-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    31
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    32
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    30
+                ]
+            ]
+        ]
+    },
+    "layer6-head0": {
+        "name": "layer6-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ]
+            ]
+        ]
+    },
+    "layer6-head1": {
+        "name": "layer6-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    15
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    17
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    14
+                ]
+            ]
+        ]
+    },
+    "layer6-head2": {
+        "name": "layer6-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ]
+            ]
+        ]
+    },
+    "layer6-head3": {
+        "name": "layer6-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ]
+            ]
+        ]
+    },
+    "layer6-head4": {
+        "name": "layer6-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ]
+            ]
+        ]
+    },
+    "layer6-head5": {
+        "name": "layer6-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    10
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ]
+            ]
+        ]
+    },
+    "layer6-head6": {
+        "name": "layer6-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer6-head7": {
+        "name": "layer6-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    20
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    22
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    19
+                ]
+            ]
+        ]
+    },
+    "layer6-head8": {
+        "name": "layer6-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ]
+            ]
+        ]
+    },
+    "layer6-head9": {
+        "name": "layer6-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    14
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    17
+                ]
+            ]
+        ]
+    },
+    "layer6-head10": {
+        "name": "layer6-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ]
+            ]
+        ]
+    },
+    "layer6-head11": {
+        "name": "layer6-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer7-head0": {
+        "name": "layer7-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    29
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    30
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    28
+                ]
+            ]
+        ]
+    },
+    "layer7-head1": {
+        "name": "layer7-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    26
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    26
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    26
+                ]
+            ]
+        ]
+    },
+    "layer7-head2": {
+        "name": "layer7-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ]
+    },
+    "layer7-head3": {
+        "name": "layer7-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -24
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -22
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -25
+                ]
+            ]
+        ]
+    },
+    "layer7-head4": {
+        "name": "layer7-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ]
+            ]
+        ]
+    },
+    "layer7-head5": {
+        "name": "layer7-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ]
+            ]
+        ]
+    },
+    "layer7-head6": {
+        "name": "layer7-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ]
+            ]
+        ]
+    },
+    "layer7-head7": {
+        "name": "layer7-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    13
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ]
+            ]
+        ]
+    },
+    "layer7-head8": {
+        "name": "layer7-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ]
+            ]
+        ]
+    },
+    "layer7-head9": {
+        "name": "layer7-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    23
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    22
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    23
+                ]
+            ]
+        ]
+    },
+    "layer7-head10": {
+        "name": "layer7-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -17
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -17
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -17
+                ]
+            ]
+        ]
+    },
+    "layer7-head11": {
+        "name": "layer7-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    24
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    25
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    24
+                ]
+            ]
+        ]
+    },
+    "layer8-head0": {
+        "name": "layer8-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ]
+            ]
+        ]
+    },
+    "layer8-head1": {
+        "name": "layer8-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    15
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    15
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    14
+                ]
+            ]
+        ]
+    },
+    "layer8-head2": {
+        "name": "layer8-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    13
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    16
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ]
+            ]
+        ]
+    },
+    "layer8-head3": {
+        "name": "layer8-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    38
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    38
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    38
+                ]
+            ]
+        ]
+    },
+    "layer8-head4": {
+        "name": "layer8-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -8
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -9
+                ]
+            ]
+        ]
+    },
+    "layer8-head5": {
+        "name": "layer8-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    31
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    34
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    28
+                ]
+            ]
+        ]
+    },
+    "layer8-head6": {
+        "name": "layer8-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    14
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    14
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    14
+                ]
+            ]
+        ]
+    },
+    "layer8-head7": {
+        "name": "layer8-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    13
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ]
+            ]
+        ]
+    },
+    "layer8-head8": {
+        "name": "layer8-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -9
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -8
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -9
+                ]
+            ]
+        ]
+    },
+    "layer8-head9": {
+        "name": "layer8-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    40
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    42
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    37
+                ]
+            ]
+        ]
+    },
+    "layer8-head10": {
+        "name": "layer8-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ]
+            ]
+        ]
+    },
+    "layer8-head11": {
+        "name": "layer8-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    15
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    17
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    13
+                ]
+            ]
+        ]
+    },
+    "layer9-head0": {
+        "name": "layer9-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    39
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    40
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    37
+                ]
+            ]
+        ]
+    },
+    "layer9-head1": {
+        "name": "layer9-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -53
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -50
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -55
+                ]
+            ]
+        ]
+    },
+    "layer9-head2": {
+        "name": "layer9-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ]
+            ]
+        ]
+    },
+    "layer9-head3": {
+        "name": "layer9-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -22
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -18
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -25
+                ]
+            ]
+        ]
+    },
+    "layer9-head4": {
+        "name": "layer9-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    40
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    41
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    40
+                ]
+            ]
+        ]
+    },
+    "layer9-head5": {
+        "name": "layer9-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    15
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    15
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    14
+                ]
+            ]
+        ]
+    },
+    "layer9-head6": {
+        "name": "layer9-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -64
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -65
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -63
+                ]
+            ]
+        ]
+    },
+    "layer9-head7": {
+        "name": "layer9-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ]
+            ]
+        ]
+    },
+    "layer9-head8": {
+        "name": "layer9-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    40
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    41
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    40
+                ]
+            ]
+        ]
+    },
+    "layer9-head9": {
+        "name": "layer9-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ]
+            ]
+        ]
+    },
+    "layer9-head10": {
+        "name": "layer9-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ]
+            ]
+        ]
+    },
+    "layer9-head11": {
+        "name": "layer9-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ]
+    },
+    "layer10-head0": {
+        "name": "layer10-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    16
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    16
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    16
+                ]
+            ]
+        ]
+    },
+    "layer10-head1": {
+        "name": "layer10-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    156
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    161
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    151
+                ]
+            ]
+        ]
+    },
+    "layer10-head2": {
+        "name": "layer10-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ]
+            ]
+        ]
+    },
+    "layer10-head3": {
+        "name": "layer10-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -9
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -8
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -11
+                ]
+            ]
+        ]
+    },
+    "layer10-head4": {
+        "name": "layer10-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    115
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    117
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    113
+                ]
+            ]
+        ]
+    },
+    "layer10-head5": {
+        "name": "layer10-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -123
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -125
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -121
+                ]
+            ]
+        ]
+    },
+    "layer10-head6": {
+        "name": "layer10-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ]
+            ]
+        ]
+    },
+    "layer10-head7": {
+        "name": "layer10-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    28
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    30
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    27
+                ]
+            ]
+        ]
+    },
+    "layer10-head8": {
+        "name": "layer10-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -12
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ]
+            ]
+        ]
+    },
+    "layer10-head9": {
+        "name": "layer10-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    15
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    10
+                ]
+            ]
+        ]
+    },
+    "layer10-head10": {
+        "name": "layer10-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer10-head11": {
+        "name": "layer10-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -80
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -82
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -78
+                ]
+            ]
+        ]
+    },
+    "layer11-head0": {
+        "name": "layer11-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -8
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ]
+            ]
+        ]
+    },
+    "layer11-head1": {
+        "name": "layer11-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ]
+            ]
+        ]
+    },
+    "layer11-head2": {
+        "name": "layer11-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer11-head3": {
+        "name": "layer11-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    18
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    19
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    16
+                ]
+            ]
+        ]
+    },
+    "layer11-head4": {
+        "name": "layer11-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -17
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -17
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -17
+                ]
+            ]
+        ]
+    },
+    "layer11-head5": {
+        "name": "layer11-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ]
+            ]
+        ]
+    },
+    "layer11-head6": {
+        "name": "layer11-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ]
+            ]
+        ]
+    },
+    "layer11-head7": {
+        "name": "layer11-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    15
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    19
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ]
+            ]
+        ]
+    },
+    "layer11-head8": {
+        "name": "layer11-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    19
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    21
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    16
+                ]
+            ]
+        ]
+    },
+    "layer11-head9": {
+        "name": "layer11-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -33
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -29
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -36
+                ]
+            ]
+        ]
+    },
+    "layer11-head10": {
+        "name": "layer11-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer11-head11": {
+        "name": "layer11-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ]
+            ]
+        ],
+        "TATA motif_sentences": [
+            [
+                [
+                    "GC",
+                    -13
+                ]
+            ]
+        ],
+        "non-TATA_sentences": [
+            [
+                [
+                    "GC",
+                    -16
+                ]
+            ]
+        ]
+    }
+}

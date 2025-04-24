@@ -1,0 +1,4 @@
+Model	Accuracy	ROC AUC
+Baseline	0.9945	1.0
+TATA-kmer Important Heads Ablated	0.5315	0.5512159999999999
+TATA-kmer Unimportant Heads Ablated	0.648	0.7238169999999999
