@@ -11,99 +11,126 @@ def calculate_z_scores(real_df, distribution_folder):
     if not files:
         raise FileNotFoundError("No coefficient files found in the distribution folder.")
     
-    dfs = [pd.read_csv(os.path.join(distribution_folder, file), index_col=0) for file in files]
-    dist_df = pd.concat(dfs, axis=1)
-    dist_df = dist_df[[col for col in dist_df.columns if 'position' not in col]]
+    print(f"Found {len(files)} distribution files in {distribution_folder}")
     
-    z_scores = pd.DataFrame(index=real_df.index)  # dataFrame to store Z-scores
-    for feature in real_df.columns:
-        mean = dist_df[feature].mean(axis=1)
-        std = dist_df[feature].std(axis=1)
-        std[std == 0] = np.nan  # 0 standard deviations with NaN to avoid division by zero
-        z_scores[feature] = (real_df[feature] - mean) / std  # Z-score per feature
-        # nonsignificant coefficients to 0 before normalization
+    try:
+        dfs = [pd.read_csv(os.path.join(distribution_folder, file), index_col=0) for file in files]
+        dist_df = pd.concat(dfs, axis=1)
+        dist_df = dist_df[[col for col in dist_df.columns if 'position' not in col]]
+        
+        z_scores = pd.DataFrame(index=real_df.index)  # dataFrame to store Z-scores
+        for feature in real_df.columns:
+            # Check if feature exists in distribution dataframe
+            if feature in dist_df.columns:
+                mean = dist_df[feature].mean(axis=1)
+                std = dist_df[feature].std(axis=1)
+                
+                # Handle zero standard deviations
+                std[std == 0] = np.nan  # 0 standard deviations with NaN to avoid division by zero
+                
+                # Calculate z-scores with protection against NaN and inf values
+                z_scores[feature] = (real_df[feature] - mean) / std
+                
+                # Report statistics
+                nan_count = z_scores[feature].isna().sum()
+                inf_count = np.isinf(z_scores[feature]).sum()
+                print(f"Feature {feature}: {nan_count} NaN values, {inf_count} infinite values")
+            else:
+                print(f"Warning: Feature '{feature}' not found in distribution data, skipping")
+                z_scores[feature] = np.nan
+    
+    except Exception as e:
+        print(f"Error during Z-score calculation: {str(e)}")
+        # Return empty dataframe with same structure as real_df
+        return pd.DataFrame(index=real_df.index, columns=real_df.columns)
 
     return z_scores
 
-
-
-def format_json(df):
-    bio_features = [col for col in df.columns if col not in ('layer_head') and 'position' not in col]
-    json_structure = {}
-
-    for layer_head, series in df.iterrows():
-        series_dict = {key: (int(value) if isinstance(value, np.integer) else value) for key, value in series.to_dict().items()}
-        # coefficients that are not significantly different from zero or abs(coef) <= 4 removed
-        non_zero_coeffs = {k: v for k, v in series_dict.items() if abs(v) > 4 and k in bio_features}
-        #do not include position...
-        sentences = [[feature if abs(series_dict[feature]) <= 4 else [feature, series_dict[feature]] for feature in bio_features if 'position' not in feature]]
-        
-        json_structure[layer_head] = {
-            "name": layer_head,
-            "given_name": "...",
-            "explanation": "The main thing this head does is find...",
-            "sentences": sentences
-        }
-
-    json_output = json.dumps(json_structure, indent=4)
-    return json_output
-
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--coef_path", type=str, help="Path to the coefficients CSV")
-    parser.add_argument("--pval_path", type=str, help="Path to the p-values CSV")
-    parser.add_argument("--adj_pval_path", type=str, help="Path to the adjusted p-values CSV")
-    parser.add_argument("--full_path", default = "/scratch/ssd004/scratch/mconsens/genome-head-interpreter/head-explainer/", type=str, help="The full path to the output directory")
-    parser.add_argument("--model_name", default="DNABERT", type=str, help="The model being explained")
+    parser.add_argument(
+        "--data_path",
+        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/coef/",
+        type=str,
+        help="The path to the data",
+    )
+    parser.add_argument(
+        "--full_path",
+        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/head-explainer/",
+        type=str,
+        help="The full path to the output directory",
+    )
+    parser.add_argument(
+        "--model_name",
+        default="DNABERT_TATA",
+        type=str,
+        help="The model being explained",
+    )
+    parser.add_argument(
+        "--model_subtype",
+        default="finetuned",
+        type=str,
+        choices=["random_init", "random", "pretrained", "finetuned"],
+        help="The model subtype being explained",
+    )
     args = parser.parse_args()
 
-    real_coef_path = args.coef_path
+    data_path = args.data_path
     full_path = args.full_path
     model_name = args.model_name
+    model_subtype = args.model_subtype
     
-    model_name_to_folder = {
-        'DNABERT': 'DNABERT',
-        'DNABERT_pretrained': 'DNABERT_pretrained',
-        'DNABERT_random': 'DNABERT_random',
-        'DNABERT_random_init': 'DNABERT_random_init',
-        'enformer': 'enformer',
-        'enformer_random_init': 'enformer_random_init',
+    #make sure if model_subtype selected as "random", the model_name is DNABERT_TATA or DNABERT_enhancer
+    if args.model_subtype == "random":
+        assert args.model_name == "DNABERT_TATA" or args.model_name == "DNABERT_enhancers", "Model name should be DNABERT_TATA or DNABERT_enhancers"
+    
+    # Path to the coefficient file
+    coef_path = f'{data_path}{model_name}/{model_subtype}_results.csv'
+    
+    # Model to distribution folder mapping
+    model_to_folder = {
+        'DNABERT_TATA': 'DNABERT_TATA',
+        'DNABERT_fake_TATA': 'DNABERT_fake_TATA',
+        'DNABERT_enhancers': 'DNABERT_enhancers',
         'scgpt_ms': 'scgpt_ms',
-        'scgpt_ms_random_init': 'scgpt_ms_random_init',
-        'scgpt_ms_pretrained': 'scgpt_ms_pretrained',
         'scgpt_pancreas': 'scgpt_pancreas',
-        'scgpt_pancreas_random_init': 'scgpt_pancreas_random_init',
-        'scgpt_pancreas_pretrained': 'scgpt_pancreas_pretrained',
+        'NT_fake_TATA': 'NT_fake_TATA',
+        'NT_TATA': 'NT_TATA',
+        'NT_enhancers': 'NT_enhancers'
     }
-
-    model_name = args.model_name
-    print("THE MODEL NAME IS:", model_name)
-    folder = model_name_to_folder.get(model_name, 'scgpt_pancreas')
-    print("THE FOLDER NAME IS:", folder)
-    distribution_folder = f'{full_path}/data/distributions/{folder}/'
-
-    real_coef_df = pd.read_csv(real_coef_path, index_col=0)
-    # exclude positional columns from real_coef_df
+    
+    # Get folder for distribution data
+    folder = model_to_folder.get(model_name, model_name)
+    distribution_folder = f'{full_path}/preprocessing/data/distributions/{folder}/'
+    
+    # Read coefficient data
+    real_coef_df = pd.read_csv(coef_path, index_col=0)
+    # exclude positional columns
     real_coef_df = real_coef_df[[col for col in real_coef_df.columns if 'position' not in col]]
 
-
+    # Calculate Z-scores
     z_scores = calculate_z_scores(real_coef_df, distribution_folder)
 
-
-    os.makedirs(f'{full_path}/data/plots/{model_name}', exist_ok=True)
-    #plot the Z_scores and save the plots to this directory
-
-    # plot the Z_scores and save the plots to this directory
-    for feature in z_scores.columns:
-        plt.figure()
-        z_scores[feature].plot(kind='hist', rwidth=0.8)
-        plt.title(f'Z-scores for {feature}')
+    # Create output directory
+    os.makedirs(f'{full_path}/preprocessing/data/plots/{model_name}/', exist_ok=True)
+    
+    # Only plot if model_subtype is "finetuned"
+    if model_subtype == "finetuned":
+        # Plot all features on the same plot
+        plt.figure(figsize=(12, 8))
+        for feature in z_scores.columns:
+            plt.hist(z_scores[feature], alpha=0.5, bins=20, label=feature)
+        
+        plt.title(f'Z-scores Distribution for {model_name} ({model_subtype})')
         plt.xlabel('Z-score')
         plt.ylabel('Frequency')
-        #if feature name has "/" in it, replace with + so filename is safe
-        feature = feature.replace("/", "+")
-        plt.savefig(f'{full_path}/data/plots/{model_name}/{feature}_z_scores.png')
+        plt.legend(loc='upper right')
+        plt.tight_layout()
+        plt.savefig(f'{full_path}/preprocessing/data/plots/{model_name}/{model_subtype}_all_features_z_scores.png')
         plt.close()
+    
+    # Save Z-scores to file
+    z_scores.to_csv(f'{full_path}/preprocessing/data/plots/{model_name}/{model_subtype}_z_scores.csv')
 
 if __name__ == "__main__":
     main()

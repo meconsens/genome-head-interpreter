@@ -4,13 +4,13 @@ import argparse
 import os
 from concurrent.futures import ProcessPoolExecutor
 from scipy import stats
-from config_functions import configure_DNABERT, configure_scgpt
+from config_functions import configure_DNABERT, configure_scgpt, configure_nucleotide_transformer
 import json
 
 
-def extract_and_calculate_correlations_for_feature(df, feature, seq_len, attention_score_columns, output_folder, model_name, identifier, seq_id_csv):
+def extract_and_calculate_correlations_for_feature(df, feature, seq_len, attention_score_columns, output_folder, model_name, model_subtype, identifier, seq_id_csv):
     print(f"\nExtracting attention score subsequences and correlations for feature: {feature}")
-    window_size = 200  # window size
+    window_size = 50  # window size
 
     if feature not in df.columns:
         print(f"Warning: Feature '{feature}' not found in DataFrame")
@@ -21,12 +21,12 @@ def extract_and_calculate_correlations_for_feature(df, feature, seq_len, attenti
 
     saved_example_count = 0  # examples per feature
     seq_info_list = []  # store seq_id and actual feature value information
-    if model_name in ['DNABERT', 'DNABERT_pretrained', 'DNABERT_random', 'DNABERT_random_init']:
+    if "DNABERT" in model_name or "NT" in model_name:
         seq_len_list = seq_len 
     # per sequence
     for index, row in df.iterrows():
         #if model name contains DNABERT, get the seq_len from the list
-        if model_name in ['DNABERT', 'DNABERT_pretrained', 'DNABERT_random', 'DNABERT_random_init']:
+        if "DNABERT" in model_name or "NT" in model_name:
             seq_len = seq_len_list[index]
         if saved_example_count >= 200:
             print(f"Reached 200 examples for feature {feature}. Stopping further processing for this feature.")
@@ -56,6 +56,10 @@ def extract_and_calculate_correlations_for_feature(df, feature, seq_len, attenti
             #centre max variance, don't go out of bounds
             center_position = max(0, max_var_index + var_window // 2)
 
+            # Fixing missing variable definition
+            subsequence_start = max(0, center_position - window_size // 2)
+            subsequence_end = min(seq_len, center_position + window_size // 2)
+            
             print(f"Most variable region: {feature_values[subsequence_start:subsequence_end]}")
 
         else:
@@ -81,6 +85,10 @@ def extract_and_calculate_correlations_for_feature(df, feature, seq_len, attenti
             elif subsequence_end == seq_len:
                 subsequence_start = max(0, seq_len - window_size)
 
+        # Handle the case where 'start' and 'end' might be undefined in some code paths
+        if 'start' not in locals() or 'end' not in locals():
+            start = subsequence_start
+            end = subsequence_end
 
         feature_length = end - start
         left_flank = max(0, start - subsequence_start)
@@ -131,7 +139,7 @@ def extract_and_calculate_correlations_for_feature(df, feature, seq_len, attenti
     feature_name = feature.replace("/", "+")
     #ensure os.mkdir exist
     os.makedirs(f'{output_folder}/{model_name}', exist_ok=True)
-    output_csv = os.path.join(output_folder, f'{model_name}/{feature_name}_correlations.csv')
+    output_csv = os.path.join(output_folder, f'{model_name}/{model_subtype}_{feature_name}_correlations.csv')
     feature_coef_df.to_csv(output_csv, index=False)
     print(f"Saved correlation coefficients for feature {feature} to {output_csv}")
     print(f"Saved example count:{saved_example_count}")
@@ -143,48 +151,91 @@ def extract_and_calculate_correlations_for_feature(df, feature, seq_len, attenti
     return output_csv
 
 
-def process_feature_in_parallel(config, feature, output_folder, model_name, identifier, seq_id_csv):
-    return extract_and_calculate_correlations_for_feature(config['transformed_df'], feature, config['seq_length'], config['attention_score_columns'], output_folder, model_name, identifier, seq_id_csv)
+def process_feature_in_parallel(config, feature, output_folder, model_name, model_subtype, identifier, seq_id_csv):
+    return extract_and_calculate_correlations_for_feature(config['transformed_df'], feature, config['seq_length'], config['attention_score_columns'], output_folder, model_name, model_subtype, identifier, seq_id_csv)
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--data_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/scores/DNABERT_scores.csv",
+        default="",
         type=str,
-        help="The path to the data",
+        help="The path to the data (optional, constructed from model_name and subtype if not provided)",
     )
     parser.add_argument(
         "--full_path",
         default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/",
         type=str,
-        help="The full path to the collect_coef.py file",
+        help="The full path to the script directory",
     )
     parser.add_argument(
         "--model_name",
-        default="DNABERT",
+        default="DNABERT_TATA",
         type=str,
         help="The model being explained",
     )
+    parser.add_argument(
+        "--model_subtype",
+        default="finetuned",
+        type=str,
+        choices=["random_init", "random", "pretrained", "finetuned"],
+        help="The model subtype being explained",
+    )
     args = parser.parse_args()
 
-    data_path = args.data_path
     full_path = args.full_path
-    model = args.model_name
+    model_name = args.model_name
+    model_subtype = args.model_subtype
+
+    #make sure if model_subtype selected as "random", the model_name is DNABERT_TATA or DNABERT_enhancer
+    if args.model_subtype == "random":
+        assert args.model_name == "DNABERT_TATA" or args.model_name == "DNABERT_enhancers", "Model name should be DNABERT_TATA or DNABERT_enhancers"
+    
+    
+    # Build data_path if not provided
+    if not args.data_path:
+        data_path = f'{full_path}/data/scores/{model_name}/{model_name}_{model_subtype}_scores.csv'
+    else:
+        data_path = args.data_path
+    
+    print(f"Using data path: {data_path}")
     
     df = pd.read_csv(data_path, sep=';')
+
+
     
-    # configs
+    # Check for and drop _minmax columns
+    minmax_columns = [col for col in df.columns if '_minmax' in col]
+    if minmax_columns:
+        print(f"Found {len(minmax_columns)} columns with '_minmax' suffix - dropping them")
+        df = df.drop(columns=minmax_columns)
+        print(f"Remaining columns: {len(df.columns)}")
+
     config_functions = {
-        'DNABERT': configure_DNABERT,
-        'DNABERT_pretrained': configure_DNABERT,
-        'DNABERT_random': configure_DNABERT,
-        'DNABERT_random_init': configure_DNABERT,
         'DNABERT_TATA': configure_DNABERT,
+        'DNABERT_enhancers': configure_DNABERT,
+        'scgpt_ms': configure_scgpt,
+        'scgpt_pancreas': configure_scgpt,
+        'NT_TATA': configure_nucleotide_transformer,
+        'NT_enhancers': configure_nucleotide_transformer
     }
 
-    # default to scGPT configurations if model not found
-    config_function = config_functions.get(args.model_name, configure_scgpt)
+    # configs
+    config_functions = {
+        'DNABERT_TATA': configure_DNABERT,
+        'DNABERT_enhancers': configure_DNABERT,
+        'scgpt_ms': configure_scgpt,
+        'scgpt_pancreas': configure_scgpt,
+        'NT_TATA': configure_nucleotide_transformer,
+        'NT_enhancers': configure_nucleotide_transformer
+    }
+
+    # Get the appropriate config function
+    if model_name in config_functions:
+        config_function = config_functions[model_name]
+    else:
+        print(f"Warning: No specific configuration for model {model_name}. Using scGPT configuration.")
+        config_function = configure_scgpt
     
     # configuration for the run
     config = config_function(df)
@@ -206,25 +257,40 @@ def main():
     # do not include biological features containing the word 'position'
     bio_feature_columns = [col for col in bio_feature_columns if 'position' not in col]
 
-    output_folder = f'{full_path}/data/coef/'
-    seq_id_csv = os.path.join(output_folder, f'{model}/{model}_seq_info.csv')
-
+    output_folder = f'{full_path}/data/coef/local/'
+    #makedirs outputfolder
+    os.makedirs(output_folder, exist_ok=True)
+    seq_id_csv = os.path.join(output_folder, f'{model_name}/{model_name}_{model_subtype}_seq_info.csv')
 
     #ensure os.mkdir exist
     os.makedirs(output_folder, exist_ok=True)
+    os.makedirs(f'{output_folder}/{model_name}', exist_ok=True)
 
     # parallelize
     with ProcessPoolExecutor() as executor:
-        futures = [executor.submit(process_feature_in_parallel, config, feature, output_folder, model, seq_column, seq_id_csv) for feature in bio_feature_columns]
+        futures = [executor.submit(
+            process_feature_in_parallel, 
+            config, 
+            feature, 
+            output_folder, 
+            model_name, 
+            model_subtype, 
+            seq_column, 
+            seq_id_csv
+        ) for feature in bio_feature_columns]
         
         # wait for all features to be processed and collect the CSV paths
-        csv_files = [future.result() for future in futures]
+        csv_files = [future.result() for future in futures if future.result() is not None]
+
+    if not csv_files:
+        print("No CSV files were generated. Check if any features were processed successfully.")
+        return
 
     # merge all individual feature CSVs
     merged_df = pd.concat([pd.read_csv(csv) for csv in csv_files], ignore_index=True)
 
     # save
-    final_output_csv = os.path.join(output_folder, f'{model}/coef.csv')
+    final_output_csv = os.path.join(output_folder, f'{model_name}/{model_subtype}_coef.csv')
     merged_df.to_csv(final_output_csv, index=False)
     print(f"Saved combined correlation coefficients to {final_output_csv}")
 

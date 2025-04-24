@@ -204,9 +204,9 @@ def main():
     full_path = args.full_path
     model = args.model_name
     
-    #make sure if model_subtype selected as "random", the model_name is DNABERT_TATA or DNABERT_enhancer
+    #make sure if model_subtype selected as "random", the model_name is DNABERT
     if args.model_subtype == "random":
-        assert args.model_name == "DNABERT_TATA" or args.model_name == "DNABERT_enhancers", "Model name should be DNABERT_TATA or DNABERT_enhancers"
+        assert args.model_name == "DNABERT_TATA" or args.model_name == "DNABERT_enhancers" or args.model_name == "DNABERT_fake_TATA", "Model name should be DNABERT_TATA, DNABERT_fake_TATA, or DNABERT_enhancers"
     
 
     #add model name to the data path
@@ -224,10 +224,12 @@ def main():
     config_functions = {
         'DNABERT_TATA': configure_DNABERT,
         'DNABERT_enhancers': configure_DNABERT,
+        'DNABERT_fake_TATA': configure_DNABERT,
         'scgpt_ms': configure_scgpt,
         'scgpt_pancreas': configure_scgpt,
         'NT_TATA': configure_nucleotide_transformer,
-        'NT_enhancers': configure_nucleotide_transformer
+        'NT_enhancers': configure_nucleotide_transformer,
+        'NT_fake_TATA': configure_nucleotide_transformer,
     }
 
     config_function = config_functions.get(args.model_name)
