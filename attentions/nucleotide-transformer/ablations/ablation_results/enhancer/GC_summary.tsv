@@ -1,0 +1,4 @@
+Model	Accuracy	ROC AUC
+Baseline	0.863	0.939397
+GC Important Heads Ablated	0.508	0.472591
+GC Unimportant Heads Ablated	0.8475	0.9319789999999999
