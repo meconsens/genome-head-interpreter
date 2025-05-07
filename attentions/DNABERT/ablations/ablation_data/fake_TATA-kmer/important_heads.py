@@ -1,654 +1,78 @@
 # Automatically generated head selection for ablation testing
-# Important heads with strong associations to feature 'TATA'
-# ranked by distance_diag (top 50)
+# Important heads with strong associations to feature 'TATAAA'
+# and paired unimportant heads with weak associations to the same feature
 
 important_heads = [
-    {
-        "layer": 10,
-        "head": 1,
-        "name": "Layer10-Head1",
-        "feature": "TATA",
-        "feature_zscore": 0.2826470760176792,
-        "abs_feature_zscore": 0.2826470760176792,
-        "mean_abs_zscore": 0.05652941520353584
-    },
-    {
-        "layer": 9,
-        "head": 8,
-        "name": "Layer9-Head8",
-        "feature": "TATA",
-        "feature_zscore": 0.28112180631424516,
-        "abs_feature_zscore": 0.28112180631424516,
-        "mean_abs_zscore": 0.056224361262849035
-    },
-    {
-        "layer": 7,
-        "head": 1,
-        "name": "Layer7-Head1",
-        "feature": "TATA",
-        "feature_zscore": 0.2084864797562695,
-        "abs_feature_zscore": 0.2084864797562695,
-        "mean_abs_zscore": 0.0416972959512539
-    },
-    {
-        "layer": 7,
-        "head": 9,
-        "name": "Layer7-Head9",
-        "feature": "TATA",
-        "feature_zscore": 0.17951029785767342,
-        "abs_feature_zscore": 0.17951029785767342,
-        "mean_abs_zscore": 0.03590205957153468
-    },
-    {
-        "layer": 7,
-        "head": 5,
-        "name": "Layer7-Head5",
-        "feature": "TATA",
-        "feature_zscore": 0.16745271823421773,
-        "abs_feature_zscore": 0.16745271823421773,
-        "mean_abs_zscore": 0.03349054364684355
-    },
-    {
-        "layer": 7,
-        "head": 3,
-        "name": "Layer7-Head3",
-        "feature": "TATA",
-        "feature_zscore": 0.14857533961429115,
-        "abs_feature_zscore": 0.14857533961429115,
-        "mean_abs_zscore": 0.02971506792285823
-    },
-    {
-        "layer": 10,
-        "head": 6,
-        "name": "Layer10-Head6",
-        "feature": "TATA",
-        "feature_zscore": 0.14803204677862533,
-        "abs_feature_zscore": 0.14803204677862533,
-        "mean_abs_zscore": 0.029606409355725068
-    },
-    {
-        "layer": 10,
-        "head": 9,
-        "name": "Layer10-Head9",
-        "feature": "TATA",
-        "feature_zscore": 0.13296446354157954,
-        "abs_feature_zscore": 0.13296446354157954,
-        "mean_abs_zscore": 0.026592892708315906
-    },
-    {
-        "layer": 8,
-        "head": 9,
-        "name": "Layer8-Head9",
-        "feature": "TATA",
-        "feature_zscore": 0.13100854404992537,
-        "abs_feature_zscore": 0.13100854404992537,
-        "mean_abs_zscore": 0.026201708809985076
-    },
-    {
-        "layer": 9,
-        "head": 7,
-        "name": "Layer9-Head7",
-        "feature": "TATA",
-        "feature_zscore": 0.1293279952819993,
-        "abs_feature_zscore": 0.1293279952819993,
-        "mean_abs_zscore": 0.025865599056399857
-    },
-    {
-        "layer": 10,
-        "head": 5,
-        "name": "Layer10-Head5",
-        "feature": "TATA",
-        "feature_zscore": 0.12697215374040752,
-        "abs_feature_zscore": 0.12697215374040752,
-        "mean_abs_zscore": 0.025394430748081502
-    },
-    {
-        "layer": 9,
-        "head": 0,
-        "name": "Layer9-Head0",
-        "feature": "TATA",
-        "feature_zscore": 0.11583719521595705,
-        "abs_feature_zscore": 0.11583719521595705,
-        "mean_abs_zscore": 0.02316743904319141
-    },
-    {
-        "layer": 9,
-        "head": 4,
-        "name": "Layer9-Head4",
-        "feature": "TATA",
-        "feature_zscore": 0.11314986353206212,
-        "abs_feature_zscore": 0.11314986353206212,
-        "mean_abs_zscore": 0.022629972706412423
-    },
-    {
-        "layer": 8,
-        "head": 6,
-        "name": "Layer8-Head6",
-        "feature": "TATA",
-        "feature_zscore": 0.10983662172324116,
-        "abs_feature_zscore": 0.10983662172324116,
-        "mean_abs_zscore": 0.02196732434464823
-    },
-    {
-        "layer": 8,
-        "head": 5,
-        "name": "Layer8-Head5",
-        "feature": "TATA",
-        "feature_zscore": 0.10922474931465732,
-        "abs_feature_zscore": 0.10922474931465732,
-        "mean_abs_zscore": 0.021844949862931465
-    },
-    {
-        "layer": 9,
-        "head": 5,
-        "name": "Layer9-Head5",
-        "feature": "TATA",
-        "feature_zscore": 0.10483573011169259,
-        "abs_feature_zscore": 0.10483573011169259,
-        "mean_abs_zscore": 0.02096714602233852
-    },
-    {
-        "layer": 9,
-        "head": 6,
-        "name": "Layer9-Head6",
-        "feature": "TATA",
-        "feature_zscore": 0.09876480057846408,
-        "abs_feature_zscore": 0.09876480057846408,
-        "mean_abs_zscore": 0.019752960115692816
-    },
-    {
-        "layer": 7,
-        "head": 7,
-        "name": "Layer7-Head7",
-        "feature": "TATA",
-        "feature_zscore": 0.09056082387333378,
-        "abs_feature_zscore": 0.09056082387333378,
-        "mean_abs_zscore": 0.018112164774666754
-    },
-    {
-        "layer": 9,
-        "head": 2,
-        "name": "Layer9-Head2",
-        "feature": "TATA",
-        "feature_zscore": 0.08805817247443065,
-        "abs_feature_zscore": 0.08805817247443065,
-        "mean_abs_zscore": 0.01761163449488613
-    },
-    {
-        "layer": 6,
-        "head": 11,
-        "name": "Layer6-Head11",
-        "feature": "TATA",
-        "feature_zscore": 0.07891079998085143,
-        "abs_feature_zscore": 0.07891079998085143,
-        "mean_abs_zscore": 0.015782159996170286
-    },
-    {
-        "layer": 8,
-        "head": 10,
-        "name": "Layer8-Head10",
-        "feature": "TATA",
-        "feature_zscore": 0.07819593764137833,
-        "abs_feature_zscore": 0.07819593764137833,
-        "mean_abs_zscore": 0.015639187528275665
-    },
-    {
-        "layer": 10,
-        "head": 0,
-        "name": "Layer10-Head0",
-        "feature": "TATA",
-        "feature_zscore": 0.07694024612510951,
-        "abs_feature_zscore": 0.07694024612510951,
-        "mean_abs_zscore": 0.015388049225021901
-    },
-    {
-        "layer": 7,
-        "head": 0,
-        "name": "Layer7-Head0",
-        "feature": "TATA",
-        "feature_zscore": 0.07438824309116854,
-        "abs_feature_zscore": 0.07438824309116854,
-        "mean_abs_zscore": 0.014877648618233708
-    },
-    {
-        "layer": 2,
-        "head": 4,
-        "name": "Layer2-Head4",
-        "feature": "TATA",
-        "feature_zscore": 0.07146994722621962,
-        "abs_feature_zscore": 0.07146994722621962,
-        "mean_abs_zscore": 0.014293989445243923
-    },
-    {
-        "layer": 9,
-        "head": 1,
-        "name": "Layer9-Head1",
-        "feature": "TATA",
-        "feature_zscore": 0.06144697162014314,
-        "abs_feature_zscore": 0.06144697162014314,
-        "mean_abs_zscore": 0.012289394324028629
-    },
-    {
-        "layer": 8,
-        "head": 4,
-        "name": "Layer8-Head4",
-        "feature": "TATA",
-        "feature_zscore": 0.06115437267743864,
-        "abs_feature_zscore": 0.06115437267743864,
-        "mean_abs_zscore": 0.012230874535487728
-    },
-    {
-        "layer": 7,
-        "head": 8,
-        "name": "Layer7-Head8",
-        "feature": "TATA",
-        "feature_zscore": 0.05633772920916401,
-        "abs_feature_zscore": 0.05633772920916401,
-        "mean_abs_zscore": 0.011267545841832802
-    },
-    {
-        "layer": 9,
-        "head": 10,
-        "name": "Layer9-Head10",
-        "feature": "TATA",
-        "feature_zscore": 0.04817602747414084,
-        "abs_feature_zscore": 0.04817602747414084,
-        "mean_abs_zscore": 0.009635205494828169
-    },
-    {
-        "layer": 10,
-        "head": 8,
-        "name": "Layer10-Head8",
-        "feature": "TATA",
-        "feature_zscore": 0.04482494692455456,
-        "abs_feature_zscore": 0.04482494692455456,
-        "mean_abs_zscore": 0.008964989384910912
-    },
-    {
-        "layer": 7,
-        "head": 11,
-        "name": "Layer7-Head11",
-        "feature": "TATA",
-        "feature_zscore": 0.0448182513907207,
-        "abs_feature_zscore": 0.0448182513907207,
-        "mean_abs_zscore": 0.00896365027814414
-    },
-    {
-        "layer": 8,
-        "head": 1,
-        "name": "Layer8-Head1",
-        "feature": "TATA",
-        "feature_zscore": 0.04481222865097811,
-        "abs_feature_zscore": 0.04481222865097811,
-        "mean_abs_zscore": 0.008962445730195622
-    },
-    {
-        "layer": 10,
-        "head": 4,
-        "name": "Layer10-Head4",
-        "feature": "TATA",
-        "feature_zscore": 0.04388465751822753,
-        "abs_feature_zscore": 0.04388465751822753,
-        "mean_abs_zscore": 0.008776931503645505
-    },
-    {
-        "layer": 8,
-        "head": 2,
-        "name": "Layer8-Head2",
-        "feature": "TATA",
-        "feature_zscore": 0.043046385974926486,
-        "abs_feature_zscore": 0.043046385974926486,
-        "mean_abs_zscore": 0.008609277194985297
-    },
-    {
-        "layer": 10,
-        "head": 3,
-        "name": "Layer10-Head3",
-        "feature": "TATA",
-        "feature_zscore": 0.04301444524602811,
-        "abs_feature_zscore": 0.04301444524602811,
-        "mean_abs_zscore": 0.008602889049205623
-    },
-    {
-        "layer": 10,
-        "head": 7,
-        "name": "Layer10-Head7",
-        "feature": "TATA",
-        "feature_zscore": 0.03396819990180872,
-        "abs_feature_zscore": 0.03396819990180872,
-        "mean_abs_zscore": 0.006793639980361745
-    },
-    {
-        "layer": 2,
-        "head": 5,
-        "name": "Layer2-Head5",
-        "feature": "TATA",
-        "feature_zscore": 0.03225022068088274,
-        "abs_feature_zscore": 0.03225022068088274,
-        "mean_abs_zscore": 0.006450044136176549
-    },
-    {
-        "layer": 10,
-        "head": 11,
-        "name": "Layer10-Head11",
-        "feature": "TATA",
-        "feature_zscore": 0.025210362537332526,
-        "abs_feature_zscore": 0.025210362537332526,
-        "mean_abs_zscore": 0.005042072507466505
-    },
-    {
-        "layer": 5,
-        "head": 0,
-        "name": "Layer5-Head0",
-        "feature": "TATA",
-        "feature_zscore": 0.02421991744073796,
-        "abs_feature_zscore": 0.02421991744073796,
-        "mean_abs_zscore": 0.004843983488147592
-    },
-    {
-        "layer": 9,
-        "head": 3,
-        "name": "Layer9-Head3",
-        "feature": "TATA",
-        "feature_zscore": 0.01728498363875378,
-        "abs_feature_zscore": 0.01728498363875378,
-        "mean_abs_zscore": 0.003456996727750756
-    },
-    {
-        "layer": 11,
-        "head": 6,
-        "name": "Layer11-Head6",
-        "feature": "TATA",
-        "feature_zscore": 0.015008940749837354,
-        "abs_feature_zscore": 0.015008940749837354,
-        "mean_abs_zscore": 0.0030017881499674708
-    },
-    {
-        "layer": 7,
-        "head": 10,
-        "name": "Layer7-Head10",
-        "feature": "TATA",
-        "feature_zscore": 0.01429827830777504,
-        "abs_feature_zscore": 0.01429827830777504,
-        "mean_abs_zscore": 0.002859655661555008
-    },
-    {
-        "layer": 11,
-        "head": 7,
-        "name": "Layer11-Head7",
-        "feature": "TATA",
-        "feature_zscore": 0.013700369512653646,
-        "abs_feature_zscore": 0.013700369512653646,
-        "mean_abs_zscore": 0.002740073902530729
-    },
-    {
-        "layer": 11,
-        "head": 3,
-        "name": "Layer11-Head3",
-        "feature": "TATA",
-        "feature_zscore": 0.012743648442477842,
-        "abs_feature_zscore": 0.012743648442477842,
-        "mean_abs_zscore": 0.0025487296884955683
-    },
-    {
-        "layer": 11,
-        "head": 10,
-        "name": "Layer11-Head10",
-        "feature": "TATA",
-        "feature_zscore": 0.012247689232145711,
-        "abs_feature_zscore": 0.012247689232145711,
-        "mean_abs_zscore": 0.0024495378464291424
-    },
-    {
-        "layer": 8,
-        "head": 0,
-        "name": "Layer8-Head0",
-        "feature": "TATA",
-        "feature_zscore": 0.011709177724947938,
-        "abs_feature_zscore": 0.011709177724947938,
-        "mean_abs_zscore": 0.0023418355449895878
-    },
-    {
-        "layer": 9,
-        "head": 9,
-        "name": "Layer9-Head9",
-        "feature": "TATA",
-        "feature_zscore": 0.009886478371176958,
-        "abs_feature_zscore": 0.009886478371176958,
-        "mean_abs_zscore": 0.0019772956742353915
-    },
-    {
-        "layer": 11,
-        "head": 5,
-        "name": "Layer11-Head5",
-        "feature": "TATA",
-        "feature_zscore": 0.009854541035350283,
-        "abs_feature_zscore": 0.009854541035350283,
-        "mean_abs_zscore": 0.001970908207070057
-    },
-    {
-        "layer": 11,
-        "head": 2,
-        "name": "Layer11-Head2",
-        "feature": "TATA",
-        "feature_zscore": 0.009598724979157647,
-        "abs_feature_zscore": 0.009598724979157647,
-        "mean_abs_zscore": 0.0019197449958315294
-    },
-    {
-        "layer": 5,
-        "head": 8,
-        "name": "Layer5-Head8",
-        "feature": "TATA",
-        "feature_zscore": 0.009082942358597482,
-        "abs_feature_zscore": 0.009082942358597482,
-        "mean_abs_zscore": 0.0018165884717194964
-    },
-    {
-        "layer": 8,
-        "head": 8,
-        "name": "Layer8-Head8",
-        "feature": "TATA",
-        "feature_zscore": 0.008545448658348177,
-        "abs_feature_zscore": 0.008545448658348177,
-        "mean_abs_zscore": 0.0017090897316696355
-    },
-    {
-        "layer": 11,
-        "head": 8,
-        "name": "Layer11-Head8",
-        "feature": "TATA",
-        "feature_zscore": 0.006494619271496784,
-        "abs_feature_zscore": 0.006494619271496784,
-        "mean_abs_zscore": 0.001298923854299357
-    },
-    {
-        "layer": 1,
-        "head": 11,
-        "name": "Layer1-Head11",
-        "feature": "TATA",
-        "feature_zscore": 0.006098017115119949,
-        "abs_feature_zscore": 0.006098017115119949,
-        "mean_abs_zscore": 0.0012196034230239898
-    },
-    {
-        "layer": 10,
-        "head": 10,
-        "name": "Layer10-Head10",
-        "feature": "TATA",
-        "feature_zscore": 0.005822775809332727,
-        "abs_feature_zscore": 0.005822775809332727,
-        "mean_abs_zscore": 0.0011645551618665454
-    },
-    {
-        "layer": 3,
-        "head": 3,
-        "name": "Layer3-Head3",
-        "feature": "TATA",
-        "feature_zscore": 0.005723830039746948,
-        "abs_feature_zscore": 0.005723830039746948,
-        "mean_abs_zscore": 0.0011447660079493896
-    },
-    {
-        "layer": 10,
-        "head": 2,
-        "name": "Layer10-Head2",
-        "feature": "TATA",
-        "feature_zscore": 0.004942425404902226,
-        "abs_feature_zscore": 0.004942425404902226,
-        "mean_abs_zscore": 0.000988485080980445
-    },
-    {
-        "layer": 0,
-        "head": 0,
-        "name": "Layer0-Head0",
-        "feature": "TATA",
-        "feature_zscore": 0.004697238066108195,
-        "abs_feature_zscore": 0.004697238066108195,
-        "mean_abs_zscore": 0.000939447613221639
-    },
-    {
-        "layer": 0,
-        "head": 4,
-        "name": "Layer0-Head4",
-        "feature": "TATA",
-        "feature_zscore": 0.003945676326110605,
-        "abs_feature_zscore": 0.003945676326110605,
-        "mean_abs_zscore": 0.000789135265222121
-    },
-    {
-        "layer": 3,
-        "head": 1,
-        "name": "Layer3-Head1",
-        "feature": "TATA",
-        "feature_zscore": 0.0038693240432609213,
-        "abs_feature_zscore": 0.0038693240432609213,
-        "mean_abs_zscore": 0.0007738648086521843
-    },
-    {
-        "layer": 0,
-        "head": 2,
-        "name": "Layer0-Head2",
-        "feature": "TATA",
-        "feature_zscore": 0.003580595394152915,
-        "abs_feature_zscore": 0.003580595394152915,
-        "mean_abs_zscore": 0.000716119078830583
-    },
-    {
-        "layer": 5,
-        "head": 1,
-        "name": "Layer5-Head1",
-        "feature": "TATA",
-        "feature_zscore": 0.003490938071765095,
-        "abs_feature_zscore": 0.003490938071765095,
-        "mean_abs_zscore": 0.000698187614353019
-    },
-    {
-        "layer": 8,
-        "head": 11,
-        "name": "Layer8-Head11",
-        "feature": "TATA",
-        "feature_zscore": 0.003377669058865835,
-        "abs_feature_zscore": 0.003377669058865835,
-        "mean_abs_zscore": 0.000675533811773167
-    },
-    {
-        "layer": 6,
-        "head": 2,
-        "name": "Layer6-Head2",
-        "feature": "TATA",
-        "feature_zscore": 0.003372761814369218,
-        "abs_feature_zscore": 0.003372761814369218,
-        "mean_abs_zscore": 0.0006745523628738436
-    },
-    {
-        "layer": 5,
-        "head": 6,
-        "name": "Layer5-Head6",
-        "feature": "TATA",
-        "feature_zscore": 0.00293311351891806,
-        "abs_feature_zscore": 0.00293311351891806,
-        "mean_abs_zscore": 0.0005866227037836121
-    },
-    {
-        "layer": 6,
-        "head": 7,
-        "name": "Layer6-Head7",
-        "feature": "TATA",
-        "feature_zscore": 0.002261640845588487,
-        "abs_feature_zscore": 0.002261640845588487,
-        "mean_abs_zscore": 0.0004523281691176974
-    },
-    {
-        "layer": 5,
-        "head": 7,
-        "name": "Layer5-Head7",
-        "feature": "TATA",
-        "feature_zscore": 0.002169062918359423,
-        "abs_feature_zscore": 0.002169062918359423,
-        "mean_abs_zscore": 0.0004338125836718846
-    },
-    {
-        "layer": 6,
-        "head": 5,
-        "name": "Layer6-Head5",
-        "feature": "TATA",
-        "feature_zscore": 0.0021610633180883083,
-        "abs_feature_zscore": 0.0021610633180883083,
-        "mean_abs_zscore": 0.00043221266361766165
-    },
-    {
-        "layer": 6,
-        "head": 10,
-        "name": "Layer6-Head10",
-        "feature": "TATA",
-        "feature_zscore": 0.0018966692067757078,
-        "abs_feature_zscore": 0.0018966692067757078,
-        "mean_abs_zscore": 0.00037933384135514157
-    },
-    {
-        "layer": 9,
-        "head": 11,
-        "name": "Layer9-Head11",
-        "feature": "TATA",
-        "feature_zscore": 0.0018917615678425645,
-        "abs_feature_zscore": 0.0018917615678425645,
-        "mean_abs_zscore": 0.0003783523135685129
-    },
-    {
-        "layer": 6,
-        "head": 0,
-        "name": "Layer6-Head0",
-        "feature": "TATA",
-        "feature_zscore": 0.0018639203136123971,
-        "abs_feature_zscore": 0.0018639203136123971,
-        "mean_abs_zscore": 0.0003727840627224794
-    },
-    {
-        "layer": 4,
-        "head": 4,
-        "name": "Layer4-Head4",
-        "feature": "TATA",
-        "feature_zscore": 0.0018128146188066277,
-        "abs_feature_zscore": 0.0018128146188066277,
-        "mean_abs_zscore": 0.00036256292376132555
-    },
-    {
-        "layer": 6,
-        "head": 3,
-        "name": "Layer6-Head3",
-        "feature": "TATA",
-        "feature_zscore": 0.0017047329484126835,
-        "abs_feature_zscore": 0.0017047329484126835,
-        "mean_abs_zscore": 0.0003409465896825367
-    },
-    {
-        "layer": 11,
-        "head": 0,
-        "name": "Layer11-Head0",
-        "feature": "TATA",
-        "feature_zscore": 0.001556646465391567,
-        "abs_feature_zscore": 0.001556646465391567,
-        "mean_abs_zscore": 0.0003113292930783134
-    }
+    {'layer': 9, 'head': 7, 'name': 'Layer9-Head7', 'feature': 'TATAAA', 'feature_zscore': 69.7567079802166, 'abs_feature_zscore': 69.7567079802166, 'mean_abs_zscore': 49.586450389546094},
+    {'layer': 9, 'head': 9, 'name': 'Layer9-Head9', 'feature': 'TATAAA', 'feature_zscore': 65.88442035487124, 'abs_feature_zscore': 65.88442035487124, 'mean_abs_zscore': 67.13793074571943},
+    {'layer': 4, 'head': 6, 'name': 'Layer4-Head6', 'feature': 'TATAAA', 'feature_zscore': -64.50128854557032, 'abs_feature_zscore': 64.50128854557032, 'mean_abs_zscore': 82.15968141998049},
+    {'layer': 6, 'head': 5, 'name': 'Layer6-Head5', 'feature': 'TATAAA', 'feature_zscore': -64.32561500915872, 'abs_feature_zscore': 64.32561500915872, 'mean_abs_zscore': 62.94733188014501},
+    {'layer': 11, 'head': 7, 'name': 'Layer11-Head7', 'feature': 'TATAAA', 'feature_zscore': 62.57377140693495, 'abs_feature_zscore': 62.57377140693495, 'mean_abs_zscore': 59.975730065428735},
+    {'layer': 4, 'head': 9, 'name': 'Layer4-Head9', 'feature': 'TATAAA', 'feature_zscore': -62.42342134986763, 'abs_feature_zscore': 62.42342134986763, 'mean_abs_zscore': 82.8233080988327},
+    {'layer': 11, 'head': 10, 'name': 'Layer11-Head10', 'feature': 'TATAAA', 'feature_zscore': 61.65543208173933, 'abs_feature_zscore': 61.65543208173933, 'mean_abs_zscore': 55.025178107748424},
+    {'layer': 9, 'head': 6, 'name': 'Layer9-Head6', 'feature': 'TATAAA', 'feature_zscore': 61.01117106606255, 'abs_feature_zscore': 61.01117106606255, 'mean_abs_zscore': 66.2785854672841},
+    {'layer': 10, 'head': 10, 'name': 'Layer10-Head10', 'feature': 'TATAAA', 'feature_zscore': 60.23755396001041, 'abs_feature_zscore': 60.23755396001041, 'mean_abs_zscore': 44.6244322469559},
+    {'layer': 10, 'head': 3, 'name': 'Layer10-Head3', 'feature': 'TATAAA', 'feature_zscore': 60.05562315617648, 'abs_feature_zscore': 60.05562315617648, 'mean_abs_zscore': 33.38236482533269},
+    {'layer': 5, 'head': 5, 'name': 'Layer5-Head5', 'feature': 'TATAAA', 'feature_zscore': -59.92424946140366, 'abs_feature_zscore': 59.92424946140366, 'mean_abs_zscore': 85.60465092793866},
+    {'layer': 10, 'head': 11, 'name': 'Layer10-Head11', 'feature': 'TATAAA', 'feature_zscore': 59.71255813617688, 'abs_feature_zscore': 59.71255813617688, 'mean_abs_zscore': 45.90622093601195},
+    {'layer': 4, 'head': 8, 'name': 'Layer4-Head8', 'feature': 'TATAAA', 'feature_zscore': -59.60134324339761, 'abs_feature_zscore': 59.60134324339761, 'mean_abs_zscore': 74.75861585071219},
+    {'layer': 10, 'head': 2, 'name': 'Layer10-Head2', 'feature': 'TATAAA', 'feature_zscore': 59.52113532636229, 'abs_feature_zscore': 59.52113532636229, 'mean_abs_zscore': 37.56201760175595},
+    {'layer': 6, 'head': 6, 'name': 'Layer6-Head6', 'feature': 'TATAAA', 'feature_zscore': 59.11229897425656, 'abs_feature_zscore': 59.11229897425656, 'mean_abs_zscore': 33.645005871617805},
+    {'layer': 11, 'head': 4, 'name': 'Layer11-Head4', 'feature': 'TATAAA', 'feature_zscore': 58.477673717039664, 'abs_feature_zscore': 58.477673717039664, 'mean_abs_zscore': 53.63049612838134},
+    {'layer': 10, 'head': 7, 'name': 'Layer10-Head7', 'feature': 'TATAAA', 'feature_zscore': 58.07188578914131, 'abs_feature_zscore': 58.07188578914131, 'mean_abs_zscore': 48.75188212928091},
+    {'layer': 10, 'head': 0, 'name': 'Layer10-Head0', 'feature': 'TATAAA', 'feature_zscore': 57.886644131799855, 'abs_feature_zscore': 57.886644131799855, 'mean_abs_zscore': 49.91201969092481},
+    {'layer': 6, 'head': 0, 'name': 'Layer6-Head0', 'feature': 'TATAAA', 'feature_zscore': 57.87144792027263, 'abs_feature_zscore': 57.87144792027263, 'mean_abs_zscore': 30.650931506455986},
+    {'layer': 10, 'head': 9, 'name': 'Layer10-Head9', 'feature': 'TATAAA', 'feature_zscore': 57.75542890307318, 'abs_feature_zscore': 57.75542890307318, 'mean_abs_zscore': 60.399117491170436},
+    {'layer': 5, 'head': 8, 'name': 'Layer5-Head8', 'feature': 'TATAAA', 'feature_zscore': 57.72924962934714, 'abs_feature_zscore': 57.72924962934714, 'mean_abs_zscore': 34.55908824824292},
+    {'layer': 9, 'head': 5, 'name': 'Layer9-Head5', 'feature': 'TATAAA', 'feature_zscore': 57.1105880552547, 'abs_feature_zscore': 57.1105880552547, 'mean_abs_zscore': 59.482113892073585},
+    {'layer': 9, 'head': 8, 'name': 'Layer9-Head8', 'feature': 'TATAAA', 'feature_zscore': 57.00682098748744, 'abs_feature_zscore': 57.00682098748744, 'mean_abs_zscore': 60.77552202105257},
+    {'layer': 5, 'head': 1, 'name': 'Layer5-Head1', 'feature': 'TATAAA', 'feature_zscore': 56.97903417382764, 'abs_feature_zscore': 56.97903417382764, 'mean_abs_zscore': 32.68692802773982},
+    {'layer': 9, 'head': 4, 'name': 'Layer9-Head4', 'feature': 'TATAAA', 'feature_zscore': 56.93943279304112, 'abs_feature_zscore': 56.93943279304112, 'mean_abs_zscore': 72.33733713106898},
+    {'layer': 10, 'head': 4, 'name': 'Layer10-Head4', 'feature': 'TATAAA', 'feature_zscore': 56.17971573879183, 'abs_feature_zscore': 56.17971573879183, 'mean_abs_zscore': 50.380210157953435},
+    {'layer': 9, 'head': 1, 'name': 'Layer9-Head1', 'feature': 'TATAAA', 'feature_zscore': 56.03327782600477, 'abs_feature_zscore': 56.03327782600477, 'mean_abs_zscore': 67.46026167679098},
+    {'layer': 9, 'head': 0, 'name': 'Layer9-Head0', 'feature': 'TATAAA', 'feature_zscore': 56.00680138650387, 'abs_feature_zscore': 56.00680138650387, 'mean_abs_zscore': 73.77374116373515},
+    {'layer': 3, 'head': 5, 'name': 'Layer3-Head5', 'feature': 'TATAAA', 'feature_zscore': -55.80726188692001, 'abs_feature_zscore': 55.80726188692001, 'mean_abs_zscore': 55.36648152638431},
+    {'layer': 7, 'head': 4, 'name': 'Layer7-Head4', 'feature': 'TATAAA', 'feature_zscore': -55.56417286288645, 'abs_feature_zscore': 55.56417286288645, 'mean_abs_zscore': 87.96733685183216},
+    {'layer': 10, 'head': 6, 'name': 'Layer10-Head6', 'feature': 'TATAAA', 'feature_zscore': 55.50445101834079, 'abs_feature_zscore': 55.50445101834079, 'mean_abs_zscore': 51.1411434220089},
+    {'layer': 1, 'head': 1, 'name': 'Layer1-Head1', 'feature': 'TATAAA', 'feature_zscore': -55.42793584185514, 'abs_feature_zscore': 55.42793584185514, 'mean_abs_zscore': 28.023015858101996},
+    {'layer': 7, 'head': 5, 'name': 'Layer7-Head5', 'feature': 'TATAAA', 'feature_zscore': 55.41254009206003, 'abs_feature_zscore': 55.41254009206003, 'mean_abs_zscore': 40.60774342070177},
+    {'layer': 3, 'head': 9, 'name': 'Layer3-Head9', 'feature': 'TATAAA', 'feature_zscore': -55.27817417243032, 'abs_feature_zscore': 55.27817417243032, 'mean_abs_zscore': 59.83846738933744},
+    {'layer': 9, 'head': 2, 'name': 'Layer9-Head2', 'feature': 'TATAAA', 'feature_zscore': 55.221379256007886, 'abs_feature_zscore': 55.221379256007886, 'mean_abs_zscore': 65.66609707817878},
+    {'layer': 2, 'head': 11, 'name': 'Layer2-Head11', 'feature': 'TATAAA', 'feature_zscore': -55.127741295372594, 'abs_feature_zscore': 55.127741295372594, 'mean_abs_zscore': 45.24001847198783},
+    {'layer': 3, 'head': 0, 'name': 'Layer3-Head0', 'feature': 'TATAAA', 'feature_zscore': -54.9616443094644, 'abs_feature_zscore': 54.9616443094644, 'mean_abs_zscore': 58.736605848997165},
+    {'layer': 8, 'head': 4, 'name': 'Layer8-Head4', 'feature': 'TATAAA', 'feature_zscore': 54.83907506826628, 'abs_feature_zscore': 54.83907506826628, 'mean_abs_zscore': 53.90534068199279},
+    {'layer': 11, 'head': 1, 'name': 'Layer11-Head1', 'feature': 'TATAAA', 'feature_zscore': 54.74155803637439, 'abs_feature_zscore': 54.74155803637439, 'mean_abs_zscore': 54.39585239336795},
+    {'layer': 3, 'head': 7, 'name': 'Layer3-Head7', 'feature': 'TATAAA', 'feature_zscore': -54.72915856886424, 'abs_feature_zscore': 54.72915856886424, 'mean_abs_zscore': 61.768005383268466},
+    {'layer': 10, 'head': 5, 'name': 'Layer10-Head5', 'feature': 'TATAAA', 'feature_zscore': 54.59823608748791, 'abs_feature_zscore': 54.59823608748791, 'mean_abs_zscore': 52.267278052055396},
+    {'layer': 10, 'head': 1, 'name': 'Layer10-Head1', 'feature': 'TATAAA', 'feature_zscore': 54.5363091810768, 'abs_feature_zscore': 54.5363091810768, 'mean_abs_zscore': 48.37679479714489},
+    {'layer': 3, 'head': 10, 'name': 'Layer3-Head10', 'feature': 'TATAAA', 'feature_zscore': -54.24805467732048, 'abs_feature_zscore': 54.24805467732048, 'mean_abs_zscore': 56.61036784913956},
+    {'layer': 11, 'head': 11, 'name': 'Layer11-Head11', 'feature': 'TATAAA', 'feature_zscore': 54.154036897178855, 'abs_feature_zscore': 54.154036897178855, 'mean_abs_zscore': 46.66362552849717},
+    {'layer': 6, 'head': 1, 'name': 'Layer6-Head1', 'feature': 'TATAAA', 'feature_zscore': 54.07834946111354, 'abs_feature_zscore': 54.07834946111354, 'mean_abs_zscore': 27.651572665478344},
+    {'layer': 2, 'head': 3, 'name': 'Layer2-Head3', 'feature': 'TATAAA', 'feature_zscore': -54.007002786480285, 'abs_feature_zscore': 54.007002786480285, 'mean_abs_zscore': 35.552526526873045},
+    {'layer': 8, 'head': 2, 'name': 'Layer8-Head2', 'feature': 'TATAAA', 'feature_zscore': 53.98569956720582, 'abs_feature_zscore': 53.98569956720582, 'mean_abs_zscore': 52.656845040478856},
+    {'layer': 1, 'head': 5, 'name': 'Layer1-Head5', 'feature': 'TATAAA', 'feature_zscore': -53.97920775394949, 'abs_feature_zscore': 53.97920775394949, 'mean_abs_zscore': 41.27521965179645},
+    {'layer': 5, 'head': 2, 'name': 'Layer5-Head2', 'feature': 'TATAAA', 'feature_zscore': -53.87136327028791, 'abs_feature_zscore': 53.87136327028791, 'mean_abs_zscore': 94.88631333958796},
+    {'layer': 5, 'head': 4, 'name': 'Layer5-Head4', 'feature': 'TATAAA', 'feature_zscore': -53.86892742990025, 'abs_feature_zscore': 53.86892742990025, 'mean_abs_zscore': 74.35643929039007},
+    {'layer': 4, 'head': 5, 'name': 'Layer4-Head5', 'feature': 'TATAAA', 'feature_zscore': 53.70824227012258, 'abs_feature_zscore': 53.70824227012258, 'mean_abs_zscore': 40.22055438288493},
+    {'layer': 8, 'head': 0, 'name': 'Layer8-Head0', 'feature': 'TATAAA', 'feature_zscore': 53.70243051658824, 'abs_feature_zscore': 53.70243051658824, 'mean_abs_zscore': 63.69285885090977},
+    {'layer': 7, 'head': 2, 'name': 'Layer7-Head2', 'feature': 'TATAAA', 'feature_zscore': -53.30379067202748, 'abs_feature_zscore': 53.30379067202748, 'mean_abs_zscore': 57.73522019389005},
+    {'layer': 4, 'head': 4, 'name': 'Layer4-Head4', 'feature': 'TATAAA', 'feature_zscore': 53.224870357738205, 'abs_feature_zscore': 53.224870357738205, 'mean_abs_zscore': 22.326483422488423},
+    {'layer': 2, 'head': 8, 'name': 'Layer2-Head8', 'feature': 'TATAAA', 'feature_zscore': -53.04997699759132, 'abs_feature_zscore': 53.04997699759132, 'mean_abs_zscore': 41.75383671936823},
+    {'layer': 4, 'head': 3, 'name': 'Layer4-Head3', 'feature': 'TATAAA', 'feature_zscore': -53.04239207917463, 'abs_feature_zscore': 53.04239207917463, 'mean_abs_zscore': 71.71245175817735},
+    {'layer': 3, 'head': 1, 'name': 'Layer3-Head1', 'feature': 'TATAAA', 'feature_zscore': 52.70851142107044, 'abs_feature_zscore': 52.70851142107044, 'mean_abs_zscore': 18.4171818212215},
+    {'layer': 10, 'head': 8, 'name': 'Layer10-Head8', 'feature': 'TATAAA', 'feature_zscore': 52.63959304971295, 'abs_feature_zscore': 52.63959304971295, 'mean_abs_zscore': 36.896981776611376},
+    {'layer': 6, 'head': 7, 'name': 'Layer6-Head7', 'feature': 'TATAAA', 'feature_zscore': 52.51093595424731, 'abs_feature_zscore': 52.51093595424731, 'mean_abs_zscore': 35.340635029622035},
+    {'layer': 8, 'head': 6, 'name': 'Layer8-Head6', 'feature': 'TATAAA', 'feature_zscore': 52.44329626323388, 'abs_feature_zscore': 52.44329626323388, 'mean_abs_zscore': 49.033227286120876},
+    {'layer': 8, 'head': 5, 'name': 'Layer8-Head5', 'feature': 'TATAAA', 'feature_zscore': 52.26879677405413, 'abs_feature_zscore': 52.26879677405413, 'mean_abs_zscore': 48.72771289574872},
+    {'layer': 6, 'head': 11, 'name': 'Layer6-Head11', 'feature': 'TATAAA', 'feature_zscore': 52.11944850480605, 'abs_feature_zscore': 52.11944850480605, 'mean_abs_zscore': 31.21460176575982},
+    {'layer': 4, 'head': 2, 'name': 'Layer4-Head2', 'feature': 'TATAAA', 'feature_zscore': -51.958390699766525, 'abs_feature_zscore': 51.958390699766525, 'mean_abs_zscore': 64.83290492614265},
+    {'layer': 1, 'head': 4, 'name': 'Layer1-Head4', 'feature': 'TATAAA', 'feature_zscore': -51.94024067516004, 'abs_feature_zscore': 51.94024067516004, 'mean_abs_zscore': 45.91532243057583},
+    {'layer': 8, 'head': 3, 'name': 'Layer8-Head3', 'feature': 'TATAAA', 'feature_zscore': 51.78992724693716, 'abs_feature_zscore': 51.78992724693716, 'mean_abs_zscore': 32.28926694166548},
+    {'layer': 8, 'head': 11, 'name': 'Layer8-Head11', 'feature': 'TATAAA', 'feature_zscore': 51.56104776441837, 'abs_feature_zscore': 51.56104776441837, 'mean_abs_zscore': 48.4984160392054},
+    {'layer': 8, 'head': 7, 'name': 'Layer8-Head7', 'feature': 'TATAAA', 'feature_zscore': 51.43399037407551, 'abs_feature_zscore': 51.43399037407551, 'mean_abs_zscore': 32.62075766016727},
+    {'layer': 11, 'head': 5, 'name': 'Layer11-Head5', 'feature': 'TATAAA', 'feature_zscore': 51.13245175136884, 'abs_feature_zscore': 51.13245175136884, 'mean_abs_zscore': 57.32403251162595},
+    {'layer': 3, 'head': 11, 'name': 'Layer3-Head11', 'feature': 'TATAAA', 'feature_zscore': -51.09338121194055, 'abs_feature_zscore': 51.09338121194055, 'mean_abs_zscore': 64.2655144713834},
+    {'layer': 1, 'head': 3, 'name': 'Layer1-Head3', 'feature': 'TATAAA', 'feature_zscore': -50.99100423842084, 'abs_feature_zscore': 50.99100423842084, 'mean_abs_zscore': 41.43559149959814},
+    {'layer': 11, 'head': 9, 'name': 'Layer11-Head9', 'feature': 'TATAAA', 'feature_zscore': 50.78688350440298, 'abs_feature_zscore': 50.78688350440298, 'mean_abs_zscore': 50.42276851056467},
+    {'layer': 4, 'head': 7, 'name': 'Layer4-Head7', 'feature': 'TATAAA', 'feature_zscore': -50.58266087154061, 'abs_feature_zscore': 50.58266087154061, 'mean_abs_zscore': 62.00561919333867},
 ]

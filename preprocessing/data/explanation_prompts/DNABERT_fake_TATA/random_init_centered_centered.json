@@ -7,22 +7,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    14
+                ],
+                [
+                    "ATATAA",
+                    5
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    20
+                ],
+                [
+                    "ATATAA",
+                    7
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ]
@@ -35,22 +59,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    8
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ]
@@ -62,23 +110,47 @@
             [
                 [
                     "GC",
-                    3
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -8
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    3
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -12
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    3
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ]
@@ -91,22 +163,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    22
+                ],
+                [
+                    "ATATAA",
+                    9
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    31
+                ],
+                [
+                    "ATATAA",
+                    12
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ]
@@ -119,22 +215,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -8
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -11
+                ],
+                [
+                    "ATATAA",
+                    7
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
                     0
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ]
@@ -147,22 +267,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    13
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    19
+                ],
+                [
+                    "ATATAA",
+                    9
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ]
@@ -174,23 +318,47 @@
             [
                 [
                     "GC",
-                    -8
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    17
+                ],
+                [
+                    "ATATAA",
+                    7
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    25
+                ],
+                [
+                    "ATATAA",
+                    10
+                ]
+            ]
+        ],
+        "0_sentences": [
             [
                 [
                     "GC",
                     -7
-                ]
-            ]
-        ],
-        "non-TATA_sentences": [
-            [
+                ],
                 [
-                    "GC",
-                    -8
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ]
@@ -203,22 +371,46 @@
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ]
@@ -230,23 +422,47 @@
             [
                 [
                     "GC",
-                    -6
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -18
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -24
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    -7
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
                 ]
             ]
         ]
@@ -258,23 +474,47 @@
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -11
+                ],
+                [
+                    "ATATAA",
+                    -11
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     6
+                ],
+                [
+                    "TATAAA",
+                    -16
+                ],
+                [
+                    "ATATAA",
+                    -15
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    3
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ]
@@ -286,23 +526,47 @@
             [
                 [
                     "GC",
-                    -9
+                    -10
+                ],
+                [
+                    "TATAAA",
+                    17
+                ],
+                [
+                    "ATATAA",
+                    11
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -13
+                    -14
+                ],
+                [
+                    "TATAAA",
+                    25
+                ],
+                [
+                    "ATATAA",
+                    14
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    -5
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    8
                 ]
             ]
         ]
@@ -314,23 +578,47 @@
             [
                 [
                     "GC",
-                    2
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
-                [
-                    "GC",
-                    3
-                ]
-            ]
-        ],
-        "non-TATA_sentences": [
-            [
-                [
-                    "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -30
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -43
+                ],
+                [
+                    "ATATAA",
+                    5
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ]
@@ -343,22 +631,46 @@
                 [
                     "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    18
+                ],
+                [
+                    "ATATAA",
+                    -11
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    25
+                ],
+                [
+                    "ATATAA",
+                    -14
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ]
@@ -370,23 +682,47 @@
             [
                 [
                     "GC",
-                    -6
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    -18
+                ],
+                [
+                    "ATATAA",
+                    -14
                 ]
             ]
         ],
-        "TATA motif_sentences": [
-            [
-                [
-                    "GC",
-                    -5
-                ]
-            ]
-        ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -6
+                ],
+                [
+                    "TATAAA",
+                    -25
+                ],
+                [
+                    "ATATAA",
+                    -19
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
                 ]
             ]
         ]
@@ -399,22 +735,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -15
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ]
@@ -427,22 +787,46 @@
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -6
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ]
@@ -455,22 +839,46 @@
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    16
+                ],
+                [
+                    "ATATAA",
+                    -8
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ]
@@ -482,23 +890,47 @@
             [
                 [
                     "GC",
-                    -7
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                    -6
+                ],
                 [
-                    "GC",
+                    "TATAAA",
+                    15
+                ],
+                [
+                    "ATATAA",
                     -6
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    22
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ],
+        "0_sentences": [
             [
                 [
                     "GC",
                     -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ]
@@ -511,21 +943,45 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
                     -1
                 ]
             ]
@@ -539,22 +995,46 @@
                 [
                     "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    5
+                    6
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -567,22 +1047,43 @@
                 [
                     "GC",
                     0
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                ],
                 [
-                    "GC",
+                    "TATAAA",
+                    -44
+                ],
+                [
+                    "ATATAA",
                     0
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -63
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                "TATAAA",
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -595,22 +1096,46 @@
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    44
+                ],
+                [
+                    "ATATAA",
+                    7
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    63
+                ],
+                [
+                    "ATATAA",
+                    10
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ]
@@ -622,23 +1147,47 @@
             [
                 [
                     "GC",
-                    -5
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
-                [
-                    "GC",
                     -6
+                ],
+                [
+                    "TATAAA",
+                    32
+                ],
+                [
+                    "ATATAA",
+                    -10
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -4
+                    -8
+                ],
+                [
+                    "TATAAA",
+                    45
+                ],
+                [
+                    "ATATAA",
+                    -12
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ]
@@ -651,21 +1200,45 @@
                 [
                     "GC",
                     0
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                ],
                 [
-                    "GC",
+                    "TATAAA",
+                    10
+                ],
+                [
+                    "ATATAA",
                     0
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    14
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
                     0
                 ]
             ]
@@ -679,22 +1252,46 @@
                 [
                     "GC",
                     -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    14
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    19
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    7
                 ]
             ]
         ]
@@ -707,22 +1304,46 @@
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    -22
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    -32
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -735,22 +1356,46 @@
                 [
                     "GC",
                     -4
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                ],
                 [
-                    "GC",
-                    -3
+                    "TATAAA",
+                    -26
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    -37
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -762,23 +1407,47 @@
             [
                 [
                     "GC",
-                    7
+                    6
+                ],
+                [
+                    "TATAAA",
+                    40
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    5
+                    4
+                ],
+                [
+                    "TATAAA",
+                    56
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     9
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ]
@@ -791,22 +1460,46 @@
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    -21
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -5
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -30
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ]
@@ -819,22 +1512,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    20
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    27
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    10
                 ]
             ]
         ]
@@ -847,22 +1564,46 @@
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -28
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    2
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -40
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ]
@@ -875,22 +1616,46 @@
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    33
+                ],
+                [
+                    "ATATAA",
+                    17
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    2
+                    1
+                ],
+                [
+                    "TATAAA",
+                    46
+                ],
+                [
+                    "ATATAA",
+                    23
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    10
                 ]
             ]
         ]
@@ -903,22 +1668,46 @@
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    12
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    17
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -931,22 +1720,43 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
+            [
+                "GC",
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    5
+                ]
+            ]
+        ],
+        "0_sentences": [
             [
                 [
                     "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
                     0
-                ]
-            ]
-        ],
-        "non-TATA_sentences": [
-            [
+                ],
                 [
-                    "GC",
-                    -2
+                    "ATATAA",
+                    1
                 ]
             ]
         ]
@@ -959,22 +1769,46 @@
                 [
                     "GC",
                     7
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                ],
                 [
-                    "GC",
-                    6
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    -9
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     7
+                ],
+                [
+                    "TATAAA",
+                    15
+                ],
+                [
+                    "ATATAA",
+                    -11
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ]
@@ -987,22 +1821,46 @@
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    -28
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -1015,21 +1873,45 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    22
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    31
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
                     -1
                 ]
             ]
@@ -1042,23 +1924,47 @@
             [
                 [
                     "GC",
-                    -4
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    -13
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ],
+        "0_sentences": [
             [
                 [
                     "GC",
                     -4
-                ]
-            ]
-        ],
-        "non-TATA_sentences": [
-            [
+                ],
                 [
-                    "GC",
-                    -4
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ]
@@ -1071,22 +1977,46 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -38
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ]
@@ -1099,21 +2029,45 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    -15
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
                     -1
                 ]
             ]
@@ -1127,22 +2081,46 @@
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    16
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    22
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    8
                 ]
             ]
         ]
@@ -1155,21 +2133,45 @@
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    9
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    13
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
                     -2
                 ]
             ]
@@ -1182,23 +2184,47 @@
             [
                 [
                     "GC",
-                    4
+                    3
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    16
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -1210,23 +2236,47 @@
             [
                 [
                     "GC",
-                    -5
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -21
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    -30
+                ],
+                [
+                    "ATATAA",
+                    -8
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ]
@@ -1239,22 +2289,46 @@
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ]
@@ -1267,22 +2341,46 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    38
+                ],
+                [
+                    "ATATAA",
+                    22
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -2
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    53
+                ],
+                [
+                    "ATATAA",
+                    30
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    11
                 ]
             ]
         ]
@@ -1294,23 +2392,47 @@
             [
                 [
                     "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    21
+                ],
+                [
+                    "ATATAA",
+                    9
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    30
+                ],
+                [
+                    "ATATAA",
+                    11
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    -6
-                ]
-            ]
-        ],
-        "non-TATA_sentences": [
-            [
+                    -2
+                ],
                 [
-                    "GC",
-                    -3
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ]
@@ -1323,22 +2445,46 @@
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    -4
+                ],
+                [
+                    "ATATAA",
+                    -17
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -22
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -9
                 ]
             ]
         ]
@@ -1351,22 +2497,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -5
+                ],
+                [
+                    "ATATAA",
+                    -13
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -18
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -7
                 ]
             ]
         ]
@@ -1378,23 +2548,47 @@
             [
                 [
                     "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
                     -6
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -7
+                    -8
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ]
@@ -1407,21 +2601,45 @@
                 [
                     "GC",
                     -2
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                ],
                 [
-                    "GC",
+                    "TATAAA",
+                    9
+                ],
+                [
+                    "ATATAA",
                     -3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    12
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
                     -2
                 ]
             ]
@@ -1434,23 +2652,47 @@
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -11
+                ],
+                [
+                    "ATATAA",
+                    -7
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -16
+                ],
+                [
+                    "ATATAA",
+                    -9
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ]
@@ -1462,23 +2704,47 @@
             [
                 [
                     "GC",
-                    1
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    17
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    23
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    9
                 ]
             ]
         ]
@@ -1490,23 +2756,47 @@
             [
                 [
                     "GC",
-                    -3
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    20
+                ],
+                [
+                    "ATATAA",
+                    17
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -5
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    29
+                ],
+                [
+                    "ATATAA",
+                    23
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    8
                 ]
             ]
         ]
@@ -1518,23 +2808,47 @@
             [
                 [
                     "GC",
-                    8
+                    6
+                ],
+                [
+                    "TATAAA",
+                    23
+                ],
+                [
+                    "ATATAA",
+                    -12
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    8
+                    6
+                ],
+                [
+                    "TATAAA",
+                    32
+                ],
+                [
+                    "ATATAA",
+                    -16
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    8
+                    7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ]
@@ -1547,22 +2861,46 @@
                 [
                     "GC",
                     0
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                ],
                 [
-                    "GC",
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
                     0
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -4
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ]
@@ -1575,22 +2913,46 @@
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -15
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -21
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
                 ]
             ]
         ]
@@ -1603,22 +2965,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -19
+                ],
+                [
+                    "ATATAA",
+                    -7
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ],
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
-                ]
-            ]
-        ],
-        "non-TATA_sentences": [
-            [
+                ],
                 [
-                    "GC",
+                    "TATAAA",
                     0
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ]
@@ -1631,22 +3017,46 @@
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    8
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ]
@@ -1659,22 +3069,46 @@
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -25
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -32
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -12
                 ]
             ]
         ]
@@ -1687,22 +3121,46 @@
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -8
+                ],
+                [
+                    "ATATAA",
+                    12
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -11
+                ],
+                [
+                    "ATATAA",
+                    15
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    7
                 ]
             ]
         ]
@@ -1715,22 +3173,46 @@
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    19
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    28
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -1742,23 +3224,47 @@
             [
                 [
                     "GC",
-                    0
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ]
@@ -1771,22 +3277,46 @@
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    -30
+                ],
+                [
+                    "ATATAA",
+                    5
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    -43
+                ],
+                [
+                    "ATATAA",
+                    7
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    -4
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ]
@@ -1799,22 +3329,46 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    9
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    6
+                ],
+                [
+                    "ATATAA",
+                    12
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ]
@@ -1827,22 +3381,46 @@
                 [
                     "GC",
                     -10
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    17
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -10
+                ],
+                [
+                    "TATAAA",
+                    -29
+                ],
+                [
+                    "ATATAA",
+                    22
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    -11
+                    -10
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    9
                 ]
             ]
         ]
@@ -1855,22 +3433,46 @@
                 [
                     "GC",
                     -8
+                ],
+                [
+                    "TATAAA",
+                    -19
+                ],
+                [
+                    "ATATAA",
+                    -11
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -7
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    -14
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -8
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ]
@@ -1882,23 +3484,47 @@
             [
                 [
                     "GC",
-                    1
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -8
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -12
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ]
@@ -1910,23 +3536,47 @@
             [
                 [
                     "GC",
-                    4
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
-                [
-                    "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    6
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -1939,22 +3589,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    29
+                ],
+                [
+                    "ATATAA",
+                    22
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    41
+                ],
+                [
+                    "ATATAA",
+                    29
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    12
                 ]
             ]
         ]
@@ -1966,23 +3640,47 @@
             [
                 [
                     "GC",
-                    -3
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    -28
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    -40
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    -3
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -1994,23 +3692,47 @@
             [
                 [
                     "GC",
-                    0
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                    -1
+                ],
                 [
-                    "GC",
+                    "TATAAA",
                     0
+                ],
+                [
+                    "ATATAA",
+                    -17
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -23
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -7
                 ]
             ]
         ]
@@ -2023,22 +3745,46 @@
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    -13
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    -17
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    3
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ]
@@ -2051,22 +3797,46 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    16
+                ],
+                [
+                    "ATATAA",
+                    10
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    23
+                ],
+                [
+                    "ATATAA",
+                    13
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ]
@@ -2078,23 +3848,47 @@
             [
                 [
                     "GC",
-                    4
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    -13
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    -17
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ]
@@ -2107,22 +3901,46 @@
                 [
                     "GC",
                     -12
+                ],
+                [
+                    "TATAAA",
+                    -43
+                ],
+                [
+                    "ATATAA",
+                    -17
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -10
+                    -11
+                ],
+                [
+                    "TATAAA",
+                    -60
+                ],
+                [
+                    "ATATAA",
+                    -23
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    -13
+                    -14
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -7
                 ]
             ]
         ]
@@ -2134,23 +3952,47 @@
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ]
@@ -2163,22 +4005,46 @@
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ]
@@ -2191,22 +4057,46 @@
                 [
                     "GC",
                     -6
+                ],
+                [
+                    "TATAAA",
+                    39
+                ],
+                [
+                    "ATATAA",
+                    -11
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -8
+                ],
+                [
+                    "TATAAA",
+                    55
+                ],
+                [
+                    "ATATAA",
+                    -14
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -7
                 ]
             ]
         ]
@@ -2218,23 +4108,47 @@
             [
                 [
                     "GC",
-                    6
+                    7
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    8
+                    10
+                ],
+                [
+                    "TATAAA",
+                    -29
+                ],
+                [
+                    "ATATAA",
+                    -8
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    3
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ]
@@ -2247,22 +4161,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -19
+                ],
+                [
+                    "ATATAA",
+                    19
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    26
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    10
                 ]
             ]
         ]
@@ -2274,23 +4212,47 @@
             [
                 [
                     "GC",
-                    7
+                    6
+                ],
+                [
+                    "TATAAA",
+                    -41
+                ],
+                [
+                    "ATATAA",
+                    16
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    10
+                    9
+                ],
+                [
+                    "TATAAA",
+                    -59
+                ],
+                [
+                    "ATATAA",
+                    22
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    4
+                    3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    9
                 ]
             ]
         ]
@@ -2302,22 +4264,46 @@
             [
                 [
                     "GC",
-                    -6
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    -9
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    15
+                ],
+                [
+                    "ATATAA",
+                    -11
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
                     -6
                 ]
             ]
@@ -2331,22 +4317,46 @@
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    1
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ]
@@ -2359,22 +4369,46 @@
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    -8
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    -10
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    3
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ]
@@ -2387,22 +4421,46 @@
                 [
                     "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     7
+                ],
+                [
+                    "TATAAA",
+                    -28
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ]
@@ -2415,22 +4473,46 @@
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    22
+                ],
+                [
+                    "ATATAA",
+                    -15
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    31
+                ],
+                [
+                    "ATATAA",
+                    -20
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
                 ]
             ]
         ]
@@ -2442,23 +4524,47 @@
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    15
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -29
+                ],
+                [
+                    "ATATAA",
+                    20
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    8
                 ]
             ]
         ]
@@ -2471,21 +4577,45 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
                     -1
                 ]
             ]
@@ -2499,22 +4629,46 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    10
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    7
+                ],
+                [
+                    "ATATAA",
+                    14
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ]
@@ -2527,22 +4681,46 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    20
+                ],
+                [
+                    "ATATAA",
+                    -27
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    29
+                ],
+                [
+                    "ATATAA",
+                    -36
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -15
                 ]
             ]
         ]
@@ -2555,22 +4733,46 @@
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    18
+                ],
+                [
+                    "ATATAA",
+                    -9
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    26
+                ],
+                [
+                    "ATATAA",
+                    -12
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ]
@@ -2582,23 +4784,47 @@
             [
                 [
                     "GC",
-                    2
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -4
+                ],
+                [
+                    "ATATAA",
+                    8
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    11
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ]
@@ -2611,22 +4837,46 @@
                 [
                     "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    -15
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    -20
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
                 ]
             ]
         ]
@@ -2638,23 +4888,47 @@
             [
                 [
                     "GC",
-                    5
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                    4
+                ],
                 [
-                    "GC",
+                    "TATAAA",
+                    38
+                ],
+                [
+                    "ATATAA",
                     4
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    5
+                    3
+                ],
+                [
+                    "TATAAA",
+                    54
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ]
@@ -2667,20 +4941,47 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    29
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    41
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
-                "GC"
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
             ]
         ]
     },
@@ -2691,23 +4992,47 @@
             [
                 [
                     "GC",
-                    7
+                    8
+                ],
+                [
+                    "TATAAA",
+                    10
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     8
+                ],
+                [
+                    "TATAAA",
+                    15
+                ],
+                [
+                    "ATATAA",
+                    -8
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ]
@@ -2720,22 +5045,46 @@
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    -14
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ]
@@ -2748,22 +5097,46 @@
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -7
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ]
@@ -2776,22 +5149,46 @@
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    22
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    29
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    12
                 ]
             ]
         ]
@@ -2803,23 +5200,47 @@
             [
                 [
                     "GC",
-                    3
+                    4
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    11
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    -4
+                ],
+                [
+                    "ATATAA",
+                    14
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ]
@@ -2831,23 +5252,47 @@
             [
                 [
                     "GC",
-                    -12
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                    -13
+                ],
                 [
-                    "GC",
-                    -11
+                    "TATAAA",
+                    -33
+                ],
+                [
+                    "ATATAA",
+                    9
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -13
+                ],
+                [
+                    "TATAAA",
+                    -47
+                ],
+                [
+                    "ATATAA",
+                    12
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ]
@@ -2860,22 +5305,46 @@
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -2887,23 +5356,47 @@
             [
                 [
                     "GC",
-                    4
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
-                [
-                    "GC",
-                    3
-                ]
-            ]
-        ],
-        "non-TATA_sentences": [
-            [
-                [
-                    "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    14
+                ],
+                [
+                    "ATATAA",
+                    -12
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    20
+                ],
+                [
+                    "ATATAA",
+                    -16
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ]
@@ -2916,21 +5409,45 @@
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    5
+                ],
+                [
+                    "ATATAA",
+                    -7
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
                     -1
                 ]
             ]
@@ -2944,22 +5461,46 @@
                 [
                     "GC",
                     -8
+                ],
+                [
+                    "TATAAA",
+                    -25
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -9
+                    -10
+                ],
+                [
+                    "TATAAA",
+                    -35
+                ],
+                [
+                    "ATATAA",
+                    8
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ]
@@ -2972,22 +5513,46 @@
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -24
+                ],
+                [
+                    "ATATAA",
+                    9
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    -35
+                ],
+                [
+                    "ATATAA",
+                    11
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ]
@@ -2999,23 +5564,47 @@
             [
                 [
                     "GC",
-                    -3
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    -15
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    -20
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
                 ]
             ]
         ]
@@ -3028,22 +5617,46 @@
                 [
                     "GC",
                     10
+                ],
+                [
+                    "TATAAA",
+                    -17
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     11
+                ],
+                [
+                    "TATAAA",
+                    -24
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     9
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ]
@@ -3055,23 +5668,47 @@
             [
                 [
                     "GC",
-                    4
+                    3
+                ],
+                [
+                    "TATAAA",
+                    8
+                ],
+                [
+                    "ATATAA",
+                    -20
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    12
+                ],
+                [
+                    "ATATAA",
+                    -27
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    4
+                    3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -10
                 ]
             ]
         ]
@@ -3084,22 +5721,46 @@
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    -15
+                ],
+                [
+                    "ATATAA",
+                    -22
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    -21
+                ],
+                [
+                    "ATATAA",
+                    -28
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -12
                 ]
             ]
         ]
@@ -3112,21 +5773,42 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    6
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
+                    0
+                ],
+                "TATAAA",
+                [
+                    "ATATAA",
                     0
                 ]
             ]
@@ -3140,22 +5822,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    31
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    44
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
                 ]
             ]
         ]
@@ -3168,22 +5874,46 @@
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    -17
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    -24
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
                 ]
             ]
         ]
@@ -3196,22 +5926,46 @@
                 [
                     "GC",
                     6
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -22
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     8
+                ],
+                [
+                    "TATAAA",
+                    -11
+                ],
+                [
+                    "ATATAA",
+                    -29
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -12
                 ]
             ]
         ]
@@ -3223,23 +5977,47 @@
             [
                 [
                     "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
                     -4
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -5
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ]
@@ -3252,22 +6030,46 @@
                 [
                     "GC",
                     -6
+                ],
+                [
+                    "TATAAA",
+                    -21
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    -29
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -3280,22 +6082,46 @@
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    -6
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ],
+        "0_sentences": [
             [
                 [
                     "GC",
                     3
-                ]
-            ]
-        ],
-        "non-TATA_sentences": [
-            [
+                ],
                 [
-                    "GC",
-                    3
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ]
@@ -3307,23 +6133,47 @@
             [
                 [
                     "GC",
-                    -3
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    25
+                ],
+                [
+                    "ATATAA",
+                    11
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    36
+                ],
+                [
+                    "ATATAA",
+                    14
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ]
@@ -3336,22 +6186,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    10
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -38
+                ],
+                [
+                    "ATATAA",
+                    13
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ]
@@ -3364,22 +6238,46 @@
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    -39
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ]
@@ -3391,22 +6289,46 @@
             [
                 [
                     "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    28
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    40
+                ],
+                [
+                    "ATATAA",
+                    -9
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    -6
-                ]
-            ]
-        ],
-        "non-TATA_sentences": [
-            [
+                    -3
+                ],
                 [
-                    "GC",
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
                     -4
                 ]
             ]
@@ -3420,22 +6342,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    21
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    30
+                ],
+                [
+                    "ATATAA",
+                    -1
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]
@@ -3448,22 +6394,46 @@
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    37
+                ],
+                [
+                    "ATATAA",
+                    12
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    53
+                ],
+                [
+                    "ATATAA",
+                    16
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ]
@@ -3475,23 +6445,47 @@
             [
                 [
                     "GC",
-                    9
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
-                [
-                    "GC",
-                    10
-                ]
-            ]
-        ],
-        "non-TATA_sentences": [
-            [
-                [
-                    "GC",
                     8
+                ],
+                [
+                    "TATAAA",
+                    -14
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ]
@@ -3503,23 +6497,47 @@
             [
                 [
                     "GC",
-                    3
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
-                [
-                    "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
             [
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
                 ]
             ]
         ]
@@ -3531,23 +6549,47 @@
             [
                 [
                     "GC",
-                    4
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    -9
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    -13
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
                 ]
             ]
         ]
@@ -3560,22 +6602,46 @@
                 [
                     "GC",
                     1
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                ],
                 [
-                    "GC",
-                    2
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -23
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -30
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -12
                 ]
             ]
         ]
@@ -3587,23 +6653,47 @@
             [
                 [
                     "GC",
-                    3
+                    4
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    -18
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    4
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -4
+                ],
+                [
+                    "ATATAA",
+                    -24
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -11
                 ]
             ]
         ]
@@ -3616,22 +6706,46 @@
                 [
                     "GC",
                     -2
+                ],
+                [
+                    "TATAAA",
+                    -36
+                ],
+                [
+                    "ATATAA",
+                    -11
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -1
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -51
+                ],
+                [
+                    "ATATAA",
+                    -15
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ]
@@ -3644,22 +6758,46 @@
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -22
+                ],
+                [
+                    "ATATAA",
+                    15
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     2
+                ],
+                [
+                    "TATAAA",
+                    -32
+                ],
+                [
+                    "ATATAA",
+                    19
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    1
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    8
                 ]
             ]
         ]
@@ -3671,23 +6809,47 @@
             [
                 [
                     "GC",
-                    -6
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    -12
+                ],
+                [
+                    "ATATAA",
+                    -5
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -6
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    -17
+                ],
+                [
+                    "ATATAA",
+                    -7
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    -6
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
                 ]
             ]
         ]
@@ -3700,22 +6862,46 @@
                 [
                     "GC",
                     9
+                ],
+                [
+                    "TATAAA",
+                    -36
+                ],
+                [
+                    "ATATAA",
+                    -18
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    13
+                    12
+                ],
+                [
+                    "TATAAA",
+                    -51
+                ],
+                [
+                    "ATATAA",
+                    -23
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -10
                 ]
             ]
         ]
@@ -3727,23 +6913,47 @@
             [
                 [
                     "GC",
-                    -4
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    -23
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    16
+                ],
+                [
+                    "ATATAA",
+                    -31
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    -4
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -12
                 ]
             ]
         ]
@@ -3756,22 +6966,46 @@
                 [
                     "GC",
                     6
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                ],
                 [
-                    "GC",
+                    "TATAAA",
+                    24
+                ],
+                [
+                    "ATATAA",
                     5
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    8
+                    4
+                ],
+                [
+                    "TATAAA",
+                    34
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ]
@@ -3783,23 +7017,47 @@
             [
                 [
                     "GC",
-                    9
+                    11
+                ],
+                [
+                    "TATAAA",
+                    38
+                ],
+                [
+                    "ATATAA",
+                    -18
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    9
+                    12
+                ],
+                [
+                    "TATAAA",
+                    54
+                ],
+                [
+                    "ATATAA",
+                    -24
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
-                    8
+                    10
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -9
                 ]
             ]
         ]
@@ -3812,22 +7070,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    25
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    -2
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    33
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    13
                 ]
             ]
         ]
@@ -3839,23 +7121,47 @@
             [
                 [
                     "GC",
-                    6
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -35
+                ],
+                [
+                    "ATATAA",
+                    -18
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    9
+                    8
+                ],
+                [
+                    "TATAAA",
+                    -50
+                ],
+                [
+                    "ATATAA",
+                    -24
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -10
                 ]
             ]
         ]
@@ -3868,21 +7174,45 @@
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    4
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    6
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
                     2
                 ]
             ]
@@ -3896,22 +7226,46 @@
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    -21
+                ],
+                [
+                    "ATATAA",
+                    -7
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
-                    7
+                    6
+                ],
+                [
+                    "TATAAA",
+                    -30
+                ],
+                [
+                    "ATATAA",
+                    -9
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
                 ]
             ]
         ]
@@ -3924,22 +7278,46 @@
                 [
                     "GC",
                     4
-                ]
-            ]
-        ],
-        "TATA motif_sentences": [
-            [
+                ],
                 [
-                    "GC",
-                    3
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    19
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     4
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    25
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    9
                 ]
             ]
         ]
@@ -3952,22 +7330,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -28
+                ],
+                [
+                    "ATATAA",
+                    21
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    -40
+                ],
+                [
+                    "ATATAA",
+                    28
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    11
                 ]
             ]
         ]
@@ -3980,22 +7382,46 @@
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -23
+                ],
+                [
+                    "ATATAA",
+                    23
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     0
+                ],
+                [
+                    "TATAAA",
+                    -33
+                ],
+                [
+                    "ATATAA",
+                    30
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    11
                 ]
             ]
         ]
@@ -4008,22 +7434,46 @@
                 [
                     "GC",
                     -5
+                ],
+                [
+                    "TATAAA",
+                    26
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "TATA motif_sentences": [
+        "1_sentences": [
             [
                 [
                     "GC",
                     -6
+                ],
+                [
+                    "TATAAA",
+                    36
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ],
-        "non-TATA_sentences": [
+        "0_sentences": [
             [
                 [
                     "GC",
                     -4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
                 ]
             ]
         ]

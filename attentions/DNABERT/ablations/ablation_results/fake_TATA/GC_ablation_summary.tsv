@@ -4,9 +4,9 @@ GC Important Heads 5% Ablated	0.9995	1.0
 GC Important Heads 10% Ablated	0.6425	0.7959795
 GC Important Heads 20% Ablated	0.5	0.36532850000000006
 GC Important Heads 30% Ablated	0.5	0.6413709999999999
-GC Important Heads 40% Ablated	0.5	0.5670824999999999
-GC Important Heads 50% Ablated	0.5	0.5336075
-GC Unimportant Heads 5% Ablated	0.998	1.0
+GC Important Heads 40% Ablated	0.5	0.567083
+GC Important Heads 50% Ablated	0.5	0.533608
+GC Unimportant Heads 5% Ablated	1.0	1.0
 GC Unimportant Heads 10% Ablated	0.998	1.0
 GC Unimportant Heads 20% Ablated	0.998	1.0
 GC Unimportant Heads 30% Ablated	0.998	1.0

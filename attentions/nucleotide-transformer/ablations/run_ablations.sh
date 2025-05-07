@@ -12,16 +12,16 @@ conda activate nt
 echo "Using script: ${SCRIPT_PATH}"
 
 # Run TATA-kmer experiment
-echo "========================================================="
-echo "Running TATA-kmer experiment"
-echo "========================================================="
-python "${SCRIPT_PATH}" \
-    --model_path "${BASE_DIR}/CUSTOM-nucleotide-transformer-finetuned-NucleotideTransformer/checkpoint-1000" \
-    --data_file "${BASE_DIR}/data/custom_TATA_test.fa" \
-    --results_dir "${BASE_DIR}/genome-interpreter/ablation_results/TATA-kmer" \
-    --important_heads_file "${BASE_DIR}/genome-interpreter/ablation_data/TATA-kmer/important_heads.py" \
-    --unimportant_heads_file "${BASE_DIR}/genome-interpreter/ablation_data/TATA-kmer/unimportant_heads.py" \
-    --experiment_name "TATA-kmer"
+# echo "========================================================="
+# echo "Running TATA-kmer experiment"
+# echo "========================================================="
+# python "${SCRIPT_PATH}" \
+#     --model_path "${BASE_DIR}/CUSTOM-nucleotide-transformer-finetuned-NucleotideTransformer/checkpoint-1000" \
+#     --data_file "${BASE_DIR}/data/custom_TATA_test.fa" \
+#     --results_dir "${BASE_DIR}/genome-interpreter/ablation_results/TATA-kmer" \
+#     --important_heads_file "${BASE_DIR}/genome-interpreter/ablation_data/TATA-kmer/important_heads.py" \
+#     --unimportant_heads_file "${BASE_DIR}/genome-interpreter/ablation_data/TATA-kmer/unimportant_heads.py" \
+#     --experiment_name "TATA-kmer"
 
 # #Run TSS experiment
 # echo "========================================================="
