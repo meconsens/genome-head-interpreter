@@ -88,8 +88,8 @@ def run_centered_attention_correlations(df, attention_score_columns, bio_feature
         global_coef_dict[layer_head] = []
         for col_iter in range(X.shape[1]):
             result = stats.spearmanr(X[:, col_iter], Y_centered)
-            if not np.isnan(result.statistic):
-                global_coef_dict[layer_head].append(result.statistic)
+            if not np.isnan(result.correlation):
+                global_coef_dict[layer_head].append(result.correlation)
             else:
                 global_coef_dict[layer_head].append(0)
     
@@ -146,8 +146,8 @@ def run_centered_attention_correlations(df, attention_score_columns, bio_feature
             # Calculate Spearman correlation for each feature using centered attention
             for col_iter in range(X.shape[1]):
                 result = stats.spearmanr(X[:, col_iter], Y_centered)
-                if not np.isnan(result.statistic):
-                    label_coef_dict[head_label_key].append(result.statistic)
+                if not np.isnan(result.correlation):
+                    label_coef_dict[head_label_key].append(result.correlation)
                 else:
                     label_coef_dict[head_label_key].append(0)
     
@@ -157,13 +157,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--data_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/scores/",
+        default="/home/vivian.chu/single-cell/scgpt/genome-head-interpreter/preprocessing/data/scores/",
         type=str,
         help="The path to the data",
     )
     parser.add_argument(
         "--full_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/",
+        default="/home/vivian.chu/single-cell/scgpt/genome-head-interpreter/preprocessing/",
         type=str,
         help="The full path to the collect_coef.py file",
     )
@@ -194,7 +194,7 @@ def main():
     
     # Make sure if model_subtype selected as "random", the model_name is DNABERT_TATA or DNABERT_enhancer
     if args.model_subtype == "random":
-        assert args.model_name == "DNABERT_TATA" or args.model_name == "DNABERT_enhancers", "Model name should be DNABERT_TATA or DNABERT_enhancers"
+        assert args.model_name == "DNABERT_TATA" or args.model_name == "DNABERT_enhancers" or args.model_name == "DNABERT_fake_TATA", "Model name should be DNABERT_TATA, DNABERT_fake_TATA, or DNABERT_enhancers"
     
     # Add model name to the data path
     data_path = f'{data_path}{args.model_name}/{args.model_name}_{args.model_subtype}_scores.csv'
@@ -214,10 +214,12 @@ def main():
 
     config_functions = {
         'DNABERT_TATA': configure_DNABERT,
+        'DNABERT_fake_TATA': configure_DNABERT,
         'DNABERT_enhancers': configure_DNABERT,
         'scgpt_ms': configure_scgpt,
         'scgpt_pancreas': configure_scgpt,
         'NT_TATA': configure_nucleotide_transformer,
+        'NT_fake_TATA': configure_nucleotide_transformer,
         'NT_enhancers': configure_nucleotide_transformer
     }
 
@@ -245,6 +247,9 @@ def main():
         seq_length,
         args.label_column,
     )
+
+    # Make sure the directory exists
+    os.makedirs(f'{full_path}/data/coef/{args.model_name}', exist_ok=True)
     
     # Create a global correlation dataframe
     global_df = pd.DataFrame.from_dict(global_coef_dict, orient="index", columns=bio_feature_columns)
@@ -266,7 +271,7 @@ def main():
         # Create dataframe for this label
         label_data = {head: label_coef_dict[f"{head}_{label}"] for head, key in zip(head_names, label_keys)}
         label_df = pd.DataFrame.from_dict(label_data, orient="index", columns=bio_feature_columns)
-        
+    
         # Save each label's results separately
         label_df.to_csv(f'{full_path}/data/coef/{args.model_name}/{args.model_subtype}_label_{label}_centered_headcorr.csv')
     

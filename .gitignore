@@ -7,3 +7,5 @@ preprocessing/data/feature_scores
 setup.py
 **/.DS_Store
 **/.Rhistory
+preprocessing/scgpt_pipeline.ipynb
+preprocessing/standardize_features.ipynb
