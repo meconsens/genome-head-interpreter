@@ -4,6 +4,11 @@ preprocessing/data/scores
 preprocessing/data/distributions
 preprocessing/data/coef
 preprocessing/data/feature_scores
+preprocessing/visualizations
+preprocessing/feature_head_associations
+preprocessing/data/z_scores
+preprocessing/data/plots
+preprocessing/data/differences
 setup.py
 **/.DS_Store
 **/.Rhistory
