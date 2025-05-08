@@ -1,4 +1,3 @@
-#place at the same level as model.py
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.ao.nn.quantized as Q
@@ -259,7 +258,8 @@ class TransformerEncoderLayer(nn.Module):
         x, attns = self.self_attn(x, x, x,
                            attn_mask=attn_mask,
                            key_padding_mask=key_padding_mask,
-                           need_weights=False, is_causal=is_causal)
+                           average_attn_weights=False,
+                           need_weights=True, is_causal=is_causal)
         #print("INSIDE SA BLOCK")
         if output_attentions:
                 return self.dropout1(x), attns
@@ -524,4 +524,3 @@ def _detect_is_causal_mask(
             make_causal = False
 
     return make_causal
-

@@ -1,0 +1,7481 @@
+{
+    "layer0-head0": {
+        "name": "layer0-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    14
+                ],
+                [
+                    "ATATAA",
+                    5
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    20
+                ],
+                [
+                    "ATATAA",
+                    7
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ]
+    },
+    "layer0-head1": {
+        "name": "layer0-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    8
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ]
+    },
+    "layer0-head2": {
+        "name": "layer0-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -8
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -12
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer0-head3": {
+        "name": "layer0-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    22
+                ],
+                [
+                    "ATATAA",
+                    9
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    31
+                ],
+                [
+                    "ATATAA",
+                    12
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ]
+    },
+    "layer0-head4": {
+        "name": "layer0-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -8
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -11
+                ],
+                [
+                    "ATATAA",
+                    7
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ]
+    },
+    "layer0-head5": {
+        "name": "layer0-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    13
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    19
+                ],
+                [
+                    "ATATAA",
+                    9
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer0-head6": {
+        "name": "layer0-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    17
+                ],
+                [
+                    "ATATAA",
+                    7
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    25
+                ],
+                [
+                    "ATATAA",
+                    10
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ]
+    },
+    "layer0-head7": {
+        "name": "layer0-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ]
+    },
+    "layer0-head8": {
+        "name": "layer0-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -18
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -24
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ]
+    },
+    "layer0-head9": {
+        "name": "layer0-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -11
+                ],
+                [
+                    "ATATAA",
+                    -11
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    -16
+                ],
+                [
+                    "ATATAA",
+                    -15
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ]
+    },
+    "layer0-head10": {
+        "name": "layer0-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ],
+                [
+                    "TATAAA",
+                    17
+                ],
+                [
+                    "ATATAA",
+                    11
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ],
+                [
+                    "TATAAA",
+                    25
+                ],
+                [
+                    "ATATAA",
+                    14
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    8
+                ]
+            ]
+        ]
+    },
+    "layer0-head11": {
+        "name": "layer0-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -30
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -43
+                ],
+                [
+                    "ATATAA",
+                    5
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer1-head0": {
+        "name": "layer1-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    18
+                ],
+                [
+                    "ATATAA",
+                    -11
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    25
+                ],
+                [
+                    "ATATAA",
+                    -14
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ]
+    },
+    "layer1-head1": {
+        "name": "layer1-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    -18
+                ],
+                [
+                    "ATATAA",
+                    -14
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    -25
+                ],
+                [
+                    "ATATAA",
+                    -19
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ]
+    },
+    "layer1-head2": {
+        "name": "layer1-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -15
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer1-head3": {
+        "name": "layer1-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer1-head4": {
+        "name": "layer1-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    16
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ]
+    },
+    "layer1-head5": {
+        "name": "layer1-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    15
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    22
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ]
+    },
+    "layer1-head6": {
+        "name": "layer1-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer1-head7": {
+        "name": "layer1-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer1-head8": {
+        "name": "layer1-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -44
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -63
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                "TATAAA",
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer1-head9": {
+        "name": "layer1-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    44
+                ],
+                [
+                    "ATATAA",
+                    7
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    63
+                ],
+                [
+                    "ATATAA",
+                    10
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ]
+    },
+    "layer1-head10": {
+        "name": "layer1-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    32
+                ],
+                [
+                    "ATATAA",
+                    -10
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -8
+                ],
+                [
+                    "TATAAA",
+                    45
+                ],
+                [
+                    "ATATAA",
+                    -12
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ]
+    },
+    "layer1-head11": {
+        "name": "layer1-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    10
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    14
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer2-head0": {
+        "name": "layer2-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    14
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    19
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    7
+                ]
+            ]
+        ]
+    },
+    "layer2-head1": {
+        "name": "layer2-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -22
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -32
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer2-head2": {
+        "name": "layer2-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -26
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -37
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer2-head3": {
+        "name": "layer2-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    40
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    56
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ]
+    },
+    "layer2-head4": {
+        "name": "layer2-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -21
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -30
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer2-head5": {
+        "name": "layer2-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    20
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    27
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    10
+                ]
+            ]
+        ]
+    },
+    "layer2-head6": {
+        "name": "layer2-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -28
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -40
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer2-head7": {
+        "name": "layer2-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    33
+                ],
+                [
+                    "ATATAA",
+                    17
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    46
+                ],
+                [
+                    "ATATAA",
+                    23
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    10
+                ]
+            ]
+        ]
+    },
+    "layer2-head8": {
+        "name": "layer2-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    12
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    17
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer2-head9": {
+        "name": "layer2-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                "GC",
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    5
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ]
+    },
+    "layer2-head10": {
+        "name": "layer2-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ],
+                [
+                    "TATAAA",
+                    15
+                ],
+                [
+                    "ATATAA",
+                    -11
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ]
+    },
+    "layer2-head11": {
+        "name": "layer2-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    -28
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer3-head0": {
+        "name": "layer3-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    22
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    31
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer3-head1": {
+        "name": "layer3-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    -13
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer3-head2": {
+        "name": "layer3-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -38
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer3-head3": {
+        "name": "layer3-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    -15
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer3-head4": {
+        "name": "layer3-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    16
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    22
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    8
+                ]
+            ]
+        ]
+    },
+    "layer3-head5": {
+        "name": "layer3-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    9
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    13
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ]
+    },
+    "layer3-head6": {
+        "name": "layer3-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    16
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer3-head7": {
+        "name": "layer3-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -21
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -30
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ]
+    },
+    "layer3-head8": {
+        "name": "layer3-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer3-head9": {
+        "name": "layer3-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    38
+                ],
+                [
+                    "ATATAA",
+                    22
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    53
+                ],
+                [
+                    "ATATAA",
+                    30
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    11
+                ]
+            ]
+        ]
+    },
+    "layer3-head10": {
+        "name": "layer3-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    21
+                ],
+                [
+                    "ATATAA",
+                    9
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    30
+                ],
+                [
+                    "ATATAA",
+                    11
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ]
+    },
+    "layer3-head11": {
+        "name": "layer3-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -4
+                ],
+                [
+                    "ATATAA",
+                    -17
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -22
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ]
+    },
+    "layer4-head0": {
+        "name": "layer4-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -5
+                ],
+                [
+                    "ATATAA",
+                    -13
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -18
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ]
+    },
+    "layer4-head1": {
+        "name": "layer4-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -8
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ]
+    },
+    "layer4-head2": {
+        "name": "layer4-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    9
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    12
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ]
+    },
+    "layer4-head3": {
+        "name": "layer4-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -11
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -16
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ]
+    },
+    "layer4-head4": {
+        "name": "layer4-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    17
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    23
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    9
+                ]
+            ]
+        ]
+    },
+    "layer4-head5": {
+        "name": "layer4-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    20
+                ],
+                [
+                    "ATATAA",
+                    17
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    29
+                ],
+                [
+                    "ATATAA",
+                    23
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    8
+                ]
+            ]
+        ]
+    },
+    "layer4-head6": {
+        "name": "layer4-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    23
+                ],
+                [
+                    "ATATAA",
+                    -12
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    32
+                ],
+                [
+                    "ATATAA",
+                    -16
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ]
+    },
+    "layer4-head7": {
+        "name": "layer4-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -4
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer4-head8": {
+        "name": "layer4-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -15
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -21
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ]
+    },
+    "layer4-head9": {
+        "name": "layer4-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -19
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ]
+    },
+    "layer4-head10": {
+        "name": "layer4-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    8
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ]
+    },
+    "layer4-head11": {
+        "name": "layer4-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -25
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -32
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -12
+                ]
+            ]
+        ]
+    },
+    "layer5-head0": {
+        "name": "layer5-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -8
+                ],
+                [
+                    "ATATAA",
+                    12
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -11
+                ],
+                [
+                    "ATATAA",
+                    15
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    7
+                ]
+            ]
+        ]
+    },
+    "layer5-head1": {
+        "name": "layer5-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    19
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    28
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer5-head2": {
+        "name": "layer5-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ]
+    },
+    "layer5-head3": {
+        "name": "layer5-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    -30
+                ],
+                [
+                    "ATATAA",
+                    5
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    -43
+                ],
+                [
+                    "ATATAA",
+                    7
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer5-head4": {
+        "name": "layer5-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    9
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    6
+                ],
+                [
+                    "ATATAA",
+                    12
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ]
+    },
+    "layer5-head5": {
+        "name": "layer5-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    17
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ],
+                [
+                    "TATAAA",
+                    -29
+                ],
+                [
+                    "ATATAA",
+                    22
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    9
+                ]
+            ]
+        ]
+    },
+    "layer5-head6": {
+        "name": "layer5-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -8
+                ],
+                [
+                    "TATAAA",
+                    -19
+                ],
+                [
+                    "ATATAA",
+                    -11
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    -14
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -8
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ]
+    },
+    "layer5-head7": {
+        "name": "layer5-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -8
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -12
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ]
+    },
+    "layer5-head8": {
+        "name": "layer5-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    6
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer5-head9": {
+        "name": "layer5-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    29
+                ],
+                [
+                    "ATATAA",
+                    22
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    41
+                ],
+                [
+                    "ATATAA",
+                    29
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    12
+                ]
+            ]
+        ]
+    },
+    "layer5-head10": {
+        "name": "layer5-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    -28
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    -40
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer5-head11": {
+        "name": "layer5-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -17
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -23
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ]
+    },
+    "layer6-head0": {
+        "name": "layer6-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    -13
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    -17
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ]
+    },
+    "layer6-head1": {
+        "name": "layer6-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    16
+                ],
+                [
+                    "ATATAA",
+                    10
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    23
+                ],
+                [
+                    "ATATAA",
+                    13
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ]
+    },
+    "layer6-head2": {
+        "name": "layer6-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    -13
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    -17
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ]
+    },
+    "layer6-head3": {
+        "name": "layer6-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -12
+                ],
+                [
+                    "TATAAA",
+                    -43
+                ],
+                [
+                    "ATATAA",
+                    -17
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -11
+                ],
+                [
+                    "TATAAA",
+                    -60
+                ],
+                [
+                    "ATATAA",
+                    -23
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ]
+    },
+    "layer6-head4": {
+        "name": "layer6-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ]
+    },
+    "layer6-head5": {
+        "name": "layer6-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -9
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ]
+    },
+    "layer6-head6": {
+        "name": "layer6-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    39
+                ],
+                [
+                    "ATATAA",
+                    -11
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -8
+                ],
+                [
+                    "TATAAA",
+                    55
+                ],
+                [
+                    "ATATAA",
+                    -14
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ]
+    },
+    "layer6-head7": {
+        "name": "layer6-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    10
+                ],
+                [
+                    "TATAAA",
+                    -29
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ]
+    },
+    "layer6-head8": {
+        "name": "layer6-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -19
+                ],
+                [
+                    "ATATAA",
+                    19
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    26
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    10
+                ]
+            ]
+        ]
+    },
+    "layer6-head9": {
+        "name": "layer6-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    -41
+                ],
+                [
+                    "ATATAA",
+                    16
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ],
+                [
+                    "TATAAA",
+                    -59
+                ],
+                [
+                    "ATATAA",
+                    22
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    9
+                ]
+            ]
+        ]
+    },
+    "layer6-head10": {
+        "name": "layer6-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    15
+                ],
+                [
+                    "ATATAA",
+                    -11
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ]
+    },
+    "layer6-head11": {
+        "name": "layer6-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ]
+    },
+    "layer7-head0": {
+        "name": "layer7-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    -10
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ]
+    },
+    "layer7-head1": {
+        "name": "layer7-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ],
+                [
+                    "TATAAA",
+                    -28
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ]
+    },
+    "layer7-head2": {
+        "name": "layer7-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    22
+                ],
+                [
+                    "ATATAA",
+                    -15
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    31
+                ],
+                [
+                    "ATATAA",
+                    -20
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ]
+    },
+    "layer7-head3": {
+        "name": "layer7-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    15
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -29
+                ],
+                [
+                    "ATATAA",
+                    20
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    8
+                ]
+            ]
+        ]
+    },
+    "layer7-head4": {
+        "name": "layer7-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer7-head5": {
+        "name": "layer7-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    10
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    7
+                ],
+                [
+                    "ATATAA",
+                    14
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ]
+    },
+    "layer7-head6": {
+        "name": "layer7-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    20
+                ],
+                [
+                    "ATATAA",
+                    -27
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    29
+                ],
+                [
+                    "ATATAA",
+                    -36
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -15
+                ]
+            ]
+        ]
+    },
+    "layer7-head7": {
+        "name": "layer7-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    18
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    26
+                ],
+                [
+                    "ATATAA",
+                    -12
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ]
+    },
+    "layer7-head8": {
+        "name": "layer7-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -4
+                ],
+                [
+                    "ATATAA",
+                    8
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    11
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ]
+    },
+    "layer7-head9": {
+        "name": "layer7-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    -15
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    -20
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ]
+    },
+    "layer7-head10": {
+        "name": "layer7-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    38
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    54
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ]
+    },
+    "layer7-head11": {
+        "name": "layer7-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    29
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    41
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer8-head0": {
+        "name": "layer8-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ],
+                [
+                    "TATAAA",
+                    10
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ],
+                [
+                    "TATAAA",
+                    15
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ]
+    },
+    "layer8-head1": {
+        "name": "layer8-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -14
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer8-head2": {
+        "name": "layer8-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ]
+    },
+    "layer8-head3": {
+        "name": "layer8-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    22
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    29
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    12
+                ]
+            ]
+        ]
+    },
+    "layer8-head4": {
+        "name": "layer8-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    11
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -4
+                ],
+                [
+                    "ATATAA",
+                    14
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ]
+    },
+    "layer8-head5": {
+        "name": "layer8-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -13
+                ],
+                [
+                    "TATAAA",
+                    -33
+                ],
+                [
+                    "ATATAA",
+                    9
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -13
+                ],
+                [
+                    "TATAAA",
+                    -47
+                ],
+                [
+                    "ATATAA",
+                    12
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -14
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ]
+    },
+    "layer8-head6": {
+        "name": "layer8-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer8-head7": {
+        "name": "layer8-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    14
+                ],
+                [
+                    "ATATAA",
+                    -12
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    20
+                ],
+                [
+                    "ATATAA",
+                    -16
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ]
+    },
+    "layer8-head8": {
+        "name": "layer8-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    5
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer8-head9": {
+        "name": "layer8-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -8
+                ],
+                [
+                    "TATAAA",
+                    -25
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -10
+                ],
+                [
+                    "TATAAA",
+                    -35
+                ],
+                [
+                    "ATATAA",
+                    8
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ]
+    },
+    "layer8-head10": {
+        "name": "layer8-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -24
+                ],
+                [
+                    "ATATAA",
+                    9
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -35
+                ],
+                [
+                    "ATATAA",
+                    11
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ]
+    },
+    "layer8-head11": {
+        "name": "layer8-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    -15
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    -20
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -8
+                ]
+            ]
+        ]
+    },
+    "layer9-head0": {
+        "name": "layer9-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    10
+                ],
+                [
+                    "TATAAA",
+                    -17
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ],
+                [
+                    "TATAAA",
+                    -24
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ]
+    },
+    "layer9-head1": {
+        "name": "layer9-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    8
+                ],
+                [
+                    "ATATAA",
+                    -20
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    12
+                ],
+                [
+                    "ATATAA",
+                    -27
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -10
+                ]
+            ]
+        ]
+    },
+    "layer9-head2": {
+        "name": "layer9-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    -15
+                ],
+                [
+                    "ATATAA",
+                    -22
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    -21
+                ],
+                [
+                    "ATATAA",
+                    -28
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -12
+                ]
+            ]
+        ]
+    },
+    "layer9-head3": {
+        "name": "layer9-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    4
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    6
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                "TATAAA",
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer9-head4": {
+        "name": "layer9-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    31
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    44
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    1
+                ]
+            ]
+        ]
+    },
+    "layer9-head5": {
+        "name": "layer9-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -17
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    -24
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    3
+                ]
+            ]
+        ]
+    },
+    "layer9-head6": {
+        "name": "layer9-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -22
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ],
+                [
+                    "TATAAA",
+                    -11
+                ],
+                [
+                    "ATATAA",
+                    -29
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -12
+                ]
+            ]
+        ]
+    },
+    "layer9-head7": {
+        "name": "layer9-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    -4
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    -6
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer9-head8": {
+        "name": "layer9-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    -21
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    -29
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer9-head9": {
+        "name": "layer9-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    -6
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ]
+    },
+    "layer9-head10": {
+        "name": "layer9-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    25
+                ],
+                [
+                    "ATATAA",
+                    11
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    36
+                ],
+                [
+                    "ATATAA",
+                    14
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ]
+    },
+    "layer9-head11": {
+        "name": "layer9-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    10
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -38
+                ],
+                [
+                    "ATATAA",
+                    13
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ]
+    },
+    "layer10-head0": {
+        "name": "layer10-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    -27
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    -39
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ]
+    },
+    "layer10-head1": {
+        "name": "layer10-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    28
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    40
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ]
+    },
+    "layer10-head2": {
+        "name": "layer10-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    21
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    30
+                ],
+                [
+                    "ATATAA",
+                    -1
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    },
+    "layer10-head3": {
+        "name": "layer10-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    37
+                ],
+                [
+                    "ATATAA",
+                    12
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    53
+                ],
+                [
+                    "ATATAA",
+                    16
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ]
+    },
+    "layer10-head4": {
+        "name": "layer10-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ],
+                [
+                    "TATAAA",
+                    -14
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ],
+                [
+                    "TATAAA",
+                    -20
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ]
+    },
+    "layer10-head5": {
+        "name": "layer10-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer10-head6": {
+        "name": "layer10-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    -13
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -3
+                ]
+            ]
+        ]
+    },
+    "layer10-head7": {
+        "name": "layer10-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -7
+                ],
+                [
+                    "ATATAA",
+                    -23
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -10
+                ],
+                [
+                    "ATATAA",
+                    -30
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -12
+                ]
+            ]
+        ]
+    },
+    "layer10-head8": {
+        "name": "layer10-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    -3
+                ],
+                [
+                    "ATATAA",
+                    -18
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -4
+                ],
+                [
+                    "ATATAA",
+                    -24
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -11
+                ]
+            ]
+        ]
+    },
+    "layer10-head9": {
+        "name": "layer10-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -2
+                ],
+                [
+                    "TATAAA",
+                    -36
+                ],
+                [
+                    "ATATAA",
+                    -11
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -51
+                ],
+                [
+                    "ATATAA",
+                    -15
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ]
+    },
+    "layer10-head10": {
+        "name": "layer10-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -22
+                ],
+                [
+                    "ATATAA",
+                    15
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    2
+                ],
+                [
+                    "TATAAA",
+                    -32
+                ],
+                [
+                    "ATATAA",
+                    19
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    8
+                ]
+            ]
+        ]
+    },
+    "layer10-head11": {
+        "name": "layer10-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    -12
+                ],
+                [
+                    "ATATAA",
+                    -5
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    -17
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -2
+                ]
+            ]
+        ]
+    },
+    "layer11-head0": {
+        "name": "layer11-head0",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    9
+                ],
+                [
+                    "TATAAA",
+                    -36
+                ],
+                [
+                    "ATATAA",
+                    -18
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ],
+                [
+                    "TATAAA",
+                    -51
+                ],
+                [
+                    "ATATAA",
+                    -23
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -10
+                ]
+            ]
+        ]
+    },
+    "layer11-head1": {
+        "name": "layer11-head1",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    11
+                ],
+                [
+                    "ATATAA",
+                    -23
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    16
+                ],
+                [
+                    "ATATAA",
+                    -31
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -12
+                ]
+            ]
+        ]
+    },
+    "layer11-head2": {
+        "name": "layer11-head2",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    24
+                ],
+                [
+                    "ATATAA",
+                    5
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    34
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    7
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ]
+    },
+    "layer11-head3": {
+        "name": "layer11-head3",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    11
+                ],
+                [
+                    "TATAAA",
+                    38
+                ],
+                [
+                    "ATATAA",
+                    -18
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    12
+                ],
+                [
+                    "TATAAA",
+                    54
+                ],
+                [
+                    "ATATAA",
+                    -24
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    10
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ]
+    },
+    "layer11-head4": {
+        "name": "layer11-head4",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    1
+                ],
+                [
+                    "ATATAA",
+                    25
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -1
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    33
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    13
+                ]
+            ]
+        ]
+    },
+    "layer11-head5": {
+        "name": "layer11-head5",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    -35
+                ],
+                [
+                    "ATATAA",
+                    -18
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    8
+                ],
+                [
+                    "TATAAA",
+                    -50
+                ],
+                [
+                    "ATATAA",
+                    -24
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    3
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -10
+                ]
+            ]
+        ]
+    },
+    "layer11-head6": {
+        "name": "layer11-head6",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -1
+                ],
+                [
+                    "ATATAA",
+                    4
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -2
+                ],
+                [
+                    "ATATAA",
+                    6
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    2
+                ]
+            ]
+        ]
+    },
+    "layer11-head7": {
+        "name": "layer11-head7",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    -21
+                ],
+                [
+                    "ATATAA",
+                    -7
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    6
+                ],
+                [
+                    "TATAAA",
+                    -30
+                ],
+                [
+                    "ATATAA",
+                    -9
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    -4
+                ]
+            ]
+        ]
+    },
+    "layer11-head8": {
+        "name": "layer11-head8",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    2
+                ],
+                [
+                    "ATATAA",
+                    19
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    4
+                ],
+                [
+                    "TATAAA",
+                    3
+                ],
+                [
+                    "ATATAA",
+                    25
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    5
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    9
+                ]
+            ]
+        ]
+    },
+    "layer11-head9": {
+        "name": "layer11-head9",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -28
+                ],
+                [
+                    "ATATAA",
+                    21
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    -40
+                ],
+                [
+                    "ATATAA",
+                    28
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    11
+                ]
+            ]
+        ]
+    },
+    "layer11-head10": {
+        "name": "layer11-head10",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -23
+                ],
+                [
+                    "ATATAA",
+                    23
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    0
+                ],
+                [
+                    "TATAAA",
+                    -33
+                ],
+                [
+                    "ATATAA",
+                    30
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    1
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    11
+                ]
+            ]
+        ]
+    },
+    "layer11-head11": {
+        "name": "layer11-head11",
+        "explanation": "The main thing this head does is find...",
+        "sentences": [
+            [
+                [
+                    "GC",
+                    -5
+                ],
+                [
+                    "TATAAA",
+                    26
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "1_sentences": [
+            [
+                [
+                    "GC",
+                    -6
+                ],
+                [
+                    "TATAAA",
+                    36
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ],
+        "0_sentences": [
+            [
+                [
+                    "GC",
+                    -4
+                ],
+                [
+                    "TATAAA",
+                    0
+                ],
+                [
+                    "ATATAA",
+                    0
+                ]
+            ]
+        ]
+    }
+}

@@ -5,221 +5,285 @@ import os
 import json
 
 def calculate_feature_specific_thresholds(real_df, distribution_folder):
-    # Find the coefficient distribution files
-    print("Distribution folder:", distribution_folder)
-    files = [f for f in os.listdir(distribution_folder) if f.startswith('coef_') and f.endswith('.csv')]
+    """
+    Calculate thresholds for feature-specific z-scores using random distribution.
+    
+    Args:
+        real_df: DataFrame with correlation coefficients
+        distribution_folder: Folder containing random coefficient distributions
+        
+    Returns:
+        z_scores: DataFrame with z-scores
+        feature_stats: Dictionary with feature statistics
+    """
+    # Look for centered coefficient files
+    files = [f for f in os.listdir(distribution_folder) if f.startswith('centered_coef_') and f.endswith('.csv')]
     if not files:
-        raise FileNotFoundError("No coefficient files found in the distribution folder.")
-    
-    print(f"Found {len(files)} distribution files in {distribution_folder}")
-    
-    # Load all distribution data
+        # Fallback to original coefficient files if no centered files found
+        files = [f for f in os.listdir(distribution_folder) if f.startswith('coef_') and f.endswith('.csv')]
+        if not files:
+            raise FileNotFoundError("No coefficient files found in the distribution folder.")
+        print("Using original coefficient files for z-score calculation.")
+    else:
+        print(f"Using {len(files)} centered coefficient files for z-score calculation.")
+
     dfs = [pd.read_csv(os.path.join(distribution_folder, file), index_col=0) for file in files]
     dist_df = pd.concat(dfs, axis=1)
     dist_df = dist_df[[col for col in dist_df.columns if 'position' not in col]]
-    
-    # Calculate 3-sigma threshold for each feature
+
     feature_stats = {}
     for feature in real_df.columns:
         if feature in dist_df.columns:
-            # Get all values for this feature across all files
             all_values = dist_df[feature].values.flatten()
-            all_values = all_values[~np.isnan(all_values)]  # Remove NaN values
-            
-            # Calculate statistics
-            if len(all_values) > 0:
-                std_dev = np.std(all_values)
-                three_sigma = 3 * std_dev
-                
-                feature_stats[feature] = {
-                    'std_dev': std_dev,
-                    'three_sigma': three_sigma
-                }
-                
-                print(f"Feature {feature}: std={std_dev:.4f}, 3σ threshold={three_sigma:.4f}")
-            else:
-                feature_stats[feature] = {
-                    'std_dev': 0,
-                    'three_sigma': 0
-                }
-    
-    # Dictionary to store Z-scores
+            all_values = all_values[~np.isnan(all_values)]
+            std_dev = np.std(all_values) if len(all_values) > 0 else 0
+            feature_stats[feature] = {
+                'std_dev': std_dev,
+                'three_sigma': 3 * std_dev
+            }
+
     z_scores_dict = {}
-    z_scores_dict_no_cutoff = {}
-    
-    # Calculate Z-scores for each feature
     for feature in real_df.columns:
         if feature in dist_df.columns:
             mean = dist_df[feature].mean(axis=1)
-            std = dist_df[feature].std(axis=1)
-            std[std == 0] = np.nan  
-            
-            # Calculate raw Z-scores
+            std = dist_df[feature].std(axis=1).replace(0, np.nan)
             raw_z_scores = (real_df[feature] - mean) / std
-            z_scores_dict_no_cutoff[feature] = raw_z_scores
-            
-            # Apply 3-sigma threshold (feature-specific)
             if feature in feature_stats:
-                three_sigma_cutoff = feature_stats[feature]['three_sigma']
-                z_scores_dict[feature] = raw_z_scores.copy()
-                z_scores_dict[feature].loc[z_scores_dict[feature].abs() <= three_sigma_cutoff] = 0
-    
-    # Create DataFrames from dictionaries
+                threshold = feature_stats[feature]['three_sigma']
+                raw_z_scores.loc[raw_z_scores.abs() <= threshold] = 0
+            z_scores_dict[feature] = raw_z_scores
+
     z_scores = pd.DataFrame(z_scores_dict, index=real_df.index)
-    z_scores_no_cutoff = pd.DataFrame(z_scores_dict_no_cutoff, index=real_df.index)
-    
-    # Replace NaN and infinite values with 0
     z_scores = z_scores.replace([np.inf, -np.inf, np.nan], 0)
-    z_scores_no_cutoff = z_scores_no_cutoff.replace([np.inf, -np.inf, np.nan], 0)
+    return z_scores, feature_stats
 
-    return z_scores, z_scores_no_cutoff, feature_stats
-
-
-def normalize_row(row):
-    # Check for existing NaN or inf values
-    if row.isnull().any() or np.isinf(row).any():
-        # Replace with 0 for normalization
-        row = row.replace([np.inf, -np.inf, np.nan], 0)
+def get_label_mapping(model_name):
+    """Return the appropriate label mapping based on the model name."""
+    label_mappings = {
+        "scgpt_ms": {
+            0: 'PVALB-expressing interneuron', 
+            1: 'SST-expressing interneuron', 
+            2: 'SV2C-expressing interneuron', 
+            3: 'VIP-expressing interneuron', 
+            4: 'astrocyte', 
+            5: 'cortical layer 2-3 excitatory neuron A', 
+            6: 'cortical layer 2-3 excitatory neuron B', 
+            7: 'cortical layer 4 excitatory neuron', 
+            8: 'cortical layer 5-6 excitatory neuron', 
+            9: 'endothelial cell', 
+            10: 'microglial cell', 
+            11: 'mixed excitatory neuron', 
+            12: 'mixed glial cell', 
+            13: 'oligodendrocyte A', 
+            14: 'oligodendrocyte C', 
+            15: 'oligodendrocyte precursor cell', 
+            16: 'phagocyte', 
+            17: 'pyramidal neuron'
+        },
+        "scgpt_pancreas": {
+            0: 'MHC class II', 
+            1: 'PP', 
+            2: 'PSC', 
+            3: 'acinar', 
+            4: 'alpha', 
+            5: 'beta', 
+            6: 'delta', 
+            7: 'ductal', 
+            8: 'endothelial', 
+            9: 'epsilon', 
+            10: 'macrophage', 
+            11: 'mast', 
+            12: 'schwann', 
+            13: 't_cell'
+        },
+        "DNABERT_TATA": {
+            0: 'non-TATA', 
+            1: 'TATA'
+        },
+        "NT_TATA": {
+            0: 'non-TATA', 
+            1: 'TATA'
+        },
+        "DNABERT_enhancers": {
+            0: 'non-enhancer', 
+            1: 'enhancer'
+        },
+        "NT_enhancers": {
+            0: 'non-enhancer', 
+            1: 'enhancer'
+        }
+    }
     
-    # Min max scaling
-    scale = max(abs(row.max()), abs(row.min()))
+    return label_mappings.get(model_name, {})
+
+def format_json_with_labels(df, label_specific_dfs, bio_features, model_name):
+    """
+    Format the data as JSON with label-specific sentences for each head.
     
-    # Handle division by zero
-    if scale == 0:
-        return row.fillna(0).astype(int)
-    
-    return ((row / scale) * 10).round().astype(int)
-
-
-def format_json(df, bio_features):
-    json_structure = {}
-
-    for layer_head, series in df.iterrows():
-        series_dict = {key: (int(value) if isinstance(value, np.integer) else value) for key, value in series.to_dict().items()}
-        # Coefficients that are not significantly different from zero are removed
-        non_zero_coeffs = {k: v for k, v in series_dict.items() if v != 0 and k in bio_features}
-        sentences = [[feature if series_dict[feature] == 0 else [feature, series_dict[feature]] for feature in bio_features if 'position' not in feature]]
+    Args:
+        df: DataFrame with overall z-scores
+        label_specific_dfs: Dictionary mapping labels to DataFrames with label-specific z-scores
+        bio_features: List of biological feature column names
+        model_name: Name of the model
         
+    Returns:
+        json_str: JSON string with formatted data
+    """
+    label_mapping = get_label_mapping(model_name)
+    
+    # Get unique labels from the label-specific DataFrames
+    unique_labels = list(label_specific_dfs.keys())
+    
+    json_structure = {}
+    for layer_head, series in df.iterrows():
+        # Get features with non-zero z-scores
+        features_only = {k: v for k, v in series.items() if k in bio_features}
+        non_zero = {k: int(v) for k, v in features_only.items() if v != 0}
+        sentences = [[feature if feature not in non_zero else [feature, non_zero[feature]] for feature in bio_features]]
+        
+        # Initialize the head's JSON structure
         json_structure[layer_head] = {
             "name": layer_head,
-            "given_name": "...",
             "explanation": "The main thing this head does is find...",
             "sentences": sentences
         }
+        
+        # Add label-specific sentences for all labels
+        for label in unique_labels:
+            if layer_head in label_specific_dfs[label].index:
+                # Get label-specific features
+                label_series = label_specific_dfs[label].loc[layer_head]
+                label_features = {k: v for k, v in label_series.items() if k in bio_features}
+                label_non_zero = {k: int(v) for k, v in label_features.items() if v != 0}
+                
+                # Try to get the text representation of the label
+                try:
+                    label_key = int(float(label))
+                    text_label = label_mapping.get(label_key, str(label))
+                except (ValueError, TypeError):
+                    text_label = str(label)
+                
+                # Create label-specific sentences
+                label_sentences = [[feature if feature not in label_non_zero 
+                                  else [feature, label_non_zero[feature]] 
+                                  for feature in bio_features]]
+                
+                # Add to the head's JSON with label-specific key
+                json_structure[layer_head][f"{text_label}_sentences"] = label_sentences
+        
+    return json.dumps(json_structure, indent=4)
 
-    json_output = json.dumps(json_structure, indent=4)
-    return json_output
-
+def calculate_label_specific_z_scores(args, label_specific_coef_dfs, global_coef_df):
+    """
+    Calculate z-scores for label-specific correlations.
+    
+    Args:
+        args: Command-line arguments
+        label_specific_coef_dfs: Dictionary mapping labels to DataFrames with label-specific correlations
+        global_coef_df: DataFrame with global correlations
+        
+    Returns:
+        z_scores_by_label: Dictionary mapping labels to DataFrames with label-specific z-scores
+        overall_z_scores: DataFrame with overall z-scores
+        feature_stats: Dictionary with feature statistics
+    """
+    # Get distribution folder
+    dist_folder = f"{args.full_path}/data/distributions/{args.model_name}/"
+    
+    # Calculate global z-scores
+    overall_z_scores, feature_stats = calculate_feature_specific_thresholds(global_coef_df, dist_folder)
+    
+    # Calculate z-scores for each label
+    z_scores_by_label = {}
+    for label, label_df in label_specific_coef_dfs.items():
+        label_z_scores, _ = calculate_feature_specific_thresholds(label_df, dist_folder)
+        z_scores_by_label[label] = label_z_scores
+    
+    return z_scores_by_label, overall_z_scores, feature_stats
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--data_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/coef/",
-        type=str,
-        help="The path to the data",
-    )
-    parser.add_argument(
-        "--full_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/",
-        type=str,
-        help="The full path to the output directory",
-    )
-    parser.add_argument(
-        "--model_name",
-        default="DNABERT_TATA",
-        type=str,
-        help="The model being explained",
-    )
-    parser.add_argument(
-        "--model_subtype",
-        default="finetuned",
-        type=str,
-        choices=["random_init", "random", "pretrained", "finetuned"],
-        help="The model subtype being explained",
-    )
+    parser.add_argument("--data_path", default="/home/mica/genome-head-interpreter/preprocessing/data/coef/", type=str)
+    parser.add_argument("--full_path", default="/home/mica/genome-head-interpreter/preprocessing/", type=str)
+    parser.add_argument("--model_name", default="DNABERT_TATA", type=str)
+    parser.add_argument("--model_subtype", default="finetuned", type=str)
     args = parser.parse_args()
 
-    data_path = args.data_path
-    full_path = args.full_path
-    model_name = args.model_name
-    model_subtype = args.model_subtype
+    # Define paths
+    model_coef_path = f"{args.data_path}{args.model_name}"
     
-    # Make sure if model_subtype selected as "random", the model_name is DNABERT_TATA or DNABERT_enhancer
-    if args.model_subtype == "random":
-        assert args.model_name == "DNABERT_TATA" or args.model_name == "DNABERT_enhancers", "Model name should be DNABERT_TATA or DNABERT_enhancers"
+    # Look for centered coefficient files first
+    global_coef_path = f"{model_coef_path}/{args.model_subtype}_global_centered_headcorr.csv"
+    if not os.path.exists(global_coef_path):
+        # Fallback to original coefficient files if no centered files found
+        global_coef_path = f"{model_coef_path}/{args.model_subtype}_results.csv"
+        prefix = ""
+        print(f"No centered global coefficient file found. Using original file: {global_coef_path}")
+    else:
+        prefix = "centered_"
+        print(f"Using centered global coefficient file: {global_coef_path}")
     
-    # Path to the coefficient file
-    coef_path = f'{data_path}{model_name}/{model_subtype}_results.csv'
+    global_df = pd.read_csv(global_coef_path, index_col=0)
     
-    # Model to distribution folder mapping
-    model_to_folder = {
-        'DNABERT_TATA': 'DNABERT_TATA',
-        'DNABERT_enhancers': 'DNABERT_enhancers',
-        'scgpt_ms': 'scgpt_ms',
-        'scgpt_pancreas': 'scgpt_pancreas',
-        'NT_TATA': 'NT_TATA',
-        'NT_enhancers': 'NT_enhancers'
-    }
+    # Load label-specific correlation files
+    label_specific_coef_dfs = {}
     
-    # Get folder for distribution data
-    folder = model_to_folder.get(model_name, model_name)
-    distribution_folder = f'{full_path}/data/distributions/{folder}/'
+    # Look for centered label-specific files first
+    label_files = [f for f in os.listdir(model_coef_path) if 
+                  f.startswith(f"{args.model_subtype}_label_") and 
+                  f"{prefix}headcorr.csv" in f]
     
-    # Check if distribution folder exists
-    if not os.path.exists(distribution_folder):
-        print(f"Warning: Distribution folder {distribution_folder} does not exist")
-        try:
-            os.makedirs(distribution_folder, exist_ok=True)
-            print(f"Created distribution folder {distribution_folder}")
-        except Exception as e:
-            print(f"Error creating distribution folder: {str(e)}")
-            return
-    
-    # Read coefficient data
-    try:
-        real_coef_df = pd.read_csv(coef_path, index_col=0)
-        # Exclude positional columns
-        real_coef_df = real_coef_df[[col for col in real_coef_df.columns if 'position' not in col]]
-    except Exception as e:
-        print(f"Error reading coefficient file {coef_path}: {str(e)}")
+    if not label_files:
+        print("No label-specific correlation files found. Make sure to run the correlation analysis first.")
         return
-
-    # Calculate Z-scores with 3-sigma thresholds
-    z_scores_3sigma, z_scores_no_cutoff, feature_stats = calculate_feature_specific_thresholds(
-        real_coef_df, distribution_folder
-    )
+    
+    print(f"Found {len(label_files)} label-specific correlation files with prefix '{prefix}'")
+    
+    for label_file in label_files:
+        # Extract label from filename
+        if prefix:
+            # Format: "{subtype}_label_{label}_centered_headcorr.csv"
+            label = label_file.replace(f"{args.model_subtype}_label_", "").replace(f"_{prefix}headcorr.csv", "")
+        else:
+            # Format: "{subtype}_label_{label}_headcorr.csv"
+            label = label_file.replace(f"{args.model_subtype}_label_", "").replace("_headcorr.csv", "")
+            
+        label_df = pd.read_csv(os.path.join(model_coef_path, label_file), index_col=0)
+        label_specific_coef_dfs[label] = label_df
+    
+    # Get bio features (remove position columns)
+    bio_features = [col for col in global_df.columns if 'position' not in col]
+    
+    # Calculate z-scores
+    z_scores_by_label, overall_z_scores, feature_stats = calculate_label_specific_z_scores(args, label_specific_coef_dfs, global_df)
     
     # Create output directories
-    os.makedirs(f'{full_path}/data/z_scores/', exist_ok=True)
-    os.makedirs(f'{full_path}/data/z_scores/{model_name}', exist_ok=True)
-    os.makedirs(f'{full_path}/data/coef/', exist_ok=True)
-    os.makedirs(f'{full_path}/data/coef/{model_name}', exist_ok=True)
-    os.makedirs(f'{full_path}/data/explanation_prompts/{model_name}', exist_ok=True)
-    
-    # Save Z-score versions
-    z_scores_no_cutoff.to_csv(f'{full_path}/data/z_scores/{model_name}/{model_subtype}_z_scores_no_cutoff.csv')
-    z_scores_3sigma.to_csv(f'{full_path}/data/z_scores/{model_name}/{model_subtype}_z_scores_3sigma.csv')
+    os.makedirs(f"{args.full_path}/data/z_scores/{args.model_name}", exist_ok=True)
+    os.makedirs(f"{args.full_path}/data/explanation_prompts/{args.model_name}", exist_ok=True)
+    os.makedirs(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}", exist_ok=True)
+    os.makedirs(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}/label_specific", exist_ok=True)
     
     # Save feature statistics
-    feature_stats_df = pd.DataFrame(feature_stats).T
-    feature_stats_df.to_csv(f'{full_path}/data/z_scores/{model_name}/{model_subtype}_feature_thresholds.csv')
+    feature_stats_df = pd.DataFrame.from_dict({k: v for k, v in feature_stats.items()})
+    feature_stats_df.to_csv(f'{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}_{prefix}feature_thresholds.csv')
     
-    # # Normalize coefficients
-    # normalized_3sigma = z_scores_3sigma.apply(normalize_row, axis=0)
+    # Save global z-scores
+    overall_z_scores.to_csv(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}_{prefix}z_scores.csv")
     
-    # # Save normalized results
-    # normalized_3sigma.to_csv(f'{full_path}/data/coef/{model_name}/{model_subtype}_normalized_3sigma.csv')
+    # Save label-specific z-scores
+    for label, z_scores in z_scores_by_label.items():
+        z_scores.to_csv(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}/label_specific/{label}_{prefix}z_scores.csv")
     
-    # Create JSON prompts for 3-sigma threshold
-    bio_features = [col for col in real_coef_df.columns if 'position' not in col]
+    # Create JSON with label-specific information
+    json_out = format_json_with_labels(overall_z_scores, z_scores_by_label, bio_features, args.model_name)
     
-    # 3-sigma threshold JSON
-    json_output_3sigma = format_json(z_scores_3sigma, bio_features)
-    with open(f'{full_path}/data/explanation_prompts/{model_name}/{model_subtype}.json', 'w') as f:
-        f.write(json_output_3sigma)
+    # Save JSON
+    with open(f"{args.full_path}/data/explanation_prompts/{args.model_name}/{args.model_subtype}_{prefix}centered.json", "w") as f:
+        f.write(json_out)
     
-    print(f"3-sigma threshold analysis complete for {model_name} ({model_subtype})")
+    print(f"Z-score analysis complete for {args.model_name} ({args.model_subtype}) using {prefix}centered approach")
+    print(f"Label-specific z-scores saved to: {args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}/label_specific/")
+    print(f"JSON explanation prompts saved to: {args.full_path}/data/explanation_prompts/{args.model_name}/{args.model_subtype}_{prefix}centered.json")
 
 if __name__ == "__main__":
     main()
