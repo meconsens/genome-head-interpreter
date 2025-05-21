@@ -1,3 +1,5 @@
+[![zenodo](https://img.shields.io/badge/docs-zenodo-green)](https://zenodo.org/records/15484539) [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.15484539.svg)](https://doi.org/10.5281/zenodo.15484539)
+
 # Genome-Head-Interpreter
 
 ## Abstract
