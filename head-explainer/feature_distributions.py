@@ -707,8 +707,6 @@ def main():
         
         if results:
             all_results.append(results)
-            # Skip printing analysis results
-            # Skip saving results to CSV
     else:
         # Analyze all models
         models = find_all_models(args.full_path)
@@ -724,12 +722,8 @@ def main():
             
             if results:
                 all_results.append(results)
-                # Skip printing analysis results
-                # Skip saving results to CSV
     
-    # Skip creating summary report
-    
-    # Only create the violin plot visualization
+    # Create the violin plot visualization
     plot_feature_violin_distributions(all_results, output_dir)
     
     print(f"\nViolin plots created and saved to {output_dir}/")
