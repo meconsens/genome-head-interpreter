@@ -999,6 +999,8 @@ def main():
         "log1p": "X_normed",
         "binned": "X_binned",
     }[input_style]
+    #set to test
+    adata = adata_test
     all_counts = (
         adata.layers[input_layer_key].A
         if issparse(adata.layers[input_layer_key])
