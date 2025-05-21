@@ -265,7 +265,7 @@ def main():
                         help="Filter for only positive or negative associations")
     parser.add_argument("--list_features", action="store_true",
                         help="List available features and exit")
-    parser.add_argument("--output_file", default="/home/mica/genome-head-interpreter/preprocessing/ablation_heads/", type=str,
+    parser.add_argument("--output_file", default="/home/mica/genome-head-interpreter/preprocessing/data/ablation_heads/", type=str,
                         help="Output Python file with head lists")
     args = parser.parse_args()
     
