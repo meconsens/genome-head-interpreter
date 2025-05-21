@@ -131,8 +131,8 @@ def run_centered_spearman(df, attention_score_columns, bio_feature_columns, seq_
         # Spearman correlation for each feature column using centered attention
         for col_iter in range(X.shape[1]):
             result = stats.spearmanr(X[:, col_iter], Y_centered)
-            if not np.isnan(result.statistic):
-                coef_dict[layer_head].append(result.statistic)
+            if not np.isnan(result.correlation):
+                coef_dict[layer_head].append(result.correlation)
             else:
                 coef_dict[layer_head].append(0)  # handle NaN
 
@@ -175,13 +175,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--data_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/scores/",
+        default="/home/vivian.chu/single-cell/scgpt/genome-head-interpreter/preprocessing/data/scores/",
         type=str,
         help="The path to the data",
     )
     parser.add_argument(
         "--full_path",
-        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/",
+        default="/home/vivian.chu/single-cell/scgpt/genome-head-interpreter/preprocessing/",
         type=str,
         help="The full path to the collect_coef.py file",
     )

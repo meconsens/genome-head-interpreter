@@ -12,3 +12,5 @@ preprocessing/data/differences
 setup.py
 **/.DS_Store
 **/.Rhistory
+preprocessing/scgpt_pipeline.ipynb
+preprocessing/standardize_features.ipynb
