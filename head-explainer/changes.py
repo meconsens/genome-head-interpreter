@@ -440,8 +440,8 @@ def plot_zscores_heatmap_diff(first_zscores, second_zscores, output_path, title,
 
 def main():
     parser = argparse.ArgumentParser(description='Compare feature-head association z-scores across model training stages')
-    parser.add_argument("--data_path", default="/home/mica/genome-head-interpreter/preprocessing/data/coef/", type=str)
-    parser.add_argument("--full_path", default="/home/mica/genome-head-interpreter/preprocessing/", type=str)
+    parser.add_argument("--data_path", default="scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/coef/", type=str)
+    parser.add_argument("--full_path", default="scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/", type=str)
     parser.add_argument("--model_name", default="DNABERT_TATA", type=str)
     parser.add_argument("--output_dir", default=None, type=str,
                         help="Directory to save the output visualizations")

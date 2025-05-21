@@ -255,13 +255,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--explanation_path",
-        default="/path/to/explanations.json",
+        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/explanations",
         type=str,
         help="The path to the head formatting for prompting the new explanations",
     )
     parser.add_argument(
         "--full_path",
-        default="/path/to/output/directory",
+        default="/scratch/ssd004/scratch/mconsens/genome-head-interpreter/preprocessing/data/explanations",
         type=str,
         help="The path to the directory for outputs",
     )
@@ -316,14 +316,13 @@ def main():
         explanation = prompt_gpt(prompt)
         explanations[head_name] = explanation.strip()
         print("EXPLANATION:", explanations[head_name])
-        return
     
     # Save to file
     os.makedirs(f'{full_path}/explanations/', exist_ok=True)
-    with open(f'{full_path}/explanations/{model_name}_vectorized.json', 'w') as file:
+    with open(f'{full_path}/explanations/{model_name}_{task}.json', 'w') as file:
         json.dump(explanations, file, indent=4)
     
-    print(f'Explanations saved to {full_path}/explanations/{model_name}_vectorized.json')
+    print(f'Explanations saved to {full_path}/explanations/{model_name}_{task}.json')
 
 if __name__ == "__main__":
     main()
