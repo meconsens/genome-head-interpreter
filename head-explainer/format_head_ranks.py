@@ -207,31 +207,31 @@ def main():
     parser.add_argument("--full_path", default="/home/mica/genome-head-interpreter/preprocessing/", type=str)
     parser.add_argument("--model_name", default="DNABERT_TATA", type=str)
     parser.add_argument("--model_subtype", default="finetuned", type=str)
+    parser.add_argument("--uncentered", action="store_true", help="Use uncentered correlation results")
     args = parser.parse_args()
 
     # Define paths
-    model_coef_path = f"{args.data_path}{args.model_name}"
-    
-    # Look for centered coefficient files first
-    global_coef_path = f"{model_coef_path}/{args.model_subtype}_global_centered_headcorr.csv"
-    if not os.path.exists(global_coef_path):
-        # Fallback to original coefficient files if no centered files found
-        global_coef_path = f"{model_coef_path}/{args.model_subtype}_results.csv"
+    if args.uncentered:
+        model_coef_path = f"{args.data_path}{args.model_name}-UNCENTERED"
         prefix = ""
-        print(f"No centered global coefficient file found. Using original file: {global_coef_path}")
+        global_coef_path = f"{model_coef_path}/{args.model_subtype}_global_headcorr.csv"
     else:
+        model_coef_path = f"{args.data_path}{args.model_name}"
+        global_coef_path = f"{model_coef_path}/{args.model_subtype}_global_centered_headcorr.csv"
         prefix = "centered_"
-        print(f"Using centered global coefficient file: {global_coef_path}")
-    
+
+    output_model_name = f"{args.model_name}-UNCENTERED" if args.uncentered else args.model_name
+
+        
     global_df = pd.read_csv(global_coef_path, index_col=0)
     
     # Load label-specific correlation files
     label_specific_coef_dfs = {}
     
     # Look for centered label-specific files first
-    label_files = [f for f in os.listdir(model_coef_path) if 
-                  f.startswith(f"{args.model_subtype}_label_") and 
-                  f"{prefix}headcorr.csv" in f]
+    label_files = [f for f in os.listdir(model_coef_path) if
+               f.startswith(f"{args.model_subtype}_label_") and
+               f"{prefix}headcorr.csv" in f]
     
     if not label_files:
         print("No label-specific correlation files found. Make sure to run the correlation analysis first.")
@@ -256,34 +256,31 @@ def main():
     
     # Calculate z-scores
     z_scores_by_label, overall_z_scores, feature_stats = calculate_label_specific_z_scores(args, label_specific_coef_dfs, global_df)
-    
     # Create output directories
-    os.makedirs(f"{args.full_path}/data/z_scores/{args.model_name}", exist_ok=True)
-    os.makedirs(f"{args.full_path}/data/explanation_prompts/{args.model_name}", exist_ok=True)
-    os.makedirs(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}", exist_ok=True)
-    os.makedirs(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}/label_specific", exist_ok=True)
-    
+    os.makedirs(f"{args.full_path}/data/z_scores/{output_model_name}", exist_ok=True)
+    os.makedirs(f"{args.full_path}/data/explanation_prompts/{output_model_name}", exist_ok=True)
+    os.makedirs(f"{args.full_path}/data/z_scores/{output_model_name}/{args.model_subtype}", exist_ok=True)
+    os.makedirs(f"{args.full_path}/data/z_scores/{output_model_name}/{args.model_subtype}/label_specific", exist_ok=True)
+
     # Save feature statistics
     feature_stats_df = pd.DataFrame.from_dict({k: v for k, v in feature_stats.items()})
-    feature_stats_df.to_csv(f'{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}_{prefix}feature_thresholds.csv')
-    
+    feature_stats_df.to_csv(f'{args.full_path}/data/z_scores/{output_model_name}/{args.model_subtype}_{prefix}feature_thresholds.csv')
+
     # Save global z-scores
-    overall_z_scores.to_csv(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}_{prefix}z_scores.csv")
-    
+    overall_z_scores.to_csv(f"{args.full_path}/data/z_scores/{output_model_name}/{args.model_subtype}_{prefix}z_scores.csv")
+
     # Save label-specific z-scores
     for label, z_scores in z_scores_by_label.items():
-        z_scores.to_csv(f"{args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}/label_specific/{label}_{prefix}z_scores.csv")
-    
-    # Create JSON with label-specific information
+        z_scores.to_csv(f"{args.full_path}/data/z_scores/{output_model_name}/{args.model_subtype}/label_specific/{label}_{prefix}z_scores.csv")
+
+    # Save JSON explanations
     json_out = format_json_with_labels(overall_z_scores, z_scores_by_label, bio_features, args.model_name)
-    
-    # Save JSON
-    with open(f"{args.full_path}/data/explanation_prompts/{args.model_name}/{args.model_subtype}_{prefix}centered.json", "w") as f:
+    with open(f"{args.full_path}/data/explanation_prompts/{output_model_name}/{args.model_subtype}_{prefix}centered.json", "w") as f:
         f.write(json_out)
-    
+
     print(f"Z-score analysis complete for {args.model_name} ({args.model_subtype}) using {prefix}centered approach")
-    print(f"Label-specific z-scores saved to: {args.full_path}/data/z_scores/{args.model_name}/{args.model_subtype}/label_specific/")
-    print(f"JSON explanation prompts saved to: {args.full_path}/data/explanation_prompts/{args.model_name}/{args.model_subtype}_{prefix}centered.json")
+    print(f"Label-specific z-scores saved to: {args.full_path}/data/z_scores/{output_model_name}/{args.model_subtype}/label_specific/")
+    print(f"JSON explanation prompts saved to: {args.full_path}/data/explanation_prompts/{output_model_name}/{args.model_subtype}_{prefix}centered.json")
 
 if __name__ == "__main__":
     main()
